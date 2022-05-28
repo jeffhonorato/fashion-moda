@@ -389,7 +389,7 @@
         }
     
         .btn-fechar {
-            width: 120px;
+            width: 100px;
             position: absolute;
             top: 2px;
             left: 2px;
@@ -399,6 +399,12 @@
             width: 60px;
             font-size: 1.5rem;
             cursor: pointer;
+            box-shadow: 2px 2px 20px 1px #fff; 
+
+                &:hover {
+                    box-shadow: 0px 0px 0px 0px #fff;
+                    transition: all .5s;
+                }
         }
     
         .card__box__img {
@@ -574,17 +580,28 @@
             background-repeat: no-repeat;
             background-size: cover;
             // padding: .8rem;
-            box-shadow: 2px 2px 10px 1px #000; 
+            box-shadow: 2px 2px 20px 1px #fff; 
+            border: 3px solid #fff; 
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            z-index: 1000;
+            top: 20px;
+            left: 130px;
+            width: 80vw;
+            height: 94vh;
+            z-index: 5;
             
                 @include celular {
+                    top: 0px;
+                    left: 0px;
                     width: 100vw;
+                    height: 100vh;
                 }
+
+                @include tablet {
+                    top: 0px;
+                    left: 0px;
+                    width: 100vw;
+                    height: 100vh;
+            }
         }
 
         .card__modal__calca.show {
@@ -606,6 +623,12 @@
             width: 60px;
             font-size: 1.5rem;
             cursor: pointer;
+            box-shadow: 2px 2px 20px 1px #fff; 
+
+                &:hover {
+                    box-shadow: 0px 0px 0px 0px #fff;
+                    transition: all .5s;
+                }
         }
 
         .card__box__img {
