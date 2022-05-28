@@ -190,6 +190,102 @@ modalCard8CalcadosMasc = () => {
     });
 }
 
+modalCard9CalcadosMasc = () => {
+    const imgPequenas = document.querySelectorAll(".js-modal-imgP-calcadoMasc-card9");
+    imgPequenas.forEach((img) => {
+        img.addEventListener("click", () => {
+            const imgGrande = document.querySelector(".js-modal-imgG-calcadoMasc-card9");
+            imgGrande.src = img.src;
+        });
+    });
+
+    const detalhesCard9 = document.querySelector(".js-btn9-detalhes-calcadoMasc");
+    detalhesCard9.addEventListener("click", (e) => {
+        e.stopPropagation()
+        const modalBox9 = document.querySelector(".js-modal__card9__calcadoMasc");
+        modalBox9.classList.add("show");
+    });
+
+    const btnFechar = document.querySelector(".js-btn-fechar-card9-calcadosMasc");
+    btnFechar.addEventListener("click", (e) => {
+        e.stopPropagation()
+        const modalBox9 = document.querySelector(".js-modal__card9__calcadoMasc");
+        modalBox9.classList.remove("show");
+    });
+}
+
+modalCard10CalcadosMasc = () => {
+    const imgPequenas = document.querySelectorAll(".js-modal-imgP-calcadoMasc-card10");
+    imgPequenas.forEach((img) => {
+        img.addEventListener("click", () => {
+            const imgGrande = document.querySelector(".js-modal-imgG-calcadoMasc-card10");
+            imgGrande.src = img.src;
+        });
+    });
+
+    const detalhesCard10 = document.querySelector(".js-btn10-detalhes-calcadoMasc");
+    detalhesCard10.addEventListener("click", (e) => {
+        e.stopPropagation()
+        const modalBox10 = document.querySelector(".js-modal__card10__calcadoMasc");
+        modalBox10.classList.add("show");
+    });
+
+    const btnFechar = document.querySelector(".js-btn-fechar-card10-calcadosMasc");
+    btnFechar.addEventListener("click", (e) => {
+        e.stopPropagation()
+        const modalBox10 = document.querySelector(".js-modal__card10__calcadoMasc");
+        modalBox10.classList.remove("show");
+    });
+}
+
+modalCard11CalcadosMasc = () => {
+    const imgPequenas = document.querySelectorAll(".js-modal-imgP-calcadoMasc-card11");
+    imgPequenas.forEach((img) => {
+        img.addEventListener("click", () => {
+            const imgGrande = document.querySelector(".js-modal-imgG-calcadoMasc-card11");
+            imgGrande.src = img.src;
+        });
+    });
+
+    const detalhesCard11 = document.querySelector(".js-btn11-detalhes-calcadoMasc");
+    detalhesCard11.addEventListener("click", (e) => {
+        e.stopPropagation()
+        const modalBox11 = document.querySelector(".js-modal__card11__calcadoMasc");
+        modalBox11.classList.add("show");
+    });
+
+    const btnFechar = document.querySelector(".js-btn-fechar-card11-calcadosMasc");
+    btnFechar.addEventListener("click", (e) => {
+        e.stopPropagation()
+        const modalBox11 = document.querySelector(".js-modal__card11__calcadoMasc");
+        modalBox11.classList.remove("show");
+    });
+}
+
+modalCard12CalcadosMasc = () => {
+    const imgPequenas = document.querySelectorAll(".js-modal-imgP-calcadoMasc-card12");
+    imgPequenas.forEach((img) => {
+        img.addEventListener("click", () => {
+            const imgGrande = document.querySelector(".js-modal-imgG-calcadoMasc-card12");
+            imgGrande.src = img.src;
+        });
+    });
+
+    const detalhesCard12 = document.querySelector(".js-btn12-detalhes-calcadoMasc");
+    detalhesCard12.addEventListener("click", (e) => {
+        e.stopPropagation()
+        const modalBox12 = document.querySelector(".js-modal__card12__calcadoMasc");
+        modalBox12.classList.add("show");
+    });
+
+    const btnFechar = document.querySelector(".js-btn-fechar-card12-calcadosMasc");
+    btnFechar.addEventListener("click", (e) => {
+        e.stopPropagation()
+        const modalBox12 = document.querySelector(".js-modal__card12__calcadoMasc");
+        modalBox12.classList.remove("show");
+    });
+}
+
 
 
 modalCard1CalcadosMasc();
@@ -200,3 +296,7 @@ modalCard5CalcadosMasc();
 modalCard6CalcadosMasc();
 modalCard7CalcadosMasc();
 modalCard8CalcadosMasc();
+modalCard9CalcadosMasc();
+modalCard10CalcadosMasc();
+modalCard11CalcadosMasc();
+modalCard12CalcadosMasc();
