@@ -358,9 +358,9 @@
             background-repeat: no-repeat;
             background-size: cover;
             padding: .8rem;
-            backdrop-filter: blur(10px);
             box-shadow: 2px 2px 20px 1px #fff; 
             border: 3px solid #fff;
+            border-radius: 10px;
             position: fixed;
             top: 20px;
             left: 130px;
@@ -582,6 +582,7 @@
             // padding: .8rem;
             box-shadow: 2px 2px 20px 1px #fff; 
             border: 3px solid #fff; 
+            border-radius: 10px;
             position: fixed;
             top: 20px;
             left: 130px;
@@ -792,6 +793,7 @@
             // padding: .8rem;
             box-shadow: 2px 2px 20px 1px #fff; 
             border: 3px solid #fff; 
+            border-radius: 10px;
             position: fixed;
             top: 20px;
             left: 130px;
@@ -993,6 +995,7 @@
             // padding: .8rem;
             box-shadow: 2px 2px 20px 1px #fff; 
             border: 3px solid #fff;
+            border-radius: 10px;
             position: fixed;
             top: 20px;
             left: 130px;
@@ -1193,6 +1196,7 @@
             // padding: .8rem;
             box-shadow: 2px 2px 20px 1px #fff; 
             border: 3px solid #fff;
+            border-radius: 10px;
             position: fixed;
             top: 20px;
             left: 130px;
@@ -1394,6 +1398,7 @@
             // padding: .8rem;
             box-shadow: 2px 2px 20px 1px #fff; 
             border: 3px solid #fff;
+            border-radius: 10px;
             position: fixed;
             top: 20px;
             left: 130px;
@@ -1537,8 +1542,6 @@
         }    
     
     }
-
-
 
 
     /******* SWWIPER SLIDER BLUSAS *******/
