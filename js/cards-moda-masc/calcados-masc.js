@@ -286,6 +286,54 @@ modalCard12CalcadosMasc = () => {
     });
 }
 
+modalCard13CalcadosMasc = () => {
+    const imgPequenas = document.querySelectorAll(".js-modal-imgP-calcadoMasc-card13");
+    imgPequenas.forEach((img) => {
+        img.addEventListener("click", () => {
+            const imgGrande = document.querySelector(".js-modal-imgG-calcadoMasc-card13");
+            imgGrande.src = img.src;
+        });
+    });
+
+    const detalhesCard13 = document.querySelector(".js-btn13-detalhes-calcadoMasc");
+    detalhesCard13.addEventListener("click", (e) => {
+        e.stopPropagation()
+        const modalBox13 = document.querySelector(".js-modal__card13__calcadoMasc");
+        modalBox13.classList.add("show");
+    });
+
+    const btnFechar = document.querySelector(".js-btn-fechar-card13-calcadosMasc");
+    btnFechar.addEventListener("click", (e) => {
+        e.stopPropagation()
+        const modalBox13 = document.querySelector(".js-modal__card13__calcadoMasc");
+        modalBox13.classList.remove("show");
+    });
+}
+
+modalCard14CalcadosMasc = () => {
+    const imgPequenas = document.querySelectorAll(".js-modal-imgP-calcadoMasc-card14");
+    imgPequenas.forEach((img) => {
+        img.addEventListener("click", () => {
+            const imgGrande = document.querySelector(".js-modal-imgG-calcadoMasc-card14");
+            imgGrande.src = img.src;
+        });
+    });
+
+    const detalhesCard14 = document.querySelector(".js-btn14-detalhes-calcadoMasc");
+    detalhesCard14.addEventListener("click", (e) => {
+        e.stopPropagation()
+        const modalBox14 = document.querySelector(".js-modal__card14__calcadoMasc");
+        modalBox14.classList.add("show");
+    });
+
+    const btnFechar = document.querySelector(".js-btn-fechar-card14-calcadosMasc");
+    btnFechar.addEventListener("click", (e) => {
+        e.stopPropagation()
+        const modalBox14 = document.querySelector(".js-modal__card14__calcadoMasc");
+        modalBox14.classList.remove("show");
+    });
+}
+
 
 
 modalCard1CalcadosMasc();
@@ -300,3 +348,5 @@ modalCard9CalcadosMasc();
 modalCard10CalcadosMasc();
 modalCard11CalcadosMasc();
 modalCard12CalcadosMasc();
+modalCard13CalcadosMasc();
+modalCard14CalcadosMasc();
