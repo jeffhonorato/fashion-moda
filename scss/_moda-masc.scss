@@ -1105,18 +1105,18 @@
         }
 }
 
-.calcas-masc{
+.calcados-masc{
     margin-bottom: 1rem;
 }
 
-.card__masc__calcas {
+.card__masc__calcados {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
 }
 
-.card__prod__calca {
+.card__prod__calcado {
     padding: .2rem;
     border: 2px solid #000;
     border-top-left-radius: 25px;
@@ -1144,7 +1144,7 @@
         }
 }
 
-.prod__info__calca {
+.prod__info__calcado {
     padding: 1rem;
     width: 300px;
     text-align: center;
@@ -1157,7 +1157,7 @@
         
 }
 
-.prod__titulo__calca {
+.prod__titulo__calcado {
     font-family: $fonte-titulo;
     font-size: 1.8rem;
     opacity: .5;
@@ -1214,8 +1214,8 @@
 }
 
 /******* MODAL CARDS CALÇADOS MASC *******/
-.modal__box__calcas { 
-    .card__calcas {
+.modal__box__calcados { 
+    .card__calcados {
         display: none;
         justify-content: center;
         align-items: center;
@@ -1251,7 +1251,7 @@
             }
     }
 
-    .card__calcas.show {
+    .card__calcados.show {
         display: flex;
     }
 
