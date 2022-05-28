@@ -1,0 +1,25 @@
+#slider {
+    display: flex;
+    // justify-content: center;
+    height: 100vh;
+    background-color: #000;
+    position: relative;
+    // max-width: 500px;
+
+        .slider__img {
+            opacity: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            position: absolute;
+            padding: 1rem;
+            transition: opacity 800ms;
+        }
+
+        .slider__img.selected {
+            opacity: 1;
+        }
+}
+
+
+

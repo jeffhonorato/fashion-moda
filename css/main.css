@@ -1,0 +1,3155 @@
+@charset "UTF-8";
+/* VARIÁVEIS - FONTES - CORES */
+/* CONFIGURAÇÕES - RESET */
+/* line 12, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/main.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/* line 18, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/main.scss */
+html {
+  scroll-behavior: smooth; }
+
+/* line 22, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/main.scss */
+a {
+  text-decoration: none;
+  display: block; }
+
+/* line 27, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/main.scss */
+img {
+  max-width: 100%;
+  display: block; }
+
+/* line 32, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/main.scss */
+ul, li {
+  list-style: none; }
+
+/* MIXINS */
+/* IMPORTS E MONTAGEM DA PÁGINA */
+/* line 1, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+#header {
+  background-image: url("../images/background-header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem;
+  position: relative;
+  height: 100vh;
+  z-index: 2; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 1, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+    #header {
+      height: 50vh; } }
+  @media (min-width: 480px) and (max-width: 800px) {
+    /* line 1, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+    #header {
+      height: 70vh; } }
+  /* line 20, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+  #header .logo__img {
+    width: 15rem;
+    z-index: 2; }
+  /* line 26, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+  #header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; }
+  /* line 40, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+  #header .menu__mobile {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 8px;
+    z-index: 5;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 50px; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 40, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+      #header .menu__mobile {
+        display: block;
+        background-color: #fff;
+        border-radius: 50%;
+        width: 45px;
+        cursor: pointer;
+        margin-right: 6px;
+        right: 5px; } }
+    @media (min-width: 715px) and (max-width: 802px) {
+      /* line 40, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+      #header .menu__mobile {
+        right: 32px; } }
+  /* line 67, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+  #header .menu__mobile.invisvel {
+    opacity: 0; }
+  /* line 71, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+  #header .nav__itens {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 90px;
+    right: 5px;
+    transform: skewY(-4deg);
+    z-index: 5; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 71, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+      #header .nav__itens {
+        display: none;
+        flex-direction: column;
+        gap: .0rem;
+        position: fixed;
+        top: 65px;
+        right: 3px;
+        padding-right: 12px; } }
+    @media (min-width: 480px) and (max-width: 800px) {
+      /* line 71, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+      #header .nav__itens {
+        top: 70px;
+        right: 10px; } }
+    @media (min-width: 715px) and (max-width: 802px) {
+      /* line 71, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+      #header .nav__itens {
+        right: 37px; } }
+    @media (min-width: 800px) and (max-width: 2480px) {
+      /* line 71, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+      #header .nav__itens {
+        right: 24px; } }
+    @media (min-width: 715px) and (max-width: 802px) {
+      /* line 71, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+      #header .nav__itens {
+        right: 37px; } }
+  /* line 113, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+  #header .nav__itens::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -40px;
+    width: 38px;
+    height: 100%;
+    transform-origin: right;
+    transform: skewY(45deg);
+    background: #b80382;
+    border: 2px solid #000; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 113, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+      #header .nav__itens::before {
+        display: none; } }
+    @media (min-width: 480px) and (max-width: 800px) {
+      /* line 113, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+      #header .nav__itens::before {
+        display: none; } }
+  /* line 134, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+  #header .nav__itens::after {
+    position: absolute;
+    content: "";
+    top: -40px;
+    left: 0px;
+    width: 100%;
+    height: 38px;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    background: #b80382;
+    border: 2px solid #000; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 134, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+      #header .nav__itens::after {
+        display: none; } }
+    @media (min-width: 480px) and (max-width: 800px) {
+      /* line 134, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+      #header .nav__itens::after {
+        display: none; } }
+  /* line 155, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+  #header .nav__itens.ativo {
+    display: flex; }
+  /* line 159, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+  #header .nav__link {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: .8rem;
+    border: 2px solid #000;
+    background-color: #b80382;
+    border-bottom-right-radius: 40px;
+    box-shadow: 4px 0 2px 0 #b80382;
+    height: 50px; }
+    /* line 170, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+    #header .nav__link:hover {
+      background-color: #2a2c2c;
+      transition: all .6s;
+      box-shadow: 0px 4px 2px 0 #fff;
+      border: 2px solid #fff; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 159, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+      #header .nav__link {
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+        padding: .5rem;
+        height: 30px; } }
+    @media (min-width: 480px) and (max-width: 800px) {
+      /* line 159, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+      #header .nav__link {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding: .5rem; } }
+  /* line 195, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+  #header .nav__ico {
+    font-size: 1.5rem;
+    color: #fff; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 195, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+      #header .nav__ico {
+        font-size: .7rem; } }
+  /* line 204, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+  #header .nav__item {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Staatliches", cursive;
+    font-size: 1.1rem; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 204, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_header.scss */
+      #header .nav__item {
+        font-size: .7rem; } }
+
+/* line 1, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_slider.scss */
+#slider {
+  display: flex;
+  height: 100vh;
+  background-color: #000;
+  position: relative; }
+  /* line 9, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_slider.scss */
+  #slider .slider__img {
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    padding: 1rem;
+    transition: opacity 800ms; }
+  /* line 19, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_slider.scss */
+  #slider .slider__img.selected {
+    opacity: 1; }
+
+/* line 1, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+.promo__container {
+  background-image: url("../images/background-section-fem.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 6rem; }
+  /* line 9, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .promo__container .promocao__titulo {
+    font-family: "Waterfall", cursive;
+    text-align: center;
+    font-size: 7rem;
+    padding: 1rem;
+    color: #fff; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 9, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .promo__container .promocao__titulo {
+        font-size: 3rem; } }
+    @media (min-width: 480px) and (max-width: 800px) {
+      /* line 9, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .promo__container .promocao__titulo {
+        font-size: 4rem; } }
+  /* line 22, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .promo__container .promocao__subtitulo {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #a19999; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 22, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .promo__container .promocao__subtitulo {
+        font-size: 1.5rem; } }
+    @media (min-width: 480px) and (max-width: 800px) {
+      /* line 22, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .promo__container .promocao__subtitulo {
+        font-size: 1.7rem; } }
+
+/* line 39, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+.btn__promocao {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 39, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .btn__promocao {
+      padding: .5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .8rem; } }
+  /* line 55, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .btn__promocao .btn__promo__fem {
+    background-color: #732970; }
+  /* line 59, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .btn__promocao .btn__promo__masc {
+    background-color: #6793ce; }
+  /* line 63, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .btn__promocao .btn__promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    border-top-right-radius: 30%;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transform: skewY(-5deg);
+    box-shadow: 4px 10px 10px 0 #b80382; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 63, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .btn__promocao .btn__promo {
+        border: 1px solid #fff;
+        box-shadow: 4px 10px 10px 0 #b80382;
+        padding: .4rem; } }
+    /* line 81, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .btn__promocao .btn__promo:hover {
+      background-color: #fff;
+      box-shadow: 0 4px 2px 0 #b80382;
+      transition: all .6s;
+      border-top-left-radius: 30%;
+      border: 2px solid #b80382; }
+    /* line 90, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .btn__promocao .btn__promo:hover .btn__titulo {
+      color: #000;
+      font-weight: bold; }
+    /* line 95, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .btn__promocao .btn__promo:hover .nav__ico {
+      color: #000;
+      font-weight: bold; }
+  /* line 101, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .btn__promocao .nav__ico {
+    font-size: 1.5rem;
+    color: #fff; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 101, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .btn__promocao .nav__ico {
+        font-size: 1.2rem; } }
+  /* line 113, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .btn__promocao .btn__titulo {
+    font-family: "Rajdhani", sans-serif;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: .4rem; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 113, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .btn__promocao .btn__titulo {
+        font-size: 14px; } }
+    @media (min-width: 480px) and (max-width: 800px) {
+      /* line 113, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .btn__promocao .btn__titulo {
+        font-size: 1rem; } }
+
+/******** TENDENCIA FEMININA ********/
+/* line 132, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+.tendencia__fem {
+  margin-top: 5rem; }
+  /* line 136, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .tendencia__fem .container__cards__fem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 136, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .tendencia__fem .container__cards__fem {
+        padding: .4rem; } }
+  /* line 147, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .tendencia__fem .cards__fem {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+    position: relative; }
+  /* line 154, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .tendencia__fem .card__fem__lista {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem; }
+  /* line 161, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .tendencia__fem .imagem__pequena {
+    height: 80px;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    opacity: .7; }
+    /* line 169, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .tendencia__fem .imagem__pequena:hover {
+      opacity: 1;
+      transition: all .5s; }
+  /* line 175, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .tendencia__fem .card__fem__retrato {
+    position: relative; }
+  /* line 180, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .tendencia__fem .imagem__grande {
+    width: 260px;
+    border-radius: 5px; }
+  /* line 186, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .tendencia__fem .acordion {
+    background-color: #732970;
+    padding: 1rem;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-top: .2rem;
+    cursor: pointer;
+    width: 260px; }
+    /* line 196, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .tendencia__fem .acordion .acordion__titulo {
+      text-align: center;
+      color: #fff;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 1rem; }
+    /* line 205, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .tendencia__fem .acordion .acordion__desc {
+      color: #7A8899;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      text-align: center; }
+    /* line 213, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .tendencia__fem .acordion .acordion__preco {
+      color: #000;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      background: #fff;
+      opacity: .9;
+      padding: .8rem;
+      border: 2px solid #000;
+      border-top-left-radius: 20%; }
+      /* line 226, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .tendencia__fem .acordion .acordion__preco span {
+        text-decoration: line-through; }
+      /* line 230, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .tendencia__fem .acordion .acordion__preco strong {
+        font-size: 1.65rem; }
+    /* line 235, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .tendencia__fem .acordion .acordion__marca {
+      color: #fff;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.4rem; }
+    /* line 241, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .tendencia__fem .acordion .acordion__tam {
+      color: #fff;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.4rem; }
+    /* line 248, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .tendencia__fem .acordion .acordion__comp {
+      color: #fff;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.4rem;
+      margin-bottom: .5rem; }
+    /* line 255, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .tendencia__fem .acordion .acordion__link {
+      display: flex;
+      gap: .2rem;
+      padding: .5rem;
+      align-items: center;
+      background-color: #2a2c2c;
+      border-radius: 10px;
+      padding: .8rem 1rem;
+      box-shadow: 4px 0 2px 0 #fff;
+      width: 140px;
+      margin: 0 auto; }
+      /* line 267, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .tendencia__fem .acordion .acordion__link:hover {
+        background-color: #b80382;
+        box-shadow: 0 4px 2px 0 #fff;
+        transition: all .6s; }
+    /* line 275, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .tendencia__fem .acordion .acordion__icone {
+      color: #fff;
+      font-size: 20px; }
+    /* line 280, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .tendencia__fem .acordion .acordion__a {
+      color: #fff;
+      font-size: 1.3rem;
+      font-family: "Staatliches", cursive; }
+
+/******** TENDENCIA MASCULINA ********/
+/* line 291, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+.tendencia__masc {
+  margin-top: 5rem; }
+  /* line 295, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .tendencia__masc .container__cards__masc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 295, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .tendencia__masc .container__cards__masc {
+        padding: .4rem; } }
+  /* line 306, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .tendencia__masc .cards__masc {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+    position: relative; }
+  /* line 313, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .tendencia__masc .card__masc__lista {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem; }
+  /* line 321, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .tendencia__masc .imagem__pequena {
+    height: 80px;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    opacity: .7; }
+    /* line 329, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .tendencia__masc .imagem__pequena:hover {
+      opacity: 1;
+      transition: all .5s; }
+  /* line 335, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .tendencia__masc .card__masc__retrato {
+    position: relative; }
+  /* line 340, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .tendencia__masc .imagem__grande {
+    width: 260px;
+    border-radius: 5px; }
+  /* line 346, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .tendencia__masc .acordion {
+    background-color: #6793ce;
+    padding: 1rem;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-top: .2rem;
+    cursor: pointer;
+    width: 260px; }
+    /* line 356, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .tendencia__masc .acordion .acordion__titulo {
+      text-align: center;
+      color: #fff;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 1rem; }
+    /* line 365, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .tendencia__masc .acordion .acordion__desc {
+      color: #2a2c2c;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      text-align: center; }
+    /* line 373, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .tendencia__masc .acordion .acordion__preco {
+      color: #000;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      background: #fff;
+      opacity: .9;
+      padding: .8rem;
+      border: 2px solid #000;
+      border-top-left-radius: 20%; }
+      /* line 386, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .tendencia__masc .acordion .acordion__preco span {
+        text-decoration: line-through; }
+      /* line 390, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .tendencia__masc .acordion .acordion__preco strong {
+        font-size: 1.65rem; }
+    /* line 395, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .tendencia__masc .acordion .acordion__marca {
+      color: #fff;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.4rem; }
+    /* line 401, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .tendencia__masc .acordion .acordion__tam {
+      color: #fff;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.4rem; }
+    /* line 408, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .tendencia__masc .acordion .acordion__comp {
+      color: #fff;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.4rem;
+      margin-bottom: .5rem; }
+    /* line 415, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .tendencia__masc .acordion .acordion__link {
+      display: flex;
+      gap: .2rem;
+      padding: .5rem;
+      align-items: center;
+      background-color: #2a2c2c;
+      border-radius: 10px;
+      padding: .8rem 1rem;
+      box-shadow: 4px 0 2px 0 #fff;
+      width: 140px;
+      margin: 0 auto; }
+      /* line 427, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .tendencia__masc .acordion .acordion__link:hover {
+        background-color: #b80382;
+        box-shadow: 0 4px 2px 0 #fff;
+        transition: all .6s; }
+    /* line 435, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .tendencia__masc .acordion .acordion__icone {
+      color: #fff;
+      font-size: 20px; }
+    /* line 440, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .tendencia__masc .acordion .acordion__a {
+      color: #fff;
+      font-size: 1.3rem;
+      font-family: "Staatliches", cursive; }
+
+/******** PROMO FEMININA ********/
+/* line 452, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+.promo__fem {
+  margin-top: 5rem; }
+  /* line 455, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .promo__fem .container__cards__fem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 455, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .promo__fem .container__cards__fem {
+        padding: .4rem; } }
+  /* line 468, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .promo__fem .cards__fem {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+    position: relative; }
+    /* line 474, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .promo__fem .cards__fem .card__fem__lista {
+      display: flex;
+      flex-direction: column;
+      gap: .5rem; }
+    /* line 481, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .promo__fem .cards__fem .imagem__pequena {
+      height: 80px;
+      opacity: 0.8;
+      cursor: pointer;
+      border-radius: 5px;
+      border: 1px solid #fff;
+      opacity: .7; }
+      /* line 489, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .promo__fem .cards__fem .imagem__pequena:hover {
+        opacity: 1;
+        transition: all .5s; }
+  /* line 496, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .promo__fem .card__fem__retrato {
+    position: relative; }
+  /* line 500, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .promo__fem .icone__promo {
+    position: absolute;
+    top: 0px;
+    right: -30px;
+    width: 100px;
+    height: 40px;
+    padding: .5rem;
+    text-align: center;
+    color: #fff;
+    background-color: #732970;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transform: rotate(35deg);
+    border: 1px solid #fff;
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%); }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 500, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .promo__fem .icone__promo {
+        top: -10px;
+        right: -4px; } }
+  /* line 525, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .promo__fem .imagem__grande {
+    width: 260px;
+    border-radius: 5px; }
+  /* line 531, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .promo__fem .acordion {
+    background-color: #732970;
+    padding: 1rem;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-top: .2rem;
+    cursor: pointer;
+    width: 260px; }
+    /* line 541, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .promo__fem .acordion .acordion__titulo {
+      text-align: center;
+      color: #fff;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 1rem; }
+    /* line 550, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .promo__fem .acordion .acordion__desc {
+      color: #7A8899;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      text-align: center; }
+    /* line 558, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .promo__fem .acordion .acordion__preco {
+      color: #000;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      background: #fff;
+      opacity: .9;
+      padding: .8rem;
+      border: 2px solid #000;
+      border-top-left-radius: 20%; }
+      /* line 571, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .promo__fem .acordion .acordion__preco span {
+        text-decoration: line-through; }
+      /* line 575, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .promo__fem .acordion .acordion__preco strong {
+        font-size: 1.65rem; }
+    /* line 580, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .promo__fem .acordion .acordion__marca {
+      color: #fff;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.4rem; }
+    /* line 586, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .promo__fem .acordion .acordion__tam {
+      color: #fff;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.4rem; }
+    /* line 593, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .promo__fem .acordion .acordion__comp {
+      color: #fff;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.4rem;
+      margin-bottom: .5rem; }
+    /* line 600, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .promo__fem .acordion .acordion__link {
+      display: flex;
+      gap: .2rem;
+      padding: .5rem;
+      align-items: center;
+      background-color: #2a2c2c;
+      border-radius: 10px;
+      padding: .8rem 1rem;
+      box-shadow: 4px 0 2px 0 #fff;
+      width: 140px;
+      margin: 0 auto; }
+      /* line 612, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .promo__fem .acordion .acordion__link:hover {
+        background-color: #b80382;
+        box-shadow: 0 4px 2px 0 #fff;
+        transition: all .6s; }
+    /* line 620, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .promo__fem .acordion .acordion__icone {
+      color: #fff;
+      font-size: 20px; }
+    /* line 625, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .promo__fem .acordion .acordion__a {
+      color: #fff;
+      font-size: 1.3rem;
+      font-family: "Staatliches", cursive; }
+
+/*PROMO MASCULINA*/
+/* line 637, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+.promo__masc {
+  margin-top: 5rem; }
+  /* line 640, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .promo__masc .container__cards__masc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem; }
+    @media (min-width: 480px) and (max-width: 800px) {
+      /* line 640, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .promo__masc .container__cards__masc {
+        gap: 2rem; } }
+  /* line 651, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .promo__masc .cards__masc {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+    position: relative; }
+    /* line 657, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .promo__masc .cards__masc .card__masc__lista {
+      display: flex;
+      flex-direction: column;
+      gap: .5rem; }
+    /* line 663, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .promo__masc .cards__masc .imagem__pequena {
+      height: 80px;
+      opacity: 0.8;
+      cursor: pointer;
+      border-radius: 5px; }
+      /* line 669, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .promo__masc .cards__masc .imagem__pequena:hover {
+        opacity: 1;
+        transition: all .5s; }
+  /* line 676, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .promo__masc .card__masc__retrato {
+    position: relative; }
+  /* line 680, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .promo__masc .icone__promo__masc {
+    position: absolute;
+    top: 0px;
+    right: -30px;
+    width: 100px;
+    height: 40px;
+    padding: .5rem;
+    text-align: center;
+    color: #fff;
+    background-color: #6793ce;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transform: rotate(35deg);
+    border: 1px solid #fff;
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%); }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 680, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .promo__masc .icone__promo__masc {
+        top: -12px;
+        right: -4px; } }
+  /* line 705, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .promo__masc .imagem__grande {
+    width: 260px;
+    border-radius: 5px; }
+  /* line 711, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+  .promo__masc .acordion {
+    padding: 1rem;
+    background-color: #6793ce;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-top: .2rem;
+    cursor: pointer;
+    width: 260px; }
+    /* line 720, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .promo__masc .acordion .acordion__titulo {
+      text-align: center;
+      color: #fff;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 1rem; }
+    /* line 728, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .promo__masc .acordion .acordion__desc {
+      color: #000;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+      text-align: center; }
+    /* line 738, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .promo__masc .acordion .acordion__preco {
+      color: #000;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      background: #fff;
+      opacity: .9;
+      padding: .8rem;
+      border: 2px solid #000;
+      border-top-left-radius: 20%; }
+      /* line 751, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .promo__masc .acordion .acordion__preco span {
+        text-decoration: line-through; }
+      /* line 755, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .promo__masc .acordion .acordion__preco strong {
+        font-size: 1.65rem; }
+    /* line 760, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .promo__masc .acordion .acordion__marca {
+      color: #fff;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.4rem; }
+    /* line 766, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .promo__masc .acordion .acordion__tam {
+      color: #fff;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.4rem; }
+    /* line 773, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .promo__masc .acordion .acordion__comp {
+      color: #fff;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.4rem;
+      margin-bottom: .5rem; }
+    /* line 780, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .promo__masc .acordion .acordion__link {
+      display: flex;
+      gap: .2rem;
+      padding: .5rem;
+      align-items: center;
+      background-color: #2a2c2c;
+      border-radius: 10px;
+      padding: .8rem 1rem;
+      box-shadow: 4px 0 2px 0 #fff;
+      width: 140px;
+      margin: 0 auto; }
+      /* line 792, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+      .promo__masc .acordion .acordion__link:hover {
+        background-color: #b80382;
+        box-shadow: 0 4px 2px 0 #fff;
+        transition: all .6s; }
+    /* line 800, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .promo__masc .acordion .acordion__icone {
+      color: #fff;
+      font-size: 20px; }
+    /* line 805, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+    .promo__masc .acordion .acordion__a {
+      color: #fff;
+      font-size: 1.3rem;
+      font-family: "Staatliches", cursive; }
+
+/* Classes JS */
+/* line 814, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+.js-promocao {
+  display: none; }
+
+/* line 818, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_promocoes.scss */
+.js-promocao.selected {
+  display: block;
+  animation: show .6s forwards; }
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0); }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
+
+/* line 1, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_adesivo-fem.scss */
+.adesivos__container {
+  height: 80vh;
+  background-image: url("../images/background-adesivo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  /* line 9, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_adesivo-fem.scss */
+  .adesivos__container .adesivo__fem__masc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    height: 80vh; }
+  /* line 18, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_adesivo-fem.scss */
+  .adesivos__container .adesivo__titulo {
+    filter: drop-shadow(2px 2px 2px #000);
+    font-family: "Waterfall", cursive;
+    font-size: 7rem;
+    text-align: center; }
+  /* line 25, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_adesivo-fem.scss */
+  .adesivos__container .adesivo__img {
+    width: 20rem; }
+
+/* line 1, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+.container__moda__fem {
+  /******* CATALOGO BLUSAS CARDS  *******/
+  /******* MODAL CARDS BLUSAS FEM *******/
+  /******* CATALOGO CALCAS CARDS  *******/
+  /******* MODAL CARDS CALCAS FEM *******/
+  /******* CATALOGO SAIAS CARDS  *******/
+  /******* MODAL CARDS SAIAS FEM *******/
+  /******* CATALOGO BOLSAS CARDS  *******/
+  /******* MODAL CARDS BOLSAS FEM *******/
+  /******* CATALOGO PLUS-SIZE CARDS  *******/
+  /******* MODAL CARDS PLUS-SIZE FEM *******/
+  /******* CATALOGO CALÇADOS CARDS  *******/
+  /******* MODAL CARDS CALÇADOS FEM *******/
+  /******* SWWIPER SLIDER BLUSAS *******/ }
+  /* line 4, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .adesivo__fem {
+    height: 85vh;
+    padding: .5rem;
+    position: relative;
+    background-image: url("../images/moda-fem/background-section-modaFem2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 40%;
+    border-top-right-radius: 20%;
+    margin: .5rem;
+    box-shadow: 4px 10px 10px 0 #b80382; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 4, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .adesivo__fem {
+        height: 50vh;
+        padding: .5rem; } }
+    @media (min-width: 480px) and (max-width: 800px) {
+      /* line 4, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .adesivo__fem {
+        height: 50vh;
+        padding: .5rem; } }
+    @media (min-width: 800px) and (max-width: 2480px) {
+      /* line 4, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .adesivo__fem {
+        height: 70vh;
+        padding: .5rem; } }
+    /* line 36, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+    .container__moda__fem .adesivo__fem .img__detalhe__header__fem {
+      position: absolute;
+      bottom: -140px;
+      left: 0px;
+      width: 400px;
+      padding: .5rem; }
+      @media (min-width: 0px) and (max-width: 480px) {
+        /* line 36, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+        .container__moda__fem .adesivo__fem .img__detalhe__header__fem {
+          width: 210px;
+          top: 20px;
+          left: -74px; } }
+      @media (min-width: 480px) and (max-width: 800px) {
+        /* line 36, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+        .container__moda__fem .adesivo__fem .img__detalhe__header__fem {
+          width: 250px;
+          top: 20px;
+          left: -50px; } }
+    /* line 65, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+    .container__moda__fem .adesivo__fem .img__detalhe2__header__fem {
+      position: absolute;
+      top: 190px;
+      right: 150px;
+      width: 200px;
+      padding: .5rem; }
+      @media (min-width: 0px) and (max-width: 480px) {
+        /* line 65, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+        .container__moda__fem .adesivo__fem .img__detalhe2__header__fem {
+          width: 210px;
+          top: 130px;
+          right: 0px;
+          width: 80px; } }
+      @media (min-width: 480px) and (max-width: 800px) {
+        /* line 65, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+        .container__moda__fem .adesivo__fem .img__detalhe2__header__fem {
+          width: 250px;
+          top: 130px;
+          right: 0px;
+          width: 110px; } }
+    /* line 89, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+    .container__moda__fem .adesivo__fem .adesivo__titulo__h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+      color: #fff;
+      font-family: "Waterfall", cursive;
+      text-align: center;
+      font-size: 7rem;
+      padding: 1rem; }
+      @media (min-width: 0px) and (max-width: 480px) {
+        /* line 89, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+        .container__moda__fem .adesivo__fem .adesivo__titulo__h1 {
+          font-size: 1.8rem;
+          font-size: 3rem;
+          margin-left: 2.5rem;
+          padding-left: 1rem; } }
+      @media (min-width: 480px) and (max-width: 800px) {
+        /* line 89, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+        .container__moda__fem .adesivo__fem .adesivo__titulo__h1 {
+          font-size: 2rem;
+          font-size: 4.2rem;
+          margin-left: 2rem; } }
+  /* line 114, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .menu__moda__fem {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem 0; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 114, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .menu__moda__fem {
+        gap: .5rem; } }
+    /* line 126, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+    .container__moda__fem .menu__moda__fem .menu__moda__link {
+      padding: 1rem;
+      background-color: #732970;
+      box-shadow: 4px 10px 10px 0 #b80382;
+      color: #fff;
+      font-family: "Staatliches", cursive;
+      font-size: 1.5rem;
+      cursor: pointer;
+      border-top-right-radius: 30%;
+      transform: skewY(-10deg); }
+      /* line 138, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .menu__moda__fem .menu__moda__link:hover {
+        background-color: #000;
+        box-shadow: 4px 10px 10px 0 #000;
+        transition: all .4s;
+        color: #858585; }
+      @media (min-width: 0px) and (max-width: 480px) {
+        /* line 126, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+        .container__moda__fem .menu__moda__fem .menu__moda__link {
+          font-size: 1.2rem; } }
+  /* line 152, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .js-moda-fem {
+    display: none; }
+  /* line 156, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .js-moda-fem.ativo {
+    display: block;
+    animation: margin-flow .5s forwards; }
+
+@keyframes margin-flow {
+  from {
+    opacity: 0;
+    margin-top: -30px; }
+  to {
+    opacity: 1;
+    margin-top: 0px; } }
+  /* line 174, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .catalogo__moda__fem {
+    background-image: url("../images/moda-fem/background-section-modaFem2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 2rem 0;
+    height: 130vh; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 174, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .catalogo__moda__fem {
+        height: 125vh; } }
+    @media (min-width: 480px) and (max-width: 800px) {
+      /* line 174, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .catalogo__moda__fem {
+        height: 135vh; } }
+  /* line 196, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .titulo__card {
+    background-color: #b80382;
+    text-align: center;
+    font-family: "Staatliches", cursive;
+    color: #fff;
+    font-size: 3.5rem;
+    border-top-right-radius: 20%;
+    border: 1px solid #fff;
+    width: 700px;
+    box-shadow: 4px 4px 10px 0 #fff;
+    margin-bottom: 2.5rem; }
+    /* line 210, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+    .container__moda__fem .titulo__card:hover {
+      box-shadow: 4px 5px 5px 0 #000;
+      transition: all .4s; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 196, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .titulo__card {
+        width: 80%;
+        font-size: 2rem;
+        box-shadow: 4px 4px 10px 0 #fff;
+        padding: .5rem; } }
+    @media (min-width: 480px) and (max-width: 800px) {
+      /* line 196, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .titulo__card {
+        width: 400px; } }
+  /* line 227, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .blusas-fem {
+    margin-bottom: 1rem; }
+  /* line 232, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .card__fem__blusa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem; }
+  /* line 246, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .card__prod__blusa {
+    padding: .2rem;
+    border: 2px solid #000;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #732970; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 246, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .card__prod__blusa {
+        width: 260px; } }
+  /* line 258, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .prod__img__blusa {
+    width: 300px; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 258, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .prod__img__blusa {
+        width: 260px; } }
+  /* line 266, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .card__ajuste img {
+    width: 270px; }
+  /* line 270, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .card__ajuste .prod__info__blusa {
+    width: 270px; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 270, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .card__ajuste .prod__info__blusa {
+        width: 250px; } }
+  /* line 278, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .prod__info__blusa {
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+    background: #b8b5b5;
+    border: 1px solid #000; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 278, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .prod__info__blusa {
+        width: 250px; } }
+  /* line 291, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .prod__titulo__blusa {
+    font-family: "Staatliches", cursive;
+    font-size: 1.8rem;
+    opacity: .5; }
+  /* line 297, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .prod__preco {
+    font-family: "Staatliches", cursive;
+    font-size: 1.9rem; }
+  /* line 302, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .prod__contato {
+    display: flex;
+    gap: .5rem;
+    justify-content: center; }
+  /* line 308, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .prod__detalhes {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: .5rem;
+    background-color: #2a2c2c;
+    width: 200px;
+    color: #fff;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid #fff; }
+    /* line 320, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+    .container__moda__fem .prod__detalhes:hover {
+      background-color: #b80382;
+      transition: all .6s; }
+  /* line 327, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .prod__link {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: .5rem;
+    background-color: #732970;
+    width: 200px;
+    color: #fff;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    cursor: pointer; }
+    /* line 340, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+    .container__moda__fem .prod__link:hover {
+      background-color: #2a2c2c;
+      transition: all .6s; }
+  /* line 349, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__blusas .card__blusas {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    background-image: url("../images/moda-fem/background-section-modaFem2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 10px 1px #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 349, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__blusas .card__blusas {
+        width: 100vw; } }
+  /* line 373, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__blusas .card__blusas.show {
+    display: flex; }
+  /* line 377, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__blusas .btn-fechar {
+    width: 120px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    height: 60px;
+    width: 60px;
+    font-size: 1.5rem;
+    cursor: pointer; }
+  /* line 390, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__blusas .card__box__img {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem; }
+  /* line 397, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__blusas .img__peq__card {
+    height: 90px;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #000;
+    opacity: .7; }
+    /* line 405, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+    .container__moda__fem .modal__box__blusas .img__peq__card:hover {
+      opacity: 1;
+      transition: all .6s; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 397, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__blusas .img__peq__card {
+        height: 80px; } }
+  /* line 415, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__blusas .img__gra__modal {
+    width: 260px;
+    border-radius: 5px;
+    border: solid 1px #000;
+    box-shadow: 1px 4px 10px #444242; }
+  /* line 422, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__blusas .detalhes__info {
+    margin-top: .2rem;
+    background: rgba(163, 157, 157, 0.5);
+    padding: .5rem;
+    width: 260px;
+    border: 1px solid #000; }
+  /* line 430, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__blusas .marca,
+  .container__moda__fem .modal__box__blusas .tamanhos,
+  .container__moda__fem .modal__box__blusas .composicao {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 430, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__blusas .marca,
+      .container__moda__fem .modal__box__blusas .tamanhos,
+      .container__moda__fem .modal__box__blusas .composicao {
+        font-size: 1.2rem; } }
+  /* line 443, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__blusas .p, .container__moda__fem .modal__box__blusas .m, .container__moda__fem .modal__box__blusas .g {
+    border: 1px solid #000;
+    padding: .2rem; }
+  /* line 449, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__blusas .marca span, .container__moda__fem .modal__box__blusas .tamanhos span, .container__moda__fem .modal__box__blusas .composicao span {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 449, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__blusas .marca span, .container__moda__fem .modal__box__blusas .tamanhos span, .container__moda__fem .modal__box__blusas .composicao span {
+        font-size: 1.2rem; } }
+  /* line 460, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__blusas .detalhes__link {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: .5rem;
+    background-color: #2a2c2c;
+    width: 200px;
+    color: #fff;
+    margin: .8rem auto;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    text-align: center; }
+    /* line 474, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+    .container__moda__fem .modal__box__blusas .detalhes__link:hover {
+      background-color: #b80382;
+      transition: all .6s; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 460, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__blusas .detalhes__link {
+        font-size: 1.1rem; } }
+    @media (min-width: 480px) and (max-width: 800px) {
+      /* line 460, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__blusas .detalhes__link {
+        font-size: 1.2rem;
+        padding: .5rem; } }
+  /* line 491, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .card__fem__calca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    height: 100vh;
+    margin-top: 1rem; }
+  /* line 501, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .card__prod__calca {
+    padding: .2rem;
+    border: 2px solid #000;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #732970; }
+  /* line 509, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .prod__img__calca {
+    width: 300px; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 509, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .prod__img__calca {
+        width: 260px; } }
+  /* line 517, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .prod__info__calca {
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+    background: #b8b5b5;
+    border: 1px solid #000; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 517, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .prod__info__calca {
+        width: 260px; } }
+  /* line 530, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .prod__titulo__calca {
+    font-family: "Staatliches", cursive;
+    font-size: 1.8rem;
+    opacity: .5;
+    text-align: center; }
+  /* line 537, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .prod__preco__calca {
+    font-family: "Staatliches", cursive;
+    font-size: 1.9rem; }
+  /* line 545, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__calcas .card__modal__calca {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    background-image: url("../images/moda-fem/background-section-modaFem2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 10px 1px #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 545, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__calcas .card__modal__calca {
+        width: 100vw; } }
+  /* line 568, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__calcas .card__modal__calca.show {
+    display: flex; }
+  /* line 576, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__calcas .card__box__img .btn-fechar-card-calca {
+    width: 120px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    height: 60px;
+    width: 60px;
+    font-size: 1.5rem;
+    cursor: pointer; }
+  /* line 589, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__calcas .card__box__img {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem; }
+  /* line 596, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__calcas .img__peq__card {
+    height: 90px;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #000;
+    opacity: .7; }
+    /* line 604, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+    .container__moda__fem .modal__box__calcas .img__peq__card:hover {
+      opacity: 1;
+      transition: all .6s; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 596, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__calcas .img__peq__card {
+        height: 80px; } }
+  /* line 614, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__calcas .img__gra__modal {
+    width: 260px;
+    border-radius: 5px;
+    border: solid 1px #000;
+    box-shadow: 1px 4px 10px #444242; }
+  /* line 621, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__calcas .detalhes__info {
+    margin-top: .2rem;
+    background: rgba(163, 157, 157, 0.5);
+    padding: .5rem;
+    width: 260px;
+    border: 1px solid #000; }
+  /* line 629, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__calcas .marca,
+  .container__moda__fem .modal__box__calcas .tamanhos,
+  .container__moda__fem .modal__box__calcas .composicao {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 629, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__calcas .marca,
+      .container__moda__fem .modal__box__calcas .tamanhos,
+      .container__moda__fem .modal__box__calcas .composicao {
+        font-size: 1.2rem; } }
+  /* line 642, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__calcas .p, .container__moda__fem .modal__box__calcas .m, .container__moda__fem .modal__box__calcas .g {
+    border: 1px solid #000;
+    padding: .1rem; }
+  /* line 648, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__calcas .marca span, .container__moda__fem .modal__box__calcas .tamanhos span, .container__moda__fem .modal__box__calcas .composicao span {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 648, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__calcas .marca span, .container__moda__fem .modal__box__calcas .tamanhos span, .container__moda__fem .modal__box__calcas .composicao span {
+        font-size: 1.2rem; } }
+  /* line 659, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__calcas .detalhes__link {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: .5rem;
+    background-color: #2a2c2c;
+    width: 200px;
+    color: #fff;
+    margin: .8rem auto;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    text-align: center; }
+    /* line 672, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+    .container__moda__fem .modal__box__calcas .detalhes__link:hover {
+      background-color: #b80382;
+      transition: all .6s; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 659, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__calcas .detalhes__link {
+        font-size: 1.1rem; } }
+  /* line 686, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .card__fem__saia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    height: 100vh;
+    margin-top: 1rem; }
+  /* line 696, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .card__prod__saia {
+    padding: .2rem;
+    border: 2px solid #000;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #732970; }
+  /* line 704, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .prod__img__saia {
+    width: 300px; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 704, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .prod__img__saia {
+        width: 260px; } }
+  /* line 712, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .prod__info__saia {
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+    background: #b8b5b5;
+    border: 1px solid #000; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 712, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .prod__info__saia {
+        width: 260px; } }
+  /* line 725, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .prod__titulo__saia {
+    font-family: "Staatliches", cursive;
+    font-size: 1.8rem;
+    opacity: .5;
+    text-align: center; }
+  /* line 734, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__saias .card__modal__saia {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    background-image: url("../images/moda-fem/background-section-modaFem2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 10px 1px #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 734, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__saias .card__modal__saia {
+        width: 100vw; } }
+  /* line 757, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__saias .card__modal__saia.show {
+    display: flex; }
+  /* line 761, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__saias .card__box__img .btn-fechar-card-saia {
+    width: 120px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    height: 60px;
+    width: 60px;
+    font-size: 1.5rem;
+    cursor: pointer; }
+  /* line 774, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__saias .card__box__img {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem; }
+  /* line 781, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__saias .img__peq__card {
+    height: 90px;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #000;
+    opacity: .7; }
+    /* line 789, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+    .container__moda__fem .modal__box__saias .img__peq__card:hover {
+      opacity: 1;
+      transition: all .6s; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 781, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__saias .img__peq__card {
+        height: 80px; } }
+  /* line 799, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__saias .img__gra__modal {
+    width: 260px;
+    border-radius: 5px;
+    border: solid 1px #000;
+    box-shadow: 1px 4px 10px #444242; }
+  /* line 806, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__saias .detalhes__info {
+    margin-top: .2rem;
+    background: rgba(163, 157, 157, 0.5);
+    padding: .5rem;
+    width: 260px;
+    border: 1px solid #000; }
+  /* line 814, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__saias .marca,
+  .container__moda__fem .modal__box__saias .tamanhos,
+  .container__moda__fem .modal__box__saias .composicao {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 814, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__saias .marca,
+      .container__moda__fem .modal__box__saias .tamanhos,
+      .container__moda__fem .modal__box__saias .composicao {
+        font-size: 1.2rem; } }
+  /* line 827, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__saias .p, .container__moda__fem .modal__box__saias .m, .container__moda__fem .modal__box__saias .g {
+    border: 1px solid #000;
+    padding: .1rem; }
+  /* line 833, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__saias .marca span, .container__moda__fem .modal__box__saias .tamanhos span, .container__moda__fem .modal__box__saias .composicao span {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 833, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__saias .marca span, .container__moda__fem .modal__box__saias .tamanhos span, .container__moda__fem .modal__box__saias .composicao span {
+        font-size: 1.2rem; } }
+  /* line 844, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__saias .detalhes__link {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: .5rem;
+    background-color: #2a2c2c;
+    width: 200px;
+    color: #fff;
+    margin: .8rem auto;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    text-align: center; }
+    /* line 857, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+    .container__moda__fem .modal__box__saias .detalhes__link:hover {
+      background-color: #b80382;
+      transition: all .6s; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 844, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__saias .detalhes__link {
+        font-size: 1.1rem; } }
+  /* line 870, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .card__fem__bolsa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    height: 100vh;
+    margin-top: 1rem; }
+  /* line 880, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .card__prod__bolsa {
+    padding: .2rem;
+    border: 2px solid #000;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #732970; }
+  /* line 888, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .prod__img__bolsa {
+    width: 300px; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 888, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .prod__img__bolsa {
+        width: 260px; } }
+  /* line 896, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .prod__info__bolsa {
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+    background: #b8b5b5;
+    border: 1px solid #000; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 896, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .prod__info__bolsa {
+        width: 260px; } }
+  /* line 909, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .prod__titulo__bolsa {
+    font-family: "Staatliches", cursive;
+    font-size: 1.8rem;
+    opacity: .5;
+    text-align: center; }
+  /* line 918, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__bolsas .card__modal__bolsa {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    background-image: url("../images/moda-fem/background-section-modaFem2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 10px 1px #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 918, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__bolsas .card__modal__bolsa {
+        width: 100vw; } }
+  /* line 941, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__bolsas .card__modal__bolsa.show {
+    display: flex; }
+  /* line 945, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__bolsas .card__box__img .btn-fechar-card-bolsa {
+    width: 120px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    height: 60px;
+    width: 60px;
+    font-size: 1.5rem;
+    cursor: pointer; }
+  /* line 958, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__bolsas .card__box__img {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem; }
+  /* line 965, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__bolsas .img__peq__card {
+    height: 90px;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #000;
+    opacity: .7; }
+    /* line 973, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+    .container__moda__fem .modal__box__bolsas .img__peq__card:hover {
+      opacity: 1;
+      transition: all .6s; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 965, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__bolsas .img__peq__card {
+        height: 80px; } }
+  /* line 983, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__bolsas .img__gra__modal {
+    width: 260px;
+    border-radius: 5px;
+    border: solid 1px #000;
+    box-shadow: 1px 4px 10px #444242; }
+  /* line 990, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__bolsas .detalhes__info {
+    margin-top: .2rem;
+    background: rgba(163, 157, 157, 0.5);
+    padding: .5rem;
+    width: 260px;
+    border: 1px solid #000; }
+  /* line 998, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__bolsas .marca,
+  .container__moda__fem .modal__box__bolsas .tamanhos,
+  .container__moda__fem .modal__box__bolsas .composicao {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 998, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__bolsas .marca,
+      .container__moda__fem .modal__box__bolsas .tamanhos,
+      .container__moda__fem .modal__box__bolsas .composicao {
+        font-size: 1.2rem; } }
+  /* line 1011, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__bolsas .p, .container__moda__fem .modal__box__bolsas .m, .container__moda__fem .modal__box__bolsas .g {
+    border: 1px solid #000;
+    padding: .1rem; }
+  /* line 1017, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__bolsas .marca span, .container__moda__fem .modal__box__bolsas .tamanhos span, .container__moda__fem .modal__box__bolsas .composicao span {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 1017, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__bolsas .marca span, .container__moda__fem .modal__box__bolsas .tamanhos span, .container__moda__fem .modal__box__bolsas .composicao span {
+        font-size: 1.2rem; } }
+  /* line 1028, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__bolsas .detalhes__link {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: .5rem;
+    background-color: #2a2c2c;
+    width: 200px;
+    color: #fff;
+    margin: .8rem auto;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    text-align: center; }
+    /* line 1041, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+    .container__moda__fem .modal__box__bolsas .detalhes__link:hover {
+      background-color: #b80382;
+      transition: all .6s; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 1028, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__bolsas .detalhes__link {
+        font-size: 1.1rem; } }
+  /* line 1053, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .card__fem__plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    height: 100vh;
+    margin-top: 1rem; }
+  /* line 1063, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .card__prod__plus {
+    padding: .2rem;
+    border: 2px solid #000;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #732970; }
+  /* line 1071, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .prod__img__plus {
+    width: 300px; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 1071, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .prod__img__plus {
+        width: 260px; } }
+  /* line 1079, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .prod__info__plus {
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+    background: #b8b5b5;
+    border: 1px solid #000; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 1079, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .prod__info__plus {
+        width: 260px; } }
+  /* line 1091, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .prod__titulo__plus {
+    font-family: "Staatliches", cursive;
+    font-size: 1.8rem;
+    opacity: .5;
+    text-align: center; }
+  /* line 1101, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__plus .card__modal__plus {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    background-image: url("../images/moda-fem/background-section-modaFem2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 10px 1px #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 1101, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__plus .card__modal__plus {
+        width: 100vw; } }
+  /* line 1124, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__plus .card__modal__plus.show {
+    display: flex; }
+  /* line 1128, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__plus .card__box__img .btn-fechar-card-plus {
+    width: 120px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    height: 60px;
+    width: 60px;
+    font-size: 1.5rem;
+    cursor: pointer; }
+  /* line 1141, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__plus .card__box__img {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem; }
+  /* line 1148, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__plus .img__peq__card {
+    height: 90px;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #000;
+    opacity: .7; }
+    /* line 1156, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+    .container__moda__fem .modal__box__plus .img__peq__card:hover {
+      opacity: 1;
+      transition: all .6s; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 1148, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__plus .img__peq__card {
+        height: 80px; } }
+  /* line 1166, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__plus .img__gra__modal {
+    width: 260px;
+    border-radius: 5px;
+    border: solid 1px #000;
+    box-shadow: 1px 4px 10px #444242; }
+  /* line 1173, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__plus .detalhes__info {
+    margin-top: .2rem;
+    background: rgba(163, 157, 157, 0.5);
+    padding: .5rem;
+    width: 260px;
+    border: 1px solid #000; }
+  /* line 1181, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__plus .marca,
+  .container__moda__fem .modal__box__plus .tamanhos,
+  .container__moda__fem .modal__box__plus .composicao {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 1181, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__plus .marca,
+      .container__moda__fem .modal__box__plus .tamanhos,
+      .container__moda__fem .modal__box__plus .composicao {
+        font-size: 1.2rem; } }
+  /* line 1194, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__plus .p, .container__moda__fem .modal__box__plus .m, .container__moda__fem .modal__box__plus .g {
+    border: 1px solid #000;
+    padding: .1rem; }
+  /* line 1200, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__plus .marca span, .container__moda__fem .modal__box__plus .tamanhos span, .container__moda__fem .modal__box__plus .composicao span {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 1200, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__plus .marca span, .container__moda__fem .modal__box__plus .tamanhos span, .container__moda__fem .modal__box__plus .composicao span {
+        font-size: 1.2rem; } }
+  /* line 1211, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__plus .detalhes__link {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: .5rem;
+    background-color: #2a2c2c;
+    width: 200px;
+    color: #fff;
+    margin: .8rem auto;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    text-align: center; }
+    /* line 1224, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+    .container__moda__fem .modal__box__plus .detalhes__link:hover {
+      background-color: #b80382;
+      transition: all .6s; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 1211, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__plus .detalhes__link {
+        font-size: 1.1rem; } }
+  /* line 1237, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .card__fem__calcados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    height: 100vh;
+    margin-top: 1rem; }
+  /* line 1247, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .card__prod__calcados {
+    padding: .2rem;
+    border: 2px solid #000;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #732970; }
+  /* line 1255, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .prod__img__calcados {
+    width: 300px; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 1255, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .prod__img__calcados {
+        width: 260px; } }
+  /* line 1263, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .prod__info__calcados {
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+    background: #b8b5b5;
+    border: 1px solid #000; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 1263, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .prod__info__calcados {
+        width: 260px; } }
+  /* line 1276, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .prod__titulo__calcados {
+    font-family: "Staatliches", cursive;
+    font-size: 1.8rem;
+    opacity: .5;
+    text-align: center; }
+  /* line 1285, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__calcados .card__modal__calcados {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    background-image: url("../images/moda-fem/background-section-modaFem2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 10px 1px #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 1285, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__calcados .card__modal__calcados {
+        width: 100vw; } }
+  /* line 1311, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__calcados .card__modal__calcados.show {
+    display: flex;
+    padding: .5rem; }
+  /* line 1316, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__calcados .card__box__img .btn-fechar-card-calcados {
+    width: 120px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    height: 60px;
+    width: 60px;
+    font-size: 1.5rem;
+    cursor: pointer; }
+  /* line 1329, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__calcados .card__box__img {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem; }
+  /* line 1336, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__calcados .img__peq__card {
+    height: 90px;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #000;
+    opacity: .7; }
+    /* line 1344, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+    .container__moda__fem .modal__box__calcados .img__peq__card:hover {
+      opacity: 1;
+      transition: all .6s; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 1336, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__calcados .img__peq__card {
+        height: 80px; } }
+  /* line 1354, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__calcados .img__gra__modal {
+    width: 260px;
+    border-radius: 5px;
+    border: solid 1px #000;
+    box-shadow: 1px 4px 10px #444242; }
+  /* line 1361, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__calcados .detalhes__info {
+    margin-top: .2rem;
+    background: rgba(163, 157, 157, 0.5);
+    padding: .5rem;
+    width: 260px;
+    border: 1px solid #000; }
+  /* line 1369, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__calcados .marca,
+  .container__moda__fem .modal__box__calcados .tamanhos,
+  .container__moda__fem .modal__box__calcados .composicao {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 1369, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__calcados .marca,
+      .container__moda__fem .modal__box__calcados .tamanhos,
+      .container__moda__fem .modal__box__calcados .composicao {
+        font-size: 1.2rem; } }
+  /* line 1382, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__calcados .p, .container__moda__fem .modal__box__calcados .m, .container__moda__fem .modal__box__calcados .g {
+    border: 1px solid #000;
+    padding: .1rem; }
+  /* line 1388, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__calcados .marca span, .container__moda__fem .modal__box__calcados .tamanhos span, .container__moda__fem .modal__box__calcados .composicao span {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 1388, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__calcados .marca span, .container__moda__fem .modal__box__calcados .tamanhos span, .container__moda__fem .modal__box__calcados .composicao span {
+        font-size: 1.2rem; } }
+  /* line 1399, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .modal__box__calcados .detalhes__link {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: .5rem;
+    background-color: #2a2c2c;
+    width: 200px;
+    color: #fff;
+    margin: .8rem auto;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    text-align: center; }
+    /* line 1412, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+    .container__moda__fem .modal__box__calcados .detalhes__link:hover {
+      background-color: #b80382;
+      transition: all .6s; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 1399, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+      .container__moda__fem .modal__box__calcados .detalhes__link {
+        font-size: 1.1rem; } }
+  /* line 1428, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .swiper {
+    width: 98vw;
+    height: 105vh;
+    padding: 30px 0; }
+  /* line 1434, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-fem.scss */
+  .container__moda__fem .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 500px; }
+
+/* line 1, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.adesivo__masc {
+  height: 85vh;
+  padding: .5rem;
+  position: relative;
+  background-image: url("../images/moda-masc/background-sectionMasc.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 40%;
+  border-top-right-radius: 20%;
+  margin: .5rem;
+  box-shadow: 4px 10px 10px 0 #b80382;
+  z-index: -1; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 1, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .adesivo__masc {
+      height: 50vh; } }
+
+/* line 21, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.adesivo__titulo {
+  font-size: 3.5rem;
+  font-family: "Waterfall", cursive;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  font-family: "Waterfall", cursive;
+  text-align: center;
+  font-size: 7rem;
+  padding: 1rem; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 21, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .adesivo__titulo {
+      font-size: 2.5rem;
+      height: 50vh; } }
+
+/* line 37, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.img__detalhe1__header__masc {
+  position: absolute;
+  bottom: -140px;
+  left: 100px;
+  width: 200px;
+  padding: .5rem; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 37, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .img__detalhe1__header__masc {
+      width: 100px;
+      bottom: -35px;
+      left: 6px; } }
+  @media (min-width: 480px) and (max-width: 800px) {
+    /* line 37, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .img__detalhe1__header__masc {
+      width: 250px;
+      top: 20px;
+      left: -50px; } }
+
+/* line 57, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.img__detalhe2__header__masc {
+  position: absolute;
+  width: 200px;
+  top: 240px;
+  right: 150px; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 57, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .img__detalhe2__header__masc {
+      width: 120px;
+      top: 150px;
+      right: 20px;
+      width: 80px; } }
+  @media (min-width: 480px) and (max-width: 800px) {
+    /* line 57, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .img__detalhe2__header__masc {
+      width: 250px;
+      top: 130px;
+      right: 0px;
+      width: 110px; } }
+
+/* line 78, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.menu__moda__masc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem 0; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 78, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .menu__moda__masc {
+      gap: .5rem; } }
+  /* line 90, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+  .menu__moda__masc .menu__moda__link-masc {
+    padding: 1rem;
+    background-color: #6793ce;
+    box-shadow: 4px 10px 10px 0 #b80382;
+    color: #fff;
+    font-family: "Staatliches", cursive;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-top-right-radius: 30%;
+    transform: skewY(-10deg); }
+    /* line 101, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .menu__moda__masc .menu__moda__link-masc:hover {
+      background-color: #000;
+      box-shadow: 4px 10px 10px 0 #000;
+      transition: all .4s;
+      color: #858585; }
+    @media (min-width: 0px) and (max-width: 480px) {
+      /* line 90, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+      .menu__moda__masc .menu__moda__link-masc {
+        font-size: 1.2rem; } }
+
+/* line 115, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.js-moda-masc {
+  display: none; }
+
+/* line 119, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.js-moda-masc.ativo {
+  display: block;
+  animation: margin-flow .5s forwards; }
+
+/******* CATALOGO BLUSAS MASC CARDS  *******/
+/* line 125, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.catalogo__moda__masc {
+  background-image: url("../images/moda-masc/background-sectionMasc.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 2rem 0;
+  height: 130vh; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 125, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .catalogo__moda__masc {
+      height: 125vh; } }
+  @media (min-width: 480px) and (max-width: 800px) {
+    /* line 125, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .catalogo__moda__masc {
+      height: 135vh; } }
+
+/* line 145, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.titulo__card {
+  background-color: #6793ce;
+  text-align: center;
+  padding: .6rem;
+  font-family: "Staatliches", cursive;
+  color: #fff;
+  font-size: 3.5rem;
+  border-top-right-radius: 20%;
+  width: 700px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  box-shadow: 4px 4px 10px 0 #000;
+  margin-bottom: 2.5rem; }
+  /* line 159, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+  .titulo__card:hover {
+    box-shadow: 4px 5px 5px 0 #6793ce;
+    transition: all .4s; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 145, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .titulo__card {
+      width: 320px; } }
+  @media (min-width: 480px) and (max-width: 800px) {
+    /* line 145, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .titulo__card {
+      width: 400px; } }
+
+/* line 173, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.blusas-masc {
+  margin-bottom: 1rem; }
+
+/* line 177, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.card__masc__blusa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem; }
+
+/* line 184, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.card__prod__blusa {
+  padding: .2rem;
+  border: 2px solid #000;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #6793ce; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 184, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .card__prod__blusa {
+      width: 260px; } }
+
+/* line 196, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.prod__img__blusa {
+  width: 300px; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 196, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .prod__img__blusa {
+      width: 260px; } }
+
+/* line 204, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.card__ajuste .prod__info__blusa {
+  width: 270px; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 204, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .card__ajuste .prod__info__blusa {
+      width: 250px; } }
+
+/* line 212, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.prod__info__blusa {
+  padding: 1rem;
+  width: 300px;
+  text-align: center;
+  background: #b8b5b5;
+  border: 1px solid #000; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 212, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .prod__info__blusa {
+      width: 250px; } }
+
+/* line 225, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.prod__titulo__blusa {
+  font-family: "Staatliches", cursive;
+  font-size: 1.8rem;
+  opacity: .5; }
+
+/* line 231, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.prod__preco {
+  font-family: "Staatliches", cursive;
+  font-size: 1.9rem; }
+
+/* line 236, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.prod__contato {
+  display: flex;
+  gap: .5rem;
+  justify-content: center; }
+
+/* line 242, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.prod__detalhes {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: .5rem;
+  background-color: #2a2c2c;
+  width: 200px;
+  color: #fff;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid #fff; }
+  /* line 254, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+  .prod__detalhes:hover {
+    background-color: #b80382;
+    transition: all .6s; }
+
+/* line 261, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.prod__link {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: .5rem;
+  background-color: #732970;
+  width: 200px;
+  color: #fff;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  cursor: pointer; }
+  /* line 274, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+  .prod__link:hover {
+    background-color: #2a2c2c;
+    transition: all .6s; }
+
+/******* MODAL CARDS BLUSAS MASC *******/
+/* line 283, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__blusas .card__blusas {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  background-image: url("../images/moda-masc/background-sectionMasc.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 2px 10px 1px #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 283, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .modal__box__blusas .card__blusas {
+      width: 100vw; } }
+
+/* line 307, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__blusas .card__blusas.show {
+  display: flex; }
+
+/* line 311, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__blusas .btn-fechar {
+  width: 120px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  height: 60px;
+  width: 60px;
+  font-size: 1.5rem;
+  cursor: pointer; }
+
+/* line 324, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__blusas .card__box__img {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem; }
+
+/* line 331, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__blusas .img__peq__card {
+  height: 90px;
+  opacity: 0.8;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #000;
+  opacity: .7; }
+  /* line 339, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+  .modal__box__blusas .img__peq__card:hover {
+    opacity: 1;
+    transition: all .6s; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 331, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .modal__box__blusas .img__peq__card {
+      height: 80px; } }
+
+/* line 349, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__blusas .img__gra__modal {
+  width: 260px;
+  border-radius: 5px;
+  border: solid 1px #000;
+  box-shadow: 1px 4px 10px #444242; }
+
+/* line 356, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__blusas .detalhes__info {
+  margin-top: .2rem;
+  background: rgba(163, 157, 157, 0.5);
+  padding: .5rem;
+  width: 260px;
+  border: 1px solid #000; }
+
+/* line 364, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__blusas .marca,
+.modal__box__blusas .tamanhos,
+.modal__box__blusas .composicao {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 364, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .modal__box__blusas .marca,
+    .modal__box__blusas .tamanhos,
+    .modal__box__blusas .composicao {
+      font-size: 1.2rem; } }
+
+/* line 377, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__blusas .p, .modal__box__blusas .m, .modal__box__blusas .g {
+  border: 1px solid #000;
+  padding: .2rem; }
+
+/* line 382, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__blusas .marca span, .modal__box__blusas .tamanhos span, .modal__box__blusas .composicao span {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 382, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .modal__box__blusas .marca span, .modal__box__blusas .tamanhos span, .modal__box__blusas .composicao span {
+      font-size: 1.2rem; } }
+
+/* line 393, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__blusas .detalhes__link {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding: .5rem;
+  background-color: #2a2c2c;
+  width: 200px;
+  color: #fff;
+  margin: .8rem auto;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  text-align: center; }
+  /* line 406, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+  .modal__box__blusas .detalhes__link:hover {
+    background-color: #b80382;
+    transition: all .6s; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 393, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .modal__box__blusas .detalhes__link {
+      font-size: 1.1rem; } }
+
+/******* CATALOGO SHORTS MASC CARDS  *******/
+/* line 419, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.catalogo__moda__masc {
+  background-image: url("../images/moda-masc/background-sectionMasc.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 2rem 0;
+  height: 130vh; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 419, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .catalogo__moda__masc {
+      height: 125vh; } }
+  @media (min-width: 480px) and (max-width: 800px) {
+    /* line 419, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .catalogo__moda__masc {
+      height: 135vh; } }
+
+/* line 439, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.titulo__card {
+  background-color: #6793ce;
+  text-align: center;
+  padding: .6rem;
+  font-family: "Staatliches", cursive;
+  color: #fff;
+  font-size: 3.5rem;
+  border-top-right-radius: 20%;
+  width: 700px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  box-shadow: 4px 4px 10px 0 #000;
+  margin-bottom: 2.5rem; }
+  /* line 453, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+  .titulo__card:hover {
+    box-shadow: 4px 5px 5px 0 #6793ce;
+    transition: all .4s; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 439, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .titulo__card {
+      width: 320px; } }
+  @media (min-width: 480px) and (max-width: 800px) {
+    /* line 439, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .titulo__card {
+      width: 400px; } }
+
+/* line 467, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.shorts-masc {
+  margin-bottom: 1rem; }
+
+/* line 471, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.card__masc__shorts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem; }
+
+/* line 478, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.card__prod__short {
+  padding: .2rem;
+  border: 2px solid #000;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #6793ce; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 478, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .card__prod__short {
+      width: 260px; } }
+
+/* line 490, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.prod__img__short {
+  width: 300px; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 490, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .prod__img__short {
+      width: 260px; } }
+
+/* line 498, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.card__ajuste .prod__info__short {
+  width: 270px; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 498, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .card__ajuste .prod__info__short {
+      width: 250px; } }
+
+/* line 506, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.prod__info__short {
+  padding: 1rem;
+  width: 300px;
+  text-align: center;
+  background: #b8b5b5;
+  border: 1px solid #000; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 506, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .prod__info__short {
+      width: 250px; } }
+
+/* line 519, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.prod__titulo__short {
+  font-family: "Staatliches", cursive;
+  font-size: 1.8rem;
+  opacity: .5; }
+
+/* line 525, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.prod__preco {
+  font-family: "Staatliches", cursive;
+  font-size: 1.9rem; }
+
+/* line 530, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.prod__contato {
+  display: flex;
+  gap: .5rem;
+  justify-content: center; }
+
+/* line 536, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.prod__detalhes {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: .5rem;
+  background-color: #2a2c2c;
+  width: 200px;
+  color: #fff;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid #fff; }
+  /* line 548, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+  .prod__detalhes:hover {
+    background-color: #b80382;
+    transition: all .6s; }
+
+/* line 555, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.prod__link {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: .5rem;
+  background-color: #732970;
+  width: 200px;
+  color: #fff;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  cursor: pointer; }
+  /* line 568, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+  .prod__link:hover {
+    background-color: #2a2c2c;
+    transition: all .6s; }
+
+/******* MODAL CARDS SHORTS MASC *******/
+/* line 577, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__shorts .card__shorts {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  background-image: url("../images/moda-masc/background-sectionMasc.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 2px 10px 1px #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 577, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .modal__box__shorts .card__shorts {
+      width: 100vw; } }
+
+/* line 601, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__shorts .card__shorts.show {
+  display: flex; }
+
+/* line 605, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__shorts .btn-fechar {
+  width: 120px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  height: 60px;
+  width: 60px;
+  font-size: 1.5rem;
+  cursor: pointer; }
+
+/* line 618, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__shorts .card__box__img {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem; }
+
+/* line 625, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__shorts .img__peq__card {
+  height: 90px;
+  opacity: 0.8;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #000;
+  opacity: .7; }
+  /* line 633, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+  .modal__box__shorts .img__peq__card:hover {
+    opacity: 1;
+    transition: all .6s; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 625, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .modal__box__shorts .img__peq__card {
+      height: 80px; } }
+
+/* line 643, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__shorts .img__gra__modal {
+  width: 260px;
+  border-radius: 5px;
+  border: solid 1px #000;
+  box-shadow: 1px 4px 10px #444242; }
+
+/* line 650, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__shorts .detalhes__info {
+  margin-top: .2rem;
+  background: rgba(163, 157, 157, 0.5);
+  padding: .5rem;
+  width: 260px;
+  border: 1px solid #000; }
+
+/* line 658, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__shorts .marca,
+.modal__box__shorts .tamanhos,
+.modal__box__shorts .composicao {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 658, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .modal__box__shorts .marca,
+    .modal__box__shorts .tamanhos,
+    .modal__box__shorts .composicao {
+      font-size: 1.2rem; } }
+
+/* line 671, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__shorts .p, .modal__box__shorts .m, .modal__box__shorts .g {
+  border: 1px solid #000;
+  padding: .2rem; }
+
+/* line 676, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__shorts .marca span, .modal__box__shorts .tamanhos span, .modal__box__shorts .composicao span {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 676, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .modal__box__shorts .marca span, .modal__box__shorts .tamanhos span, .modal__box__shorts .composicao span {
+      font-size: 1.2rem; } }
+
+/* line 687, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__shorts .detalhes__link {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding: .5rem;
+  background-color: #2a2c2c;
+  width: 200px;
+  color: #fff;
+  margin: .8rem auto;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  text-align: center; }
+  /* line 700, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+  .modal__box__shorts .detalhes__link:hover {
+    background-color: #b80382;
+    transition: all .6s; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 687, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .modal__box__shorts .detalhes__link {
+      font-size: 1.1rem; } }
+
+/******* CATALOGO CALÇAS MASC CARDS  *******/
+/* line 713, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.catalogo__moda__masc {
+  background-image: url("../images/moda-masc/background-sectionMasc.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 2rem 0;
+  height: 130vh; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 713, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .catalogo__moda__masc {
+      height: 125vh; } }
+  @media (min-width: 480px) and (max-width: 800px) {
+    /* line 713, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .catalogo__moda__masc {
+      height: 135vh; } }
+
+/* line 733, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.titulo__card {
+  background-color: #6793ce;
+  text-align: center;
+  padding: .6rem;
+  font-family: "Staatliches", cursive;
+  color: #fff;
+  font-size: 3.5rem;
+  border-top-right-radius: 20%;
+  width: 700px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  box-shadow: 4px 4px 10px 0 #000;
+  margin-bottom: 2.5rem; }
+  /* line 747, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+  .titulo__card:hover {
+    box-shadow: 4px 5px 5px 0 #6793ce;
+    transition: all .4s; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 733, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .titulo__card {
+      width: 320px; } }
+  @media (min-width: 480px) and (max-width: 800px) {
+    /* line 733, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .titulo__card {
+      width: 400px; } }
+
+/* line 761, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.calcas-masc {
+  margin-bottom: 1rem; }
+
+/* line 765, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.card__masc__calcas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem; }
+
+/* line 772, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.card__prod__calca {
+  padding: .2rem;
+  border: 2px solid #000;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #6793ce; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 772, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .card__prod__calca {
+      width: 260px; } }
+
+/* line 784, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.prod__img__calca {
+  width: 300px; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 784, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .prod__img__calca {
+      width: 260px; } }
+
+/* line 792, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.card__ajuste .prod__info__calca {
+  width: 270px; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 792, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .card__ajuste .prod__info__calca {
+      width: 250px; } }
+
+/* line 800, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.prod__info__calca {
+  padding: 1rem;
+  width: 300px;
+  text-align: center;
+  background: #b8b5b5;
+  border: 1px solid #000; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 800, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .prod__info__calca {
+      width: 250px; } }
+
+/* line 813, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.prod__titulo__calca {
+  font-family: "Staatliches", cursive;
+  font-size: 1.8rem;
+  opacity: .5; }
+
+/* line 819, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.prod__preco {
+  font-family: "Staatliches", cursive;
+  font-size: 1.9rem; }
+
+/* line 824, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.prod__contato {
+  display: flex;
+  gap: .5rem;
+  justify-content: center; }
+
+/* line 830, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.prod__detalhes {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: .5rem;
+  background-color: #2a2c2c;
+  width: 200px;
+  color: #fff;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid #fff; }
+  /* line 842, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+  .prod__detalhes:hover {
+    background-color: #b80382;
+    transition: all .6s; }
+
+/* line 849, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.prod__link {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: .5rem;
+  background-color: #732970;
+  width: 200px;
+  color: #fff;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  cursor: pointer; }
+  /* line 862, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+  .prod__link:hover {
+    background-color: #2a2c2c;
+    transition: all .6s; }
+
+/******* MODAL CARDS CALÇAS MASC *******/
+/* line 871, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__calcas .card__calcas {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  background-image: url("../images/moda-masc/background-sectionMasc.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 2px 10px 1px #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 871, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .modal__box__calcas .card__calcas {
+      width: 100vw; } }
+
+/* line 895, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__calcas .card__calcas.show {
+  display: flex; }
+
+/* line 899, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__calcas .btn-fechar {
+  width: 120px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  height: 60px;
+  width: 60px;
+  font-size: 1.5rem;
+  cursor: pointer; }
+
+/* line 912, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__calcas .card__box__img {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem; }
+
+/* line 919, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__calcas .img__peq__card {
+  height: 90px;
+  opacity: 0.8;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #000;
+  opacity: .7; }
+  /* line 927, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+  .modal__box__calcas .img__peq__card:hover {
+    opacity: 1;
+    transition: all .6s; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 919, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .modal__box__calcas .img__peq__card {
+      height: 80px; } }
+
+/* line 937, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__calcas .img__gra__modal {
+  width: 260px;
+  border-radius: 5px;
+  border: solid 1px #000;
+  box-shadow: 1px 4px 10px #444242; }
+
+/* line 944, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__calcas .detalhes__info {
+  margin-top: .2rem;
+  background: rgba(163, 157, 157, 0.5);
+  padding: .5rem;
+  width: 260px;
+  border: 1px solid #000; }
+
+/* line 952, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__calcas .marca,
+.modal__box__calcas .tamanhos,
+.modal__box__calcas .composicao {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 952, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .modal__box__calcas .marca,
+    .modal__box__calcas .tamanhos,
+    .modal__box__calcas .composicao {
+      font-size: 1.2rem; } }
+
+/* line 965, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__calcas .p, .modal__box__calcas .m, .modal__box__calcas .g {
+  border: 1px solid #000;
+  padding: .2rem; }
+
+/* line 970, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__calcas .marca span, .modal__box__calcas .tamanhos span, .modal__box__calcas .composicao span {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 970, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .modal__box__calcas .marca span, .modal__box__calcas .tamanhos span, .modal__box__calcas .composicao span {
+      font-size: 1.2rem; } }
+
+/* line 981, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.modal__box__calcas .detalhes__link {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding: .5rem;
+  background-color: #2a2c2c;
+  width: 200px;
+  color: #fff;
+  margin: .8rem auto;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  text-align: center; }
+  /* line 994, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+  .modal__box__calcas .detalhes__link:hover {
+    background-color: #b80382;
+    transition: all .6s; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* line 981, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+    .modal__box__calcas .detalhes__link {
+      font-size: 1.1rem; } }
+
+/******* SWWIPER SLIDER BLUSAS *******/
+/* line 1008, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.swiper {
+  width: 98vw;
+  height: 105vh;
+  padding: 30px 0; }
+
+/* line 1014, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/ecommerce-moda/scss/_moda-masc.scss */
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 500px; }
+
+/*# sourceMappingURL=main.css.map */

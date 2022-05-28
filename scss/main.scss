@@ -1,0 +1,74 @@
+/* VARIÁVEIS - FONTES - CORES */
+$cor-header: #b80382;
+$cor-links: #2a2c2c;
+$cor-sectionFem: #732970;
+$cor-sectionMasc: #6793ce;
+$fonte-titulo: 'Staatliches', cursive;
+$fonte-subtitulo: 'Waterfall', cursive;
+$fonte-corpo: 'Rajdhani', sans-serif;
+
+
+/* CONFIGURAÇÕES - RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul, li {
+    list-style: none;
+}
+
+/* MIXINS */
+@mixin titulo {
+    font-family: $fonte-subtitulo;
+    text-align: center;
+    font-size: 7rem;
+    padding: 1rem;
+}
+
+@mixin celular {
+    @media(min-width: 0px) and (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media(min-width: 480px) and (max-width: 800px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media(min-width: 800px) and (max-width: 2480px) {
+        @content;
+    }
+}
+
+@mixin ajuste {
+    @media(min-width: 715px) and (max-width: 802px) {
+        @content;
+    }
+}
+
+/* IMPORTS E MONTAGEM DA PÁGINA */
+@import "header";
+@import "slider";
+@import "promocoes";
+@import "adesivo-fem";
+@import "moda-fem";
+@import "moda-masc";

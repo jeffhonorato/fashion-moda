@@ -1,0 +1,215 @@
+#header {
+    background-image: url("../images/background-header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 1rem;
+    position: relative;
+    height: 100vh;
+    z-index: 2;
+
+        @include celular {
+            height: 50vh;
+        }
+
+        @include tablet {
+            height: 70vh;
+        }
+
+        .logo__img {
+            width: 15rem;
+            z-index: 2;
+            // background-color: aqua;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+
+            // @include celular {
+            //     position: fixed;
+            //     top: 30px;
+            //     right: 2px;
+            //     z-index: 5;
+            // }
+        }
+
+        .menu__mobile {
+            display: block;
+            position: fixed;
+            top: 10px;
+            right: 8px;
+            z-index: 5;
+            cursor: pointer;
+            background-color: #fff;
+            border-radius: 50%;
+            width: 50px;
+
+                @include celular {
+                    display: block;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    width: 45px;
+                    cursor: pointer;
+                    // z-index: 100;
+                    margin-right: 6px;
+                    right: 5px;
+                }
+
+                @include ajuste {
+                    right: 32px;
+                }
+        }
+
+        .menu__mobile.invisvel {
+            opacity: 0;
+        }
+
+        .nav__itens {
+            display: none;
+            flex-direction: column;
+            // gap: .3rem;
+            position: fixed;
+            top: 90px;
+            right: 5px;
+            transform: skewY(-4deg);
+
+            z-index: 5;
+            
+
+                @include celular {
+                    display: none;
+                    flex-direction: column;
+                    gap: .0rem;
+                    position: fixed;
+                    top: 65px;
+                    right: 3px;
+                    padding-right: 12px;
+                }
+
+                @include tablet {
+                    top: 70px;
+                    right: 10px;
+                }
+
+                @include ajuste {
+                    right: 37px;
+                }
+
+                @include desktop {
+                    right: 24px;
+                }
+
+                @include ajuste {
+                    right: 37px;
+                }
+
+
+        }
+
+        .nav__itens::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: -40px;
+            width: 38px;
+            height: 100%;
+            transform-origin: right;
+            transform: skewY(45deg);
+            background: $cor-header;
+            border: 2px solid #000;
+
+                @include celular {
+                    display: none;
+                }
+                
+                @include tablet {
+                    display: none;
+                }
+        }
+
+        .nav__itens::after {
+            position: absolute;
+            content: "";
+            top: -40px;
+            left: 0px;
+            width: 100%;
+            height: 38px;
+            transform-origin: bottom;
+            transform: skewX(45deg);
+            background: $cor-header;
+            border: 2px solid #000;
+
+                @include celular {
+                    display: none;
+                }
+                
+                @include tablet {
+                    display: none;
+                }
+        }
+
+        .nav__itens.ativo {
+            display: flex;
+        }
+
+        .nav__link {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            padding: .8rem;
+            border: 2px solid #000;
+            background-color: $cor-header;
+            border-bottom-right-radius: 40px;
+            box-shadow: 4px 0 2px 0 $cor-header;
+            height: 50px;
+
+                &:hover {
+                    background-color: $cor-links;
+                    transition: all .6s;
+                    box-shadow: 0px 4px 2px 0 #fff;
+                    border: 2px solid #fff;
+                }
+
+                @include celular {
+                    display: flex;
+                    justify-content: center;
+                    gap: 4px;
+                    padding: .5rem; 
+                    height: 30px;
+                }
+
+                @include tablet {
+                    display: flex;
+                    flex-direction: column;
+                    // justify-items: center;
+                    gap: 4px;
+                    padding: .5rem; 
+                }
+
+        }
+
+        .nav__ico {
+            font-size: 1.5rem;
+            color: #fff;
+
+                @include celular {
+                    font-size: .7rem;
+                }
+        }
+
+        .nav__item {
+            color: #fff;
+            text-transform: uppercase;
+            font-family: $fonte-titulo;
+            font-size: 1.1rem;
+
+
+                @include celular {
+                    font-size: .7rem;
+                }
+        }
+}

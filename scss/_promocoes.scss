@@ -1,0 +1,845 @@
+.promo__container {
+    background-image: url("../images/background-section-fem.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 6rem;
+
+        .promocao__titulo {
+            @include titulo;
+            color: #fff;
+
+                @include celular {
+                    font-size: 3rem;
+                }
+
+                @include tablet {
+                    font-size: 4rem;
+                }
+        }
+        
+        .promocao__subtitulo {
+            font-family: $fonte-corpo;
+            font-size: 2rem;
+            text-align: center;
+            color: #a19999;
+
+                @include celular {
+                    font-size: 1.5rem;
+                }
+
+                @include tablet {
+                    font-size: 1.7rem;
+                }
+
+        }
+}
+
+.btn__promocao {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+
+        @include celular {
+            padding: .5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: .8rem;
+        } 
+
+
+        .btn__promo__fem {
+            background-color: $cor-sectionFem;
+        }
+
+        .btn__promo__masc {
+            background-color: $cor-sectionMasc;
+        }
+
+        .btn__promo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: .8rem;
+            border-top-right-radius: 30%;
+            border: 2px solid #fff;
+            cursor: pointer;
+            transform: skewY(-5deg);
+            box-shadow: 4px 10px 10px 0 $cor-header;
+
+                @include celular {
+                    border: 1px solid #fff;
+                    box-shadow: 4px 10px 10px 0 $cor-header;
+                    padding: .4rem;
+                }
+
+
+                &:hover {
+                    background-color: #fff;
+                    box-shadow: 0 4px 2px 0 $cor-header;
+                    transition: all .6s;
+                    border-top-left-radius: 30%;
+                    border: 2px solid $cor-header;
+                    
+                }
+
+                &:hover .btn__titulo {
+                    color: #000;
+                    font-weight: bold;
+                }
+
+                &:hover .nav__ico {
+                    color: #000;
+                    font-weight: bold;
+                }     
+        }
+
+        .nav__ico {
+            // display: flex;
+            // justify-content: center;
+            font-size: 1.5rem;
+            color: #fff;
+            // margin: 0 auto;
+
+                @include celular {
+                    font-size: 1.2rem;  
+                }
+        }
+
+        .btn__titulo { 
+            font-family: $fonte-corpo;
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: .4rem;
+
+                @include celular {
+                    font-size: 14px;
+                }
+
+                @include tablet {
+                    font-size: 1rem;
+                }
+        }
+}
+
+/******** TENDENCIA FEMININA ********/
+.tendencia__fem {
+    margin-top: 5rem;
+
+
+    .container__cards__fem {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4rem;
+
+            @include celular {
+                padding: .4rem;
+            }
+    }
+
+    .cards__fem {
+        display: flex;
+        gap: 0.5rem;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .card__fem__lista {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        
+    }
+
+    .imagem__pequena {
+        height: 80px;
+        opacity: 0.8;
+        cursor: pointer;
+        border-radius: 5px;
+        border: 1px solid #fff;
+        opacity: .7;
+
+            &:hover {
+                opacity: 1;
+                transition: all .5s;
+            }
+    }
+
+    .card__fem__retrato {
+        position: relative;
+    } 
+
+
+    .imagem__grande {
+        width: 260px;
+        border-radius: 5px;
+        // border: 2px solid #000;
+    }
+
+    .acordion {
+        background-color: $cor-sectionFem;
+        padding: 1rem;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        margin-top: .2rem;
+        cursor: pointer;
+        width: 260px;
+  
+
+            .acordion__titulo {
+                text-align: center;
+                color: #fff;
+                font-family: $fonte-corpo;
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                
+            }
+
+            .acordion__desc {
+                color: #7A8899;
+                font-family: $fonte-corpo;
+                font-size: 1.4rem;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+
+            .acordion__preco {
+                color: #000;
+                font-family: $fonte-corpo;
+                font-size: 1.2rem;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 1.5rem;
+                background: #fff;
+                opacity: .9;
+                padding: .8rem;
+                border: 2px solid #000;
+                border-top-left-radius: 20%;
+
+                span {
+                    text-decoration: line-through;
+                }
+
+                strong {
+                    font-size: 1.65rem;
+                }
+            }
+
+            .acordion__marca {
+                color: #fff;
+                font-family: $fonte-corpo;
+                font-size: 1.4rem;
+            }
+
+            .acordion__tam {
+                color: #fff;
+                font-family: $fonte-corpo;
+                font-size: 1.4rem;
+                
+            }
+
+            .acordion__comp {
+                color: #fff;
+                font-family: $fonte-corpo;
+                font-size: 1.4rem;
+                margin-bottom: .5rem;
+            }
+
+            .acordion__link {
+                display: flex;
+                gap: .2rem;
+                padding: .5rem;
+                align-items: center;
+                background-color: $cor-links;
+                border-radius: 10px;
+                padding: .8rem 1rem;
+                box-shadow: 4px 0 2px 0 #fff;
+                width: 140px;
+                margin: 0 auto;
+
+                &:hover {
+                    background-color: $cor-header;
+                    box-shadow: 0 4px 2px 0 #fff;
+                    transition: all .6s;
+                }
+                
+            }
+
+            .acordion__icone {
+                color: #fff;
+                font-size: 20px;
+            }
+
+            .acordion__a {
+                color: #fff;
+                font-size: 1.3rem;
+                font-family: $fonte-titulo;
+            }
+
+
+    }
+}
+
+/******** TENDENCIA MASCULINA ********/
+.tendencia__masc {
+    margin-top: 5rem;
+
+
+    .container__cards__masc {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4rem;
+
+            @include celular {
+                padding: .4rem;
+            }
+    }
+
+    .cards__masc {
+        display: flex;
+        gap: 0.5rem;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .card__masc__lista {
+        display: flex;
+        flex-direction: column;
+
+        gap: .5rem;
+        
+    }
+
+    .imagem__pequena {
+        height: 80px;
+        opacity: 0.8;
+        cursor: pointer;
+        border-radius: 5px;
+        border: 1px solid #fff;
+        opacity: .7;
+
+            &:hover {
+                opacity: 1;
+                transition: all .5s;
+            }
+    }
+
+    .card__masc__retrato {
+        position: relative;
+    } 
+
+
+    .imagem__grande {
+        width: 260px;
+        border-radius: 5px;
+        // border: 2px solid #000;
+    }
+
+    .acordion {
+        background-color: $cor-sectionMasc;
+        padding: 1rem;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        margin-top: .2rem;
+        cursor: pointer;
+        width: 260px;
+  
+
+            .acordion__titulo {
+                text-align: center;
+                color: #fff;
+                font-family: $fonte-corpo;
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                
+            }
+
+            .acordion__desc {
+                color: $cor-links;
+                font-family: $fonte-corpo;
+                font-size: 1.4rem;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+
+            .acordion__preco {
+                color: #000;
+                font-family: $fonte-corpo;
+                font-size: 1.2rem;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 1.5rem;
+                background: #fff;
+                opacity: .9;
+                padding: .8rem;
+                border: 2px solid #000;
+                border-top-left-radius: 20%;
+
+                span {
+                    text-decoration: line-through;
+                }
+
+                strong {
+                    font-size: 1.65rem;
+                }
+            }
+
+            .acordion__marca {
+                color: #fff;
+                font-family: $fonte-corpo;
+                font-size: 1.4rem;
+            }
+
+            .acordion__tam {
+                color: #fff;
+                font-family: $fonte-corpo;
+                font-size: 1.4rem;
+                
+            }
+
+            .acordion__comp {
+                color: #fff;
+                font-family: $fonte-corpo;
+                font-size: 1.4rem;
+                margin-bottom: .5rem;
+            }
+
+            .acordion__link {
+                display: flex;
+                gap: .2rem;
+                padding: .5rem;
+                align-items: center;
+                background-color: $cor-links;
+                border-radius: 10px;
+                padding: .8rem 1rem;
+                box-shadow: 4px 0 2px 0 #fff;
+                width: 140px;
+                margin: 0 auto;
+
+                &:hover {
+                    background-color: $cor-header;
+                    box-shadow: 0 4px 2px 0 #fff;
+                    transition: all .6s;
+                }
+                
+            }
+
+            .acordion__icone {
+                color: #fff;
+                font-size: 20px;
+            }
+
+            .acordion__a {
+                color: #fff;
+                font-size: 1.3rem;
+                font-family: $fonte-titulo;
+            }
+
+
+    }
+}
+
+
+/******** PROMO FEMININA ********/
+.promo__fem {
+    margin-top: 5rem;
+
+    .container__cards__fem {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4rem;
+
+            @include celular {
+                padding: .4rem;
+            }
+    }
+
+        
+
+        .cards__fem {
+            display: flex;
+            gap: 0.5rem;
+            align-items: flex-start;
+            position: relative;
+        
+                .card__fem__lista {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                    
+                }
+        
+                .imagem__pequena {
+                    height: 80px;
+                    opacity: 0.8;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    border: 1px solid #fff;
+                    opacity: .7;
+        
+                        &:hover {
+                            opacity: 1;
+                            transition: all .5s;
+                        }
+                }
+        }
+
+    .card__fem__retrato {
+        position: relative;
+    }    
+
+    .icone__promo {
+        position: absolute;
+        top: 0px;
+        right: -30px;
+        width: 100px;
+        height: 40px;
+        padding: .5rem;
+        text-align: center;
+        color: #fff;
+        background-color: $cor-sectionFem;
+        font-family: $fonte-corpo;
+        font-weight: bold;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        // box-shadow: 2px 10px 10px #000;
+        transform: rotate(35deg);
+        border: 1px solid #fff;
+        clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+
+            @include celular {
+                top: -10px;
+                right: -4px;
+            }
+    }
+    
+    .imagem__grande {
+        width: 260px;
+        border-radius: 5px;
+        // border: 2px solid #000;
+    }
+
+    .acordion {
+        background-color: $cor-sectionFem;
+        padding: 1rem;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        margin-top: .2rem;
+        cursor: pointer;
+        width: 260px;
+  
+
+            .acordion__titulo {
+                text-align: center;
+                color: #fff;
+                font-family: $fonte-corpo;
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                
+            }
+
+            .acordion__desc {
+                color: #7A8899;
+                font-family: $fonte-corpo;
+                font-size: 1.4rem;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+
+            .acordion__preco {
+                color: #000;
+                font-family: $fonte-corpo;
+                font-size: 1.2rem;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 1.5rem;
+                background: #fff;
+                opacity: .9;
+                padding: .8rem;
+                border: 2px solid #000;
+                border-top-left-radius: 20%;
+
+                span {
+                    text-decoration: line-through;
+                }
+
+                strong {
+                    font-size: 1.65rem;
+                }
+            }
+
+            .acordion__marca {
+                color: #fff;
+                font-family: $fonte-corpo;
+                font-size: 1.4rem;
+            }
+
+            .acordion__tam {
+                color: #fff;
+                font-family: $fonte-corpo;
+                font-size: 1.4rem;
+                
+            }
+
+            .acordion__comp {
+                color: #fff;
+                font-family: $fonte-corpo;
+                font-size: 1.4rem;
+                margin-bottom: .5rem;
+            }
+
+            .acordion__link {
+                display: flex;
+                gap: .2rem;
+                padding: .5rem;
+                align-items: center;
+                background-color: $cor-links;
+                border-radius: 10px;
+                padding: .8rem 1rem;
+                box-shadow: 4px 0 2px 0 #fff;
+                width: 140px;
+                margin: 0 auto;
+
+                &:hover {
+                    background-color: $cor-header;
+                    box-shadow: 0 4px 2px 0 #fff;
+                    transition: all .6s;
+                }
+                
+            }
+
+            .acordion__icone {
+                color: #fff;
+                font-size: 20px;
+            }
+
+            .acordion__a {
+                color: #fff;
+                font-size: 1.3rem;
+                font-family: $fonte-titulo;
+            }
+
+
+    }
+
+}
+
+/*PROMO MASCULINA*/
+.promo__masc {
+    margin-top: 5rem;
+
+    .container__cards__masc {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4rem;
+
+            @include tablet {
+                gap: 2rem;
+            }
+    }
+
+        .cards__masc {
+            display: flex;
+            gap: 0.5rem;
+            align-items: flex-start;
+            position: relative;
+        
+                .card__masc__lista {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                }
+        
+                .imagem__pequena {
+                    height: 80px ;
+                    opacity: 0.8;
+                    cursor: pointer;
+                    border-radius: 5px;
+        
+                        &:hover {
+                            opacity: 1;
+                            transition: all .5s;
+                        }
+                }
+        }
+
+    .card__masc__retrato {
+        position: relative;
+    }  
+    
+    .icone__promo__masc {
+        position: absolute;
+        top: 0px;
+        right: -30px;
+        width: 100px;
+        height: 40px;
+        padding: .5rem;
+        text-align: center;
+        color: #fff;
+        background-color: $cor-sectionMasc;
+        font-family: $fonte-corpo;
+        font-weight: bold;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        // box-shadow: 2px 10px 10px #000;
+        transform: rotate(35deg);
+        border: 1px solid #fff;
+        clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+
+            @include celular {
+                top: -12px;
+                right: -4px;
+            }
+    }
+    
+    .imagem__grande {
+        width: 260px;
+        border-radius: 5px;
+        // border: 2px solid #000;
+    }
+
+    .acordion {
+        padding: 1rem;
+        background-color: $cor-sectionMasc;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        margin-top: .2rem;
+        cursor: pointer;
+        width: 260px;
+
+            .acordion__titulo {
+                text-align: center;
+                color: #fff;
+                font-family: $fonte-corpo;
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+
+            .acordion__desc {
+                color: #000;
+                font-family: $fonte-corpo;
+                font-size: 1.4rem;
+                font-weight: bold;
+                margin-bottom: 2rem;
+                text-align: center;
+
+            }
+
+            .acordion__preco {
+                color: #000;
+                font-family: $fonte-corpo;
+                font-size: 1.2rem;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 1.5rem;
+                background: #fff;
+                opacity: .9;
+                padding: .8rem;
+                border: 2px solid #000;
+                border-top-left-radius: 20%;
+
+                span {
+                    text-decoration: line-through;
+                }
+
+                strong {
+                    font-size: 1.65rem;
+                }
+            }
+
+            .acordion__marca {
+                color: #fff;
+                font-family: $fonte-corpo;
+                font-size: 1.4rem;
+            }
+
+            .acordion__tam {
+                color: #fff;
+                font-family: $fonte-corpo;
+                font-size: 1.4rem;
+                
+            }
+
+            .acordion__comp {
+                color: #fff;
+                font-family: $fonte-corpo;
+                font-size: 1.4rem;
+                margin-bottom: .5rem;
+            }
+
+            .acordion__link {
+                display: flex;
+                gap: .2rem;
+                padding: .5rem;
+                align-items: center;
+                background-color: $cor-links;
+                border-radius: 10px;
+                padding: .8rem 1rem;
+                box-shadow: 4px 0 2px 0 #fff;
+                width: 140px;
+                margin: 0 auto;
+
+                &:hover {
+                    background-color: $cor-header;
+                    box-shadow: 0 4px 2px 0 #fff;
+                    transition: all .6s;
+                }
+                
+            }
+
+            .acordion__icone {
+                color: #fff;
+                font-size: 20px;
+            }
+
+            .acordion__a {
+                color: #fff;
+                font-size: 1.3rem;
+                font-family: $fonte-titulo;
+            }
+        }
+}
+
+/* Classes JS */
+.js-promocao {
+    display: none;
+}
+
+.js-promocao.selected {
+    display: block;
+    animation: show .6s forwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translate3d(-30px,0,0)
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0)
+    }
+}
+
+// @keyframes acordion-show {
+//     from {
+//         opacity: 0;
+//         margin-top: -10px;
+//     }
+
+//     to {
+//         opacity: 0;
+//         margin-top: 0px;
+//     }
+// }
+

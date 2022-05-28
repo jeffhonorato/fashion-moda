@@ -1,0 +1,29 @@
+.adesivos__container {
+    height: 80vh;
+    background-image: url("../images/background-adesivo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+        .adesivo__fem__masc {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+        }
+
+        .adesivo__titulo {
+            filter: drop-shadow(2px 2px 2px #000);
+            font-family: $fonte-subtitulo;
+            font-size: 7rem;
+            text-align: center;
+        } 
+        
+        .adesivo__img {
+            width: 20rem;
+        }
+}
+
