@@ -1,10 +1,15 @@
 .marcas {
+    background-image: url("../images/marcas/background-marcas.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     height: 50vh;
 
     .marca__box {
         display: flex;
         flex-wrap: wrap;
-        gap: .5rem;
+        gap: 1rem;
         justify-content: center;
         padding: .5rem;
     }
