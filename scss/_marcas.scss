@@ -1,3 +1,16 @@
 .marcas {
     height: 50vh;
+
+    .marca__box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+        justify-content: center;
+        padding: .5rem;
+    }
+
+    .marca__img {
+        width: 180px;
+    }
+
 }
