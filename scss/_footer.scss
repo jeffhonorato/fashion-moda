@@ -1,8 +1,107 @@
 .footer {
-    height: 120vh;
+    height: 50vh;
     background-image: url("../images/footer/background-footer.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+
+        @include celular {
+            height: 80vh;
+        }
+
+        // @include tablet {
+        //     height: 100vh;
+        // }
+
+
+    .contato {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .endereco__titulo {
+        font-size: 2rem;
+        font-family: $fonte-titulo;
+
+            @include celular {
+                font-size: 1.4rem;
+                text-align: center;
+            }
+    }
+
+    .endereco__info {
+        box-shadow: 3px 3px 20px 1px rgba(255,255,255, .8);
+        backdrop-filter: blur(10px);
+        padding: .4rem;
+    }
+
+    .rua,
+    .bairro,
+    .cidade {
+        font-size: 1.5rem;
+        font-family: $fonte-corpo;
+    }
+
+    .bandeira__titulo {
+        font-size: 2rem;
+        font-family: $fonte-titulo;
+
+        @include celular {
+            font-size: 1.4rem;
+            text-align: center;
+        }
+    }
+
+
+    .bandeiras__box__logos {
+        display: flex;
+        gap: .5rem;
+        padding: .4rem;
+        justify-content: center;
+        align-content: center;
+
+        backdrop-filter: blur(10px);
+        box-shadow: 3px 3px 20px 1px rgba(255,255,255, .8);
+    }
+
+    .bandeira__img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .redes__sociais__titulo {
+        font-size: 2rem;
+        font-family: $fonte-titulo;
+
+        @include celular {
+            font-size: 1.4rem;
+            text-align: center;
+        }
+    }
+
+    .redes__sociais__box {
+        display: flex;
+        gap: .5rem;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);
+        box-shadow: 3px 3px 20px 1px rgba(255,255,255, .8);
+        padding: .4rem;
+
+    }   
+
+    .redes__sociais__img {
+        width: 50px;
+    }
+
+
+
+    
+
+    
 }
