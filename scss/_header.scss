@@ -18,9 +18,12 @@
         }
 
         .logo__img {
-            width: 15rem;
+            width: 18rem;
             z-index: 2;
-            // background-color: aqua;
+            
+            @include celular {
+                width: 14rem;
+            }
         }
 
         .nav {
@@ -209,7 +212,7 @@
 
 
                 @include celular {
-                    font-size: .7rem;
+                    font-size: 1rem;
                 }
         }
 }

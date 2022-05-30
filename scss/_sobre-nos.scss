@@ -5,4 +5,61 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+
+        @include celular {
+            height: 150vh;
+        }
+
+        @include tablet {
+            height: 150vh;
+        }
+
+    .sobre__nos__box { 
+        height: 100vh;
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+
+    }    
+
+    .sobre__nos__img {
+       
+       
+        @include celular {
+            width: 200px;
+        }
+
+        @include tablet {
+            width: 260px;
+        }
+    }
+
+    .sobre__nos__info {
+        max-width: 600px;
+        backdrop-filter: blur(10px);
+        box-shadow: 3px 3px 20px 1px rgba(255,255,255, .8);
+        padding: .5rem;
+    }
+
+    .sobre__nos__p {
+        padding: .5rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: $fonte-corpo;
+
+            @include celular {
+                font-size: 1rem;
+            }
+
+            @include tablet {
+                font-size: 1.2rem;
+            }
+        
+        // background: rgba(255,255,255, 0.6);
+    }
+
+    
+    
 }
