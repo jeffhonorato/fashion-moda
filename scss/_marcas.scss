@@ -30,12 +30,12 @@
 
             @include celular {
                 height: 80vh;
-                gap: .4rem;
+                gap: .3rem;
             }
 
             @include tablet {
                 height: 90vh;
-                gap: .4rem;
+                gap: .3rem;
             }
     }
 
@@ -56,7 +56,7 @@
         @include tablet {
             width: 6rem;
             height: 6rem;
-            padding: .1rem;
+            padding: .2rem;
         }
         
     }
