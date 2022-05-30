@@ -6,6 +6,14 @@
     height: 60vh;
     position: relative;
 
+        @include celular {
+            height: 80vh;
+        }
+
+        @include tablet {
+            height: 90vh;
+        }
+
 
     .marca__box {
         display: flex;
@@ -13,12 +21,22 @@
         gap: 1rem;
         justify-content: center;
         align-items: center;
-        padding: .5rem;
         height: 60vh;
         width: 100%;
         position: absolute;
         opacity: 0;
         transition: opacity 1s;
+        padding: .2rem;
+
+            @include celular {
+                height: 80vh;
+                gap: .4rem;
+            }
+
+            @include tablet {
+                height: 90vh;
+                gap: .4rem;
+            }
     }
 
     .marca__img {
@@ -28,6 +46,18 @@
         border: 1px solid #000;
         padding: .5rem;
         box-shadow: 4px 10px 10px 0 #000;
+
+        @include celular {
+            width: 5.5rem;
+            height: 5.5rem;
+            padding: .1rem;
+        }
+
+        @include tablet {
+            width: 6rem;
+            height: 6rem;
+            padding: .1rem;
+        }
         
     }
 
