@@ -16,6 +16,10 @@
         @include celular {
             height: 50vh;
         }
+
+        @include tablet {
+            height: 40vh;
+        }
 }
 
     .adesivo__titulo {
@@ -32,6 +36,11 @@
                 font-size: 2.5rem;
                 height: 50vh;
             }
+
+            @include tablet {
+                font-size: 3rem;
+                height: 50vh;
+            }
     }
 
     .img__detalhe1__header__masc {
@@ -44,13 +53,13 @@
             @include celular {
                 width: 100px;
                 bottom: -35px;
-                left: 6px;
+                left: 4px;
             }
 
             @include tablet {
-                width: 250px;
+                width: 100px;
                 top: 20px;
-                left: -50px;
+                left: 10px;
             }
     }         
 
@@ -68,8 +77,8 @@
             }
 
             @include tablet {
-                width: 250px;
-                top: 130px;
+                width: 200px;
+                top: 100px;
                 right: 0px;
                 width: 110px;
             }
