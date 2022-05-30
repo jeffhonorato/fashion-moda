@@ -7,11 +7,11 @@
     background-attachment: fixed;
 
         @include celular {
-            height: 150vh;
+            height: 125vh;
         }
 
         @include tablet {
-            height: 150vh;
+            height: 140vh;
         }
 
     .sobre__nos__box { 
@@ -22,10 +22,14 @@
         justify-content: center;
         align-content: center;
 
+            @include celular {
+                height: 120vh;
+            }
+
     }    
 
     .sobre__nos__img {
-       
+       max-width: 26rem;
        
         @include celular {
             width: 200px;
