@@ -5,6 +5,8 @@
     background-size: cover;
     height: 60vh;
     position: relative;
+    z-index: -1;
+    
 
         @include celular {
             height: 80vh;
@@ -27,6 +29,7 @@
         opacity: 0;
         transition: opacity 1s;
         padding: .2rem;
+        
 
             @include celular {
                 height: 80vh;
