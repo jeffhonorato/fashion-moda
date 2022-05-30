@@ -4,7 +4,10 @@
     height: 100vh;
     background-color: #000;
     position: relative;
-    // max-width: 500px;
+
+        @include celular {
+            height: 50vh;
+        }
 
         .slider__img {
             opacity: 0;
@@ -14,6 +17,10 @@
             position: absolute;
             padding: 1rem;
             transition: opacity 800ms;
+
+                @include celular {
+                    height: 50vh;
+                }
         }
 
         .slider__img.selected {
