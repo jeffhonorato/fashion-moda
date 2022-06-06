@@ -361,14 +361,11 @@
             box-shadow: 2px 2px 20px 1px #fff; 
             border: 3px solid #fff;
             border-radius: 10px;
-            position: fixed;
+            position: absolute;
             top: 20px;
             left: 130px;
             width: 80vw;
-            height: 94vh;
-            
-           
-            
+            height: 94vh;            
             
                 @include celular {
                     top: 0px;
@@ -387,7 +384,6 @@
     
         .card__blusas.show {
             display: flex;
-            transform: scale(1);
         }
     
         .btn-fechar {

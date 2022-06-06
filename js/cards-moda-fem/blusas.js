@@ -39,14 +39,14 @@ const modalCard1BlusasFem = () => {
     const detalhesCard1 = document.querySelector("[data-card1-btn-blusas]");
     detalhesCard1.addEventListener("click", (e) => {
         e.stopPropagation();
-        const modalBox1 = document.querySelector("[data-modal-card1-blusas-fem]");
+        const modalBox1 = document.querySelector(".js-btn-modalBox");
         modalBox1.classList.add("show"); 
     });
 
-    const btnFechar = document.querySelector("[data-btn-fechar-card1-blusas-fem]")
+    const btnFechar = document.querySelector("[data-btn-fechar-card1-blusas-fem]");
     btnFechar.addEventListener("click", (e) => {
         e.stopPropagation();
-        const modalBox2 = document.querySelector("[data-modal-card1-blusas-fem]");
+        const modalBox2 = document.querySelector(".js-btn-modalBox");
         modalBox2.classList.remove("show");
     });
 
