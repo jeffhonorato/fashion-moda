@@ -1224,6 +1224,9 @@
 
 /******* MODAL CARDS CALÇADOS MASC *******/
 .modal__box__calcados { 
+    position: relative;
+   
+    
     .card__calcados {
         display: none;
         justify-content: center;
@@ -1242,7 +1245,6 @@
         left: 130px;
         width: 80vw;
         height: 94vh;
-        z-index: 5;
         
         
             @include celular {

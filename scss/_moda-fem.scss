@@ -366,7 +366,8 @@
             left: 130px;
             width: 80vw;
             height: 94vh;
-            z-index: 5;
+            
+           
             
             
                 @include celular {
@@ -386,6 +387,7 @@
     
         .card__blusas.show {
             display: flex;
+            transform: scale(1);
         }
     
         .btn-fechar {
