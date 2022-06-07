@@ -347,19 +347,8 @@
     /******* MODAL CARDS BLUSAS FEM *******/
     .modal__box__blusas {
 
-    
-        .modal__card__blusa {
-            display: none;
-            position: relative;
-            background-color: rgba(202, 37, 37, 0.1);
-            width: 98.5vw;
-            height: 100vh;
-            z-index: 99;
-        }
-        
-
         .card__blusas {
-            display: flex;
+            display: none;
             justify-content: center;
             align-items: center;
             gap: .5rem;  
@@ -371,31 +360,27 @@
             box-shadow: 2px 2px 20px 1px #fff; 
             border: 3px solid #fff;
             border-radius: 10px;
-            position: absolute;
-            top: -700px;
+            position: fixed;
+            width: 98.5vw;
+            height: 100vh;
             width: 80vw;
-            height: 94vh;            
+            height: 94vh;   
+            z-index: 99;         
             
                 @include celular {
-                    top: -700px;
                     width: 100vw;
                     height: 100vh;
                 }
 
                 @include tablet {
-                    top: -700px;
                     width: 100vw;
                     height: 100vh;
                 }
         }
 
-        .modal__card__blusa.show {
-            display: block;
+        .card__blusas.show {
+            display: flex;
         }
-    
-        // .card__blusas.show {
-            
-        // }
     
         .btn-fechar {
             width: 100px;
