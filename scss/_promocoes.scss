@@ -144,12 +144,11 @@
             }
     }
 
-    .cards__fem {
+    .cards__tendenciaFem {
         display: flex;
         gap: 0.5rem;
         align-items: flex-start;
         position: relative;
-        // visibility: hidden;
     }
 
     .card__fem__lista {
@@ -304,14 +303,13 @@
             }
     }
 
-    .cards__masc {
+    .cards__tendenciaMasc {
         display: flex;
         gap: 0.5rem;
         align-items: flex-start;
         position: relative;
     }
 
-    
 
     .card__masc__lista {
         display: flex;
