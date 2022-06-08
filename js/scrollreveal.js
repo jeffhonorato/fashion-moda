@@ -1,16 +1,18 @@
 window.sr = ScrollReveal({reset: true})
 
-sr.reveal('.cards__tendenciaFem', {duration: 1000} )
+sr.reveal('.cards__tendenciaFem')
 
-sr.reveal('.promocao', {duration: 1000} )
+sr.reveal('.promocao')
 
-sr.reveal('.btn__titulo', {duration: 1000} )
+sr.reveal('.btn__titulo')
 
-sr.reveal('.btn__promocao', {duration: 1000} )
+sr.reveal('.btn__promocao')
 
-sr.reveal('.adesivo__titulo__h1', {duration: 1000} )
+sr.reveal('.adesivo__titulo__h1')
 
-sr.reveal('.img__detalhe2__header__fem', {duration: 1000} )
+sr.reveal('.img__detalhe__header__fem')
 
-sr.reveal('.menu__moda__fem', {duration: 1000} )
+sr.reveal('.img__detalhe2__header__fem')
+
+sr.reveal('.menu__moda__fem')
 
