@@ -115,7 +115,6 @@
             flex-wrap: wrap;
             gap: 1rem;
             justify-content: center;
-            // margin-bottom: 4rem;
             padding: 2rem 0;
 
                 @include celular {
@@ -242,14 +241,12 @@
         border: 2px solid #000;
         border-top-left-radius: 25px;
         border-bottom-right-radius: 25px;
-
-            @include celular {
-                width: 260px;
-            }
+        box-shadow: 0 0 5px 1px #000;
+        background-color: #000;
     } 
 
     .prod__img__blusa {
-        width: 200px;
+        width: 280px;
 
             @include celular {
                 width: 260px;
@@ -274,6 +271,7 @@
         text-align: center;
         background: rgb(184, 181, 181);
         border: 1px solid #000;
+        width: 280px;
            
             @include celular {
                 width: 250px;
@@ -339,18 +337,10 @@
 
     /******* MODAL CARDS BLUSAS FEM *******/
     .modal__box__blusas {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #858585;
-        display: none;
-        z-index: 99;
-
+        position: relative;
 
         .card__blusas {
-            display: flex;
+            display: none;
             justify-content: center;
             align-items: center;
             gap: .5rem;  
@@ -363,10 +353,8 @@
             border: 3px solid #fff;
             border-radius: 10px;
             position: absolute;
-            width: 98.5vw;
-            height: 100vh;
-            width: 80vw;
-            height: 94vh;   
+            height: 50vh;
+            width: 80vw;  
             z-index: 99;         
             
                 @include celular {
@@ -380,8 +368,8 @@
                 }
         }
 
-        .modal__box__blusas.show {
-            display: block;
+        .card__blusas.show {
+            display: flex;
         }
     
         .btn-fechar {
@@ -522,7 +510,7 @@
       .swiper-slide {
         background-position: center;
         background-size: cover;
-        width: 500px;
+        width: 400px;
         // height: 500px;
       }
 
