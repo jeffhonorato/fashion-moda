@@ -336,14 +336,15 @@
     }
 
     /******* MODAL CARDS BLUSAS FEM *******/
-    .modal__box__blusas {
-        position: relative;
-
+    .modal__card__blusa {
+        // position: fixed;
+       
+   
         .card__blusas {
             display: none;
-            justify-content: center;
             align-items: center;
-            gap: .5rem;  
+            justify-content: center;
+            flex-wrap: wrap;
             background-image: url("../images/moda-fem/background-section-modaFem2.jpg");
             background-position: center;
             background-repeat: no-repeat;
@@ -352,11 +353,12 @@
             box-shadow: 2px 2px 20px 1px #fff; 
             border: 3px solid #fff;
             border-radius: 10px;
-            position: absolute;
-            height: 50vh;
             width: 80vw;  
-            z-index: 99;         
-            
+            height: 80vh;
+            z-index: 99; 
+           
+                   
+
                 @include celular {
                     width: 100vw;
                     height: 100vh;
@@ -369,6 +371,10 @@
         }
 
         .card__blusas.show {
+            display: flex;
+        }
+
+        .cards__blusas__imgs {
             display: flex;
         }
     
@@ -417,7 +423,7 @@
         }
 
         .img__gra__modal {
-            width: 260px;
+            width: 320px;
             border-radius: 5px;
             border: solid 1px #000;
             box-shadow: 1px 4px 10px rgba(68, 66, 66, 1);
@@ -427,7 +433,7 @@
             margin-top: .2rem;
             background: rgba(163, 157, 157, 0.5);
             padding: .5rem;
-            width: 260px;
+            width: 400px;
             border: 1px solid #000;
         }
     
