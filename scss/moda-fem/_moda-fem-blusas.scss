@@ -232,22 +232,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        // gap: 1rem;
         padding: 1rem;
-        // height: 60vh;
-        // margin-top: 1rem;
     }
 
-    // .cards__sliders__fem {
-    //     background-color: #000;
-    // }
+ 
 
     .card__prod__blusa {
         padding: .2rem;
         border: 2px solid #000;
         border-top-left-radius: 25px;
         border-bottom-right-radius: 25px;
-        background-color: $cor-sectionFem;
 
             @include celular {
                 width: 260px;
@@ -255,7 +249,7 @@
     } 
 
     .prod__img__blusa {
-        width: 300px;
+        width: 200px;
 
             @include celular {
                 width: 260px;
@@ -276,7 +270,7 @@
 
     .prod__info__blusa {
         padding: 1rem;
-        width: 300px;
+        width: 200px;
         text-align: center;
         background: rgb(184, 181, 181);
         border: 1px solid #000;
@@ -528,8 +522,8 @@
       .swiper-slide {
         background-position: center;
         background-size: cover;
-        width: 400px;
-        height: 500px;
+        width: 500px;
+        // height: 500px;
       }
 
     //   .swiper-slide .card__produto {
