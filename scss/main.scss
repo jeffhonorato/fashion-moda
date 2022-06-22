@@ -70,7 +70,12 @@ ul, li {
 @import "slider";
 @import "promocoes";
 @import "adesivo-fem";
-@import "moda-fem";
+@import "./moda-fem/moda-fem-blusas";
+@import "./moda-fem/moda-fem-calcas";
+@import "./moda-fem/moda-fem-saias";
+@import "./moda-fem/moda-fem-bolsas";
+@import "./moda-fem/moda-fem-plussize";
+@import "./moda-fem/moda-fem-calcadas";
 @import "moda-masc";
 @import "marcas";
 @import "sobre-nos";
