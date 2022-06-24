@@ -68,6 +68,7 @@ const modalCard2BlusasFem = () => {
         e.stopPropagation();
         const modalBlusasCard2 = document.querySelector(".js-modal-blusas-card2");
         modalBlusasCard2.classList.add("show"); 
+        console.log(modalBlusasCard2)
     });
 
     const btnFechar = document.querySelector(".js-btnFechar-blusas-card2")
@@ -93,6 +94,7 @@ const modalCard3BlusasFem = () => {
         e.stopPropagation();
         const modalBlusasCard3 = document.querySelector(".js-modal-blusas-card3");
         modalBlusasCard3.classList.add("show"); 
+        console.log(modalBlusasCard3)
     });
 
     const btnFechar = document.querySelector(".js-btnFechar-blusas-card3")
