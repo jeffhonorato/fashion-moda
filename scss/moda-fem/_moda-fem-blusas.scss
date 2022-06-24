@@ -355,7 +355,7 @@
         right: 0;
         bottom: 0;
         background-color: rgba(0, 0, 0, 0.5);
-        display: none;
+        display: block;
 
         .modal__card__blusa.show {
             display: block;
@@ -378,8 +378,8 @@
             height: 80vh;
             
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 50px;
+            left: 120px;
             right: 0;
             bottom: 0;
             z-index: 2000; 
