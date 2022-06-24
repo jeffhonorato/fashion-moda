@@ -234,19 +234,19 @@
         padding: 1rem;
     }
 
- 
-
     .card__prod__blusa {
         padding: .2rem;
-        // border: 2px solid #000;
+        border: 2px solid #000;
         border-top-left-radius: 25px;
         border-bottom-right-radius: 25px;
-        background-color: $cor-sectionFem;
         width: 260px;
+        background-color: #000;
     } 
 
     .prod__img__blusa {
         width: 260px;
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
 
             @include celular {
                 width: 260px;
@@ -268,9 +268,13 @@
     .prod__info__blusa {
         padding: 1rem;
         text-align: center;
-        background: $cor-sectionFem;
-        border: 1px solid #000;
         width: 250px;
+        background: rgba(115, 41, 112, 0.35);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(0px);
+        border: 1px solid #fff;
 
            
             @include celular {
@@ -280,20 +284,24 @@
     }
 
     .prod__titulo__blusa {
-        font-family: $fonte-titulo;
+        font-family: $fonte-corpo;
         font-size: 1.4rem;
         color: #fff;
+        font-weight: bold;
     }
 
     .prod__preco {
         font-family: $fonte-titulo;
         font-size: 1.9rem;
+        color: #fff;
+        
     }
 
-    .prod__contato {
+    .prod__detalhes__box {
         display: flex;
         gap: .5rem;
         justify-content: center;
+        padding-top: .4rem;
     }
 
     .prod__detalhes {
@@ -301,21 +309,23 @@
         font-weight: bold;
         font-size: 1.2rem;
         padding: .5rem;
-        background-color: $cor-links;
+        background-color: #fff;
         width: 200px;
-        color:#fff;
+        color:#000;
         margin: 0 auto;
         border-radius: 10px;
         border: 1px solid #fff;
+        cursor: pointer;
 
             &:hover {
                 background-color: $cor-header;
                 transition: all .6s;
+                color: #fff;
             }
 
     }
 
-    .prod__link {
+    .prod__contato {
         font-family: $fonte-corpo;
         font-weight: bold;
         font-size: 1.2rem;
