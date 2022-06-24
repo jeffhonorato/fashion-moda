@@ -238,15 +238,15 @@
 
     .card__prod__blusa {
         padding: .2rem;
-        border: 2px solid #000;
+        // border: 2px solid #000;
         border-top-left-radius: 25px;
         border-bottom-right-radius: 25px;
-        box-shadow: 0 0 5px 1px #000;
-        background-color: #000;
+        background-color: $cor-sectionFem;
+        width: 260px;
     } 
 
     .prod__img__blusa {
-        width: 280px;
+        width: 260px;
 
             @include celular {
                 width: 260px;
@@ -267,11 +267,11 @@
 
     .prod__info__blusa {
         padding: 1rem;
-        width: 200px;
         text-align: center;
-        background: rgb(184, 181, 181);
+        background: $cor-sectionFem;
         border: 1px solid #000;
-        width: 280px;
+        width: 250px;
+
            
             @include celular {
                 width: 250px;
@@ -281,8 +281,8 @@
 
     .prod__titulo__blusa {
         font-family: $fonte-titulo;
-        font-size: 1.8rem;
-        opacity: .5;
+        font-size: 1.4rem;
+        color: #fff;
     }
 
     .prod__preco {
