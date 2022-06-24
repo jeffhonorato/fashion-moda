@@ -28,25 +28,52 @@ navegacaoMenuCardsFem();
 
 // CARDS MODA FEMININA - MODAL BLUSAS  // 
 const modalCard1BlusasFem = () => {
-    const imgPequenas = document.querySelectorAll("[data-modal-imgP-blusas-card1]");
+    const imgPequenas = document.querySelectorAll(".js-modal-imgP-blusas-card1");
     imgPequenas.forEach((img) => {
         img.addEventListener("click", () => {
-            const imgGrande = document.querySelector("[data-modal-imgG-blusas-card1]");
+            const imgGrande = document.querySelector(".js-modal-imgG-blusas-card1");
             imgGrande.src = img.src;
         });
     });
 
-    const detalhesCard1 = document.querySelector("[data-card1-btn-blusas]");
+    const detalhesCard1 = document.querySelector(".js-btn-card1-blusas");
     detalhesCard1.addEventListener("click", (e) => {
         e.stopPropagation();
-        const modalBox1 = document.querySelector(".js-modal-blusas");
+        const modalBox1 = document.querySelector(".js-modal-blusas-card1");
+        modalBox1.classList.add("show"); 
+        console.log(detalhesCard1)
+    });
+
+    const btnFechar = document.querySelector(".js-btnFechar-blusas-card1")
+    btnFechar.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const modalBox2 = document.querySelector(".js-modal-blusas-card1");
+        modalBox2.classList.remove("show");
+    });
+   
+    
+}
+
+const modalCard2BlusasFem = () => {
+    const imgPequenas = document.querySelectorAll(".js-modal-imgP-blusas-card2");
+    imgPequenas.forEach((img) => {
+        img.addEventListener("click", () => {
+            const imgGrande = document.querySelector(".js-modal-imgG-blusas-card2");
+            imgGrande.src = img.src;
+        });
+    });
+
+    const detalhesCard2 = document.querySelector(".js-btn-card2-blusas");
+    detalhesCard2.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const modalBox1 = document.querySelector(".js-modal-blusas-card2");
         modalBox1.classList.add("show"); 
     });
 
-    const btnFechar = document.querySelector("[data-btn-fechar-card1-blusas-fem]")
+    const btnFechar = document.querySelector(".js-btnFechar-blusas-card2")
     btnFechar.addEventListener("click", (e) => {
         e.stopPropagation();
-        const modalBox2 = document.querySelector("..js-modal-blusas");
+        const modalBox2 = document.querySelector(".js-modal-blusas-card2");
         modalBox2.classList.remove("show");
     });
    
@@ -56,6 +83,7 @@ const modalCard1BlusasFem = () => {
 
 
 modalCard1BlusasFem();
+modalCard2BlusasFem();
 
 
 

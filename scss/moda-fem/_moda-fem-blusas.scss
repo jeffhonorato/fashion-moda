@@ -355,7 +355,11 @@
         right: 0;
         bottom: 0;
         background-color: rgba(0, 0, 0, 0.5);
-        display: block;
+        display: none;
+
+        .modal__card__blusa.show {
+            display: block;
+        }
    
         .card__blusas {
             display: flex;
@@ -394,9 +398,7 @@
                 }
         }
 
-        .card__blusas.show {
-            display: flex;
-        }
+        
 
         .cards__blusas__imgs {
             display: flex;
