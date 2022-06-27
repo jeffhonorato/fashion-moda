@@ -308,8 +308,57 @@
             }
     }
 
+    
+    
+    /* MODAL CARD - BLUSAS */
+    .modal__box {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+    }
+
+    .modal {
+        background-image: url("../../images/moda-fem/background-section-modaFem2.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 900px;
+        height: 500px;
+        position: absolute;
+        top: 100px;
+        left: 220px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 
+
+    .modal__img__box {
+        display: flex;
+        align-items: flex-end;
+        gap: .5rem;
+    }
+
+    .modal__img {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: .4rem;
+    }
+
+    .modal__img__peq {
+        width: 70px;
+    }
+
+    .modal__img__gra {
+        width: 250px;
+    }
 }
 
 
