@@ -232,14 +232,13 @@
     }
 
     .card__prod--info {
+        margin-top: .5rem;
         border-radius: 5px;
         padding-bottom: 1rem;
 
-        background: rgba(115, 41, 112, 0.2);
+        background: $cor-sectionFem;
         border-radius: .5rem;
         box-shadow: 0 0px 10px #fff;
-        backdrop-filter: blur(11.5px);
-        -webkit-backdrop-filter: blur(11.5px);
     }
 
     .card__prod--titulo {
@@ -320,6 +319,7 @@
         background-color: rgba(0, 0, 0, 0.5);
         width: 100%;
         height: 100%;
+        display: none;
     }
 
     .modal {
