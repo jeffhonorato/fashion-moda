@@ -254,10 +254,10 @@
     .card__prod--preco {
         font-family: $fonte-corpo;
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 1.7rem;
         text-align: center;
         margin-bottom: .5rem;
-        color: #8e8e8e;
+        color: #b5b5b5;
     }
 
     .card__prod--parcelas {
@@ -266,19 +266,19 @@
         font-size: 1rem;
         text-align: center;
         margin-bottom: .5rem;
-        color: #8e8e8e;
+        color: #b5b5b5;
     }
 
     .card__prod--btns {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
+        gap: .5rem;
     }
 
     .card__prod--detalhes {
         font-family: $fonte-corpo;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         font-weight: bold;
         background-color: $cor-header;
         padding: .3rem;
@@ -294,7 +294,7 @@
 
     .card__prod--contato {
         font-family: $fonte-corpo;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         font-weight: bold;
         background-color: #000;
         padding: .3rem;
@@ -306,10 +306,6 @@
                 background-color: $cor-header;
                 transition: all .4s;
             }
-        
-        
-        
-        
     }
 
 
