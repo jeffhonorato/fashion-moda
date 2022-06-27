@@ -176,7 +176,6 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         padding: 2rem 0;
-        height: 130vh;
 
             @include celular {
                 height: 125vh;
@@ -191,16 +190,14 @@
             // }
     }
 
-    .titulo__card {
-        background-color: $cor-header;
+    .catalogo__titulo {
+        background-color: $cor-sectionFem;
         text-align: center;
-        // padding: .6rem;
         font-family: $fonte-titulo;
         color: #fff;
         font-size: 3.5rem;
-        border-top-right-radius: 20%;
         border: 1px solid #fff;
-        width: 700px;
+        width: 300px;
         box-shadow: 4px 4px 10px 0 #fff; 
         margin-bottom: 2.5rem;
 
@@ -222,350 +219,64 @@
             }
     }
 
-    .blusas-fem {
-        margin-bottom: 1rem;
-        z-index: 0;
-    }
-
-
-    .card__fem__blusa {
+    .card__prod {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 1rem;
-
     }
 
-    .card__prod__blusa {
-        padding: .2rem;
-        border: 2px solid #000;
-        border-top-left-radius: 25px;
-        border-bottom-right-radius: 25px;
-        width: 260px;
-        background-color: #000;
-    } 
-
-    .prod__img__blusa {
-        width: 260px;
-        border-top-left-radius: 25px;
-        border-bottom-right-radius: 25px;
-
-            @include celular {
-                width: 260px;
-            }
+    .card__prod--imgCard {
+        width: 15.5rem; /* 250px */
+        border-radius: 5px;
     }
 
-    .card__ajuste img {
-        width: 270px;
-    }
-
-    .card__ajuste .prod__info__blusa {
-        width: 270px;
-
-            @include celular {
-                width: 250px;
-            }
-    }
-
-    .prod__info__blusa {
-        padding: 1rem;
-        text-align: center;
-        width: 250px;
-        background: rgba(115, 41, 112, 0.35);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(0px);
-        border: 1px solid #fff;
-
-           
-            @include celular {
-                width: 250px;
-            }
-            
-    }
-
-    .prod__titulo__blusa {
-        font-family: $fonte-corpo;
-        font-size: 1.4rem;
-        color: #fff;
-        font-weight: bold;
-    }
-
-    .prod__preco {
-        font-family: $fonte-titulo;
-        font-size: 1.9rem;
-        color: #fff;
-        
-    }
-
-    .prod__detalhes__box {
-        display: flex;
-        gap: .5rem;
-        justify-content: center;
-        padding-top: .4rem;
-    }
-
-    .prod__detalhes {
-        font-family: $fonte-corpo;
-        font-weight: bold;
-        font-size: 1.2rem;
-        padding: .5rem;
-        background-color: #fff;
-        width: 200px;
-        color:#000;
-        margin: 0 auto;
-        border-radius: 10px;
-        border: 1px solid #fff;
-        cursor: pointer;
-
-            &:hover {
-                background-color: $cor-header;
-                transition: all .6s;
-                color: #fff;
-            }
-
-    }
-
-    .prod__contato {
-        font-family: $fonte-corpo;
-        font-weight: bold;
-        font-size: 1.2rem;
-        padding: .5rem;
+    .card__prod--info {
         background-color: $cor-sectionFem;
-        width: 200px;
-        color:#fff;
-        margin: 0 auto;
-        border-radius: 10px;
-        border: 1px solid #fff;
-        cursor: pointer;
-
-            &:hover {
-                background-color: $cor-links;
-                transition: all .6s;
-            }
-
+        border-radius: 5px;
+        padding-bottom: 1rem;
     }
 
-    /******* MODAL CARDS BLUSAS FEM *******/
-    .modal__card__blusa {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-        display: none;
-
-        .modal__card__blusa.show {
-            display: block;
-        }
-   
-        .card__blusas {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            background-image: url("../images/moda-fem/background-section-modaFem2.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 1rem .3rem;
-            box-shadow: 2px 2px 20px 1px #fff; 
-            border: 3px solid #fff;
-            border-radius: 10px;
-            width: 80vw;  
-            height: 80vh;
-            
-            position: absolute;
-            top: 50px;
-            left: 120px;
-            right: 0;
-            bottom: 0;
-            z-index: 2000; 
-
-           
-                   
-
-                @include celular {
-                    width: 100vw;
-                    height: 100vh;
-                }
-
-                @include tablet {
-                    width: 100vw;
-                    height: 100vh;
-                }
-        }
-
-        
-
-        .cards__blusas__imgs {
-            display: flex;
-            align-items: flex-end;
-            gap: .4rem;
-        }
-
-    
-        .btn-fechar {
-            width: 100px;
-            position: absolute;
-            top: 2px;
-            left: 2px;
-            border-radius: 50%;
-            border: 2px solid #000;
-            height: 60px;
-            width: 60px;
-            font-size: 1.5rem;
-            cursor: pointer;
-            box-shadow: 2px 2px 20px 1px #fff; 
-
-                &:hover {
-                    box-shadow: 0px 0px 0px 0px #fff;
-                    transition: all .5s;
-                }
-
-                @include celular {
-                    width: 50px;
-                    height: 40px;
-                   
-                }
-        }
-    
-        .card__box__img {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-    
-        .img__peq__card {
-            height: 90px;
-            opacity: 0.8;
-            cursor: pointer;
-            border-radius: 5px;
-            border: 1px solid #000;
-            opacity: .7;
-    
-                &:hover {
-                    opacity: 1;
-                    transition: all .6s;
-                }
-    
-                @include celular {
-                    height: 70px;
-                }
-        }
-
-        .img__gra__modal {
-            width: 320px;
-            border-radius: 5px;
-            border: solid 1px #000;
-            box-shadow: 1px 4px 10px rgba(68, 66, 66, 1);
-
-                @include celular {
-                    width: 280px;
-                }
-        }
-    
-        .detalhes__info {
-            margin-top: .2rem;
-            background: rgba(163, 157, 157, 0.5);
-            padding: .5rem;
-            width: 400px;
-            border: 1px solid #000;
-
-                
-                @include celular {
-                    width: 320px;
-                }
-
-        }
-    
-        .marca, 
-        .tamanhos,
-        .composicao {
-            font-family: $fonte-corpo;
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: #fff;
-    
-                @include celular {
-                    font-size: 1rem;
-                }
-
-                @include tablet {
-                    font-size: 1.2rem;
-                }
-        }
-        
-    
-        .marca span, .tamanhos span, .composicao span {
-            font-family: $fonte-corpo;
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #000;
-    
-                @include celular {
-                    font-size: 1rem;
-                }
-
-                @include tablet {
-                    font-size: 1.2rem;
-                }
-        }
-    
-        .detalhes__link {
-            font-family: $fonte-corpo;
-            font-weight: bold;
-            font-size: 1.4rem;
-            padding: .5rem;
-            background-color: $cor-links;
-            width: 200px;
-            color:#fff;
-            margin: .8rem auto;
-            border-radius: 10px;
-            border: 1px solid #fff;
-            text-align: center;
-            
-    
-                &:hover {
-                    background-color: $cor-header;
-                    transition: all .6s;
-                }
-    
-                @include celular {
-                    font-size: 1.2rem;
-                    width: 150px;
-                }
-
-                @include tablet {
-                    font-size: 1.2rem;
-                    padding: .5rem;
-                }
-        }    
+    .card__prod--titulo {
+        font-family: $fonte-corpo;
+        color: #242424;
+        padding-top: .5rem;
+        text-align: center;
+        font-size: 1.5rem;
+        color: #fff;
     }
 
-    
-    /******* SWWIPER SLIDER BLUSAS *******/
-    .swiper {
-        width: 98vw;
-        height: 105vh;
-        padding: 30px 0;
-      }
+    .card__prod--preco {
+        font-family: $fonte-corpo;
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: .5rem;
+    }
 
-      .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 400px;
-        // height: 500px;
-      }
+    .card__prod--btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
 
-    //   .swiper-slide .card__produto {
-    //     display: block;
-    //     width: 100%;
-    //   }
-    
+    .card__prod--detalhes {
+        font-family: $fonte-corpo;
+        font-size: 1.5rem;
+        font-weight: bold;
+        background-color: $cor-header;
+        padding: .3rem;
+    }
+
+    .card__prod--contato {
+        font-family: $fonte-corpo;
+        font-size: 1.5rem;
+        font-weight: bold;
+        background-color: $cor-header;
+        padding: .3rem;
+    }
+
+
 
 }
 
