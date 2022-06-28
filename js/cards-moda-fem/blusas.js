@@ -39,12 +39,17 @@ const boxCard1blusasFem = () => {
     detalhesCard1Fem.addEventListener("click", () => {
         const modalCard1Fem = document.querySelector(".js-modal-card1-blusasFem");
         modalCard1Fem.classList.add("open");
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "none"; 
     });
 
     const btnFecharModal1BlusaFem = document.querySelector(".js-btnFechar-card1-blusasFem");
     btnFecharModal1BlusaFem.addEventListener("click", () => {
         const modalCard1Fem = document.querySelector(".js-modal-card1-blusasFem");
         modalCard1Fem.classList.remove("open");
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "block";
+        
     })
     
 }
