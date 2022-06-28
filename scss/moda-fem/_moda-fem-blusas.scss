@@ -331,9 +331,39 @@
         background-repeat: no-repeat;
         background-size: cover;
         box-shadow: 0 0 20px #fff;
-        border-top-left-radius: 20%;
-        border-bottom-right-radius: 20%;
+        border-top-right-radius: 20%;
+        border-bottom-right-radius: 10%;
 
+    }
+
+    .modal__imgs--box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        gap: .5rem;
+
+    }
+
+    .modal__img--peq {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: .4rem;
+    }
+
+    .img__peq {
+        width: 70px;
+        opacity: .7;
+        cursor: pointer;
+
+            &:hover {
+                opacity: 1;
+                transition: all .4s;
+            }
+    }
+
+    .img__gra {
+        width: 250px;
     }
 
 }
