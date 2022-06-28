@@ -19,9 +19,6 @@ tabMenuPro.forEach((itemMenu, index) => {
 });
 
 
-
-
-
 // PROMOÇÔES CARDS FEMININO //
 const boxFemCard01 = () => {
     const imgPequenas = document.querySelectorAll(".img__peq__card1"); 
