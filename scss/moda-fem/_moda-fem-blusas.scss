@@ -354,7 +354,7 @@
     .modal__info--btnFechar {
         position: absolute;
         top: -8px;
-        left: 5px;
+        right: 5px;
         width: 70px;
         cursor: pointer;
         opacity: .8;
@@ -364,9 +364,9 @@
                 transition: all .4s;
             }
 
-
-
-
+            @include celular {
+                width: 60px;
+            }
     }
 
     .modal__imgs--box {
@@ -384,6 +384,7 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: .4rem;
+        margin-top: 1rem;
     }
 
     .img__peq {
@@ -420,6 +421,7 @@
 
             @include celular {
                 width: 320px;
+                margin-left: 1.5rem;
             }
     }
 
