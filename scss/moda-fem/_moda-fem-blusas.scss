@@ -192,14 +192,14 @@
 
     .catalogo__titulo {
         background-color: $cor-sectionFem;
-        text-align: center;
         font-family: $fonte-titulo;
         color: #fff;
         font-size: 3.5rem;
         border: 1px solid #fff;
         width: 300px;
         box-shadow: 4px 4px 10px 0 #fff; 
-        margin-bottom: 2.5rem;
+        margin: 2rem auto;
+        text-align: center;
 
 
             &:hover {
@@ -365,6 +365,8 @@
             }
 
 
+
+
     }
 
     .modal__imgs--box {
@@ -394,11 +396,19 @@
                 opacity: 1;
                 transition: all .4s;
             }
+
+            @include celular {
+                width: 60px;
+            }
     }
 
     .img__gra {
         width: 250px;
         border-radius: 5px;
+
+            @include celular {
+                width: 230px;
+            }
     }
 
     .modal__info {
@@ -407,12 +417,21 @@
         padding: .5rem;
         border-radius: 5px;
         box-shadow: 0 0 2px #fff;
+
+            @include celular {
+                width: 320px;
+            }
     }
 
     .modal__info--marca {
         font-family: $fonte-corpo;
         font-size: 1.8rem;
         color: #b5b5b5;
+
+            @include celular {
+                font-size: 1.2rem;
+            }
+
     }
 
     .modal__info--preco {
@@ -444,6 +463,10 @@
         border-radius: 70%;
         padding: .3rem;
         background: #fff;
+
+            @include celular {
+                font-size: 1.2rem;
+            }
     }
 
     .modal__info--composicao {
@@ -451,6 +474,10 @@
         font-size: 1.5rem;
         color: #fff;
         margin-bottom: .5rem;
+
+            @include celular {
+                font-size: 1.2rem;
+            }
     }
 
     .modal__info--compre {
@@ -468,6 +495,10 @@
             &:hover {
                 background-color: #000;
                 transition: all .4s;
+            }
+
+            @include celular {
+                font-size: 1.1rem;
             }
     }
 

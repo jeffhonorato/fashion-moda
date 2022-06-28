@@ -49,9 +49,7 @@ const boxCard1blusasFem = () => {
         modalCard1Fem.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "block";
-        
     })
-    
 }
 
 
