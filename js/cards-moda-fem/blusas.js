@@ -31,7 +31,6 @@ const boxCard1blusasFem = () => {
         img.addEventListener("click", () => {
             const imgGra = document.querySelector(".js-imgGra-card1-blusa");
             imgGra.src = img.src;
-            console.log(imgPeq)
         });
     });
 
@@ -58,7 +57,7 @@ const boxCard2blusasFem = () => {
         img.addEventListener("click", () => {
             const imgGra = document.querySelector(".js-imgGra-card2-blusa");
             imgGra.src = img.src;
-            console.log(imgPeq)
+            
         });
     });
 
@@ -85,7 +84,7 @@ const boxCard3blusasFem = () => {
         img.addEventListener("click", () => {
             const imgGra = document.querySelector(".js-imgGra-card3-blusa");
             imgGra.src = img.src;
-            console.log(imgPeq)
+            
         });
     });
 
