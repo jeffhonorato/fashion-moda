@@ -225,6 +225,11 @@
         justify-content: center;
         align-items: center;
         gap: 2rem;
+        
+    }
+
+    .blusas-fem {
+        z-index: 0;
     }
 
     .card__prod--blusa {
@@ -236,19 +241,85 @@
 
     .card__prod--imgCard {
         width: 250px;
+        border-radius: 5px;
     }
 
+    .card__prod--info {
+        width: 250px;
+        background: rgba(0, 0, 0, 0.361);
+        border-radius: 5px;
+        box-shadow: 2px 2px 1px #000;
+        padding-bottom: 1rem;
+    }
+
+    .card__prod--titulo {
+        font-family: $fonte-titulo;
+        text-align: center;
+        padding-top: 1rem;
+        color: #b5b5b5;
+        font-weight: 100;
+    }
+
+    .card__prod--preco {
+        font-family: $fonte-corpo;
+        text-align: center;
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    .card__prod--parcelas {
+        font-family: $fonte-corpo;
+        display: block;
+        text-align: center;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+
+    .card__prod--btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: .7rem;
+    }
+
+    .card__prod--detalhes {
+        background-color: $cor-sectionFem;
+        font-family: $fonte-corpo;
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: .4rem;
+        color: #fff;
+        border-top-left-radius: 30%;
+        box-shadow: 1px 1px 5px #fff;
+        cursor: pointer;
+
+            &:hover {
+                box-shadow: 1px 1px 10px #fff;
+                background-color: #000;
+                transition: all .4s;
+            }
+
+    }
+
+    .card__prod--contato {
+        background-color: $cor-header;
+        font-family: $fonte-corpo;
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: .4rem;
+        color: #fff;
+        border-top-right-radius: 30%;
+        box-shadow: 1px 1px 5px #fff;
+        cursor: pointer;
+
+            &:hover {
+                box-shadow: 1px 1px 10px #fff;
+                background-color: #000;
+                transition: all .4s;
+            }
+    }
     
-
-    
-
-
-
-  
-
-  
-
-  
 
 
 
