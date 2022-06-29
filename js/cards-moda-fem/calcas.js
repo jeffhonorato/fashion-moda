@@ -61,7 +61,39 @@ const modalCard2CalcasFem = () => {
     
 }
 
+const modalCard3CalcasFem = () => {
+    const imgPequenas = document.querySelectorAll(".js-imgPeq-card3-calca");
+    imgPequenas.forEach((img) => {
+        img.addEventListener("click", () => {
+            const imgGrande = document.querySelector(".js-imgGra-card3-calca");
+            imgGrande.src = img.src;
+        });
+    });
+
+    const detalhesCard3 = document.querySelector(".js-card3-calcaFem");
+    detalhesCard3.addEventListener("click", (e) => {
+        e.stopPropagation()
+        const modalBoxCard3 = document.querySelector(".js-modal-card3-calcasFem");
+        modalBoxCard3.classList.add("open"); 
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "none"; 
+    });
+
+    const btnFechar = document.querySelector(".js-btnFechar-card3-calcasFem");
+    btnFechar.addEventListener("click", (e) => {
+        e.stopPropagation()
+        const modalBoxCard3 = document.querySelector(".js-modal-card3-calcasFem");
+        modalBoxCard3.classList.remove("open");
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "block"; 
+        
+    });
+   
+    
+}
+
 
 modalCard1CalcasFem();
 modalCard2CalcasFem();
+modalCard3CalcasFem();
 
