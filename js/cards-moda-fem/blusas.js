@@ -79,9 +79,37 @@ const boxCard2blusasFem = () => {
     })
 }
 
+const boxCard3blusasFem = () => {
+    const imgPeq = document.querySelectorAll(".js-imgPeq-card3-blusa");
+    imgPeq.forEach((img) => {
+        img.addEventListener("click", () => {
+            const imgGra = document.querySelector(".js-imgGra-card3-blusa");
+            imgGra.src = img.src;
+            console.log(imgPeq)
+        });
+    });
+
+    const detalhesCard3Fem = document.querySelector(".js-card3-blusaFem");
+    detalhesCard3Fem.addEventListener("click", () => {
+        const modalCard3Fem = document.querySelector(".js-modal-card3-blusasFem");
+        modalCard3Fem.classList.add("open");
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "none"; 
+    });
+
+    const btnFecharModal3BlusaFem = document.querySelector(".js-btnFechar-card3-blusasFem");
+    btnFecharModal3BlusaFem.addEventListener("click", () => {
+        const modalCard3Fem = document.querySelector(".js-modal-card3-blusasFem");
+        modalCard3Fem.classList.remove("open");
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "block";
+    })
+}
+
 
 boxCard1blusasFem();
 boxCard2blusasFem();
+boxCard3blusasFem();
 
 
 
