@@ -52,8 +52,36 @@ const boxCard1blusasFem = () => {
     })
 }
 
+const boxCard2blusasFem = () => {
+    const imgPeq = document.querySelectorAll(".js-imgPeq-card2-blusa");
+    imgPeq.forEach((img) => {
+        img.addEventListener("click", () => {
+            const imgGra = document.querySelector(".js-imgGra-card2-blusa");
+            imgGra.src = img.src;
+            console.log(imgPeq)
+        });
+    });
+
+    const detalhesCard2Fem = document.querySelector(".js-card2-blusaFem");
+    detalhesCard2Fem.addEventListener("click", () => {
+        const modalCard2Fem = document.querySelector(".js-modal-card2-blusasFem");
+        modalCard2Fem.classList.add("open");
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "none"; 
+    });
+
+    const btnFecharModal2BlusaFem = document.querySelector(".js-btnFechar-card2-blusasFem");
+    btnFecharModal2BlusaFem.addEventListener("click", () => {
+        const modalCard2Fem = document.querySelector(".js-modal-card2-blusasFem");
+        modalCard2Fem.classList.remove("open");
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "block";
+    })
+}
+
 
 boxCard1blusasFem();
+boxCard2blusasFem();
 
 
 
