@@ -266,6 +266,32 @@ const boxCard9blusasFem = () => {
     })
 }
 
+const boxCard10blusasFem = () => {
+    const imgPeq = document.querySelectorAll(".js-imgPeq-card10-blusa");
+    imgPeq.forEach((img) => {
+        img.addEventListener("click", () => {
+            const imgGra = document.querySelector(".js-imgGra-card10-blusa");
+            imgGra.src = img.src;
+        });
+    });
+
+    const detalhesCard10Fem = document.querySelector(".js-card10-blusaFem");
+    detalhesCard10Fem.addEventListener("click", () => {
+        const modalCard10Fem = document.querySelector(".js-modal-card10-blusasFem");
+        modalCard10Fem.classList.add("open");
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "none"; 
+    });
+
+    const btnFecharModal10BlusaFem = document.querySelector(".js-btnFechar-card10-blusasFem");
+    btnFecharModal10BlusaFem.addEventListener("click", () => {
+        const modalCard10Fem = document.querySelector(".js-modal-card10-blusasFem");
+        modalCard10Fem.classList.remove("open");
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "block";
+    })
+}
+
 
 boxCard1blusasFem();
 boxCard2blusasFem();
@@ -276,6 +302,7 @@ boxCard6blusasFem();
 boxCard7blusasFem();
 boxCard8blusasFem();
 boxCard9blusasFem();
+boxCard10blusasFem();
 
 
 
