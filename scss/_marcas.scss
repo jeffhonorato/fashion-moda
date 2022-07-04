@@ -3,7 +3,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60vh;
+    height: 30vh;
     position: relative;
     z-index: -1;
     
@@ -23,7 +23,7 @@
         gap: 1rem;
         justify-content: center;
         align-items: center;
-        height: 60vh;
+        height: 30vh;
         width: 100%;
         position: absolute;
         opacity: 0;
@@ -43,8 +43,8 @@
     }
 
     .marca__img {
-        width: 8rem;
-        height: 8rem;
+        width: 5rem; /* 128px */
+        height: 6rem;
         border-radius: 20%;
         border: 1px solid #000;
         padding: .5rem;
