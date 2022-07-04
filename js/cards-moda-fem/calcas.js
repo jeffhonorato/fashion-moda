@@ -216,6 +216,99 @@ const modalCard7CalcasFem = () => {
     
 }
 
+const modalCard8CalcasFem = () => {
+    const imgPequenas = document.querySelectorAll(".js-imgPeq-card8-calca");
+    imgPequenas.forEach((img) => {
+        img.addEventListener("click", () => {
+            const imgGrande = document.querySelector(".js-imgGra-card8-calca");
+            imgGrande.src = img.src;
+        });
+    });
+
+    const detalhesCard8 = document.querySelector(".js-card8-calcaFem");
+    detalhesCard8.addEventListener("click", (e) => {
+        e.stopPropagation()
+        const modalBoxCard8 = document.querySelector(".js-modal-card8-calcasFem");
+        modalBoxCard8.classList.add("open"); 
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "none"; 
+    });
+
+    const btnFechar = document.querySelector(".js-btnFechar-card8-calcasFem");
+    btnFechar.addEventListener("click", (e) => {
+        e.stopPropagation()
+        const modalBoxCard8 = document.querySelector(".js-modal-card8-calcasFem");
+        modalBoxCard8.classList.remove("open");
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "block"; 
+        
+    });
+   
+    
+}
+
+const modalCard9CalcasFem = () => {
+    const imgPequenas = document.querySelectorAll(".js-imgPeq-card9-calca");
+    imgPequenas.forEach((img) => {
+        img.addEventListener("click", () => {
+            const imgGrande = document.querySelector(".js-imgGra-card9-calca");
+            imgGrande.src = img.src;
+        });
+    });
+
+    const detalhesCard9 = document.querySelector(".js-card9-calcaFem");
+    detalhesCard9.addEventListener("click", (e) => {
+        e.stopPropagation()
+        const modalBoxCard9 = document.querySelector(".js-modal-card9-calcasFem");
+        modalBoxCard9.classList.add("open"); 
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "none"; 
+    });
+
+    const btnFechar = document.querySelector(".js-btnFechar-card9-calcasFem");
+    btnFechar.addEventListener("click", (e) => {
+        e.stopPropagation()
+        const modalBoxCard9 = document.querySelector(".js-modal-card9-calcasFem");
+        modalBoxCard9.classList.remove("open");
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "block"; 
+        
+    });
+   
+    
+}
+
+const modalCard10CalcasFem = () => {
+    const imgPequenas = document.querySelectorAll(".js-imgPeq-card10-calca");
+    imgPequenas.forEach((img) => {
+        img.addEventListener("click", () => {
+            const imgGrande = document.querySelector(".js-imgGra-card10-calca");
+            imgGrande.src = img.src;
+        });
+    });
+
+    const detalhesCard10 = document.querySelector(".js-card10-calcaFem");
+    detalhesCard10.addEventListener("click", (e) => {
+        e.stopPropagation()
+        const modalBoxCard10 = document.querySelector(".js-modal-card10-calcasFem");
+        modalBoxCard10.classList.add("open"); 
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "none"; 
+    });
+
+    const btnFechar = document.querySelector(".js-btnFechar-card10-calcasFem");
+    btnFechar.addEventListener("click", (e) => {
+        e.stopPropagation()
+        const modalBoxCard10 = document.querySelector(".js-modal-card10-calcasFem");
+        modalBoxCard10.classList.remove("open");
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "block"; 
+        
+    });
+   
+    
+}
+
 
 
 
@@ -228,3 +321,6 @@ modalCard4CalcasFem();
 modalCard5CalcasFem();
 modalCard6CalcasFem();
 modalCard7CalcasFem();
+modalCard8CalcasFem();
+modalCard9CalcasFem();
+modalCard10CalcasFem();
