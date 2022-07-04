@@ -334,12 +334,14 @@
         height: 100%;
         background: rgba(0, 0, 0, 0.605);
         display: none;
+        
 
           
     }
 
     .modal__box.open {
         display: block;
+        
 
             @include celular {
                 background: rgba(0, 0, 0, 1);
@@ -549,6 +551,8 @@
         color: #fff;
             
     }
+
+    
 
     /******* SWWIPER SLIDER BLUSAS *******/
     .swiper {
