@@ -365,10 +365,11 @@
         border-bottom-right-radius: 10%;
 
             @include celular {
-                top: 0px;
-                left: 0px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
                 width: 100%;
-                height: 120vh;   
+                height: 100vh;   
 
                 background-image: url("../../images/moda-fem/background-section-modaFem2.jpg");
                 background-position: center;
