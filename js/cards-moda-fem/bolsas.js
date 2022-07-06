@@ -76,6 +76,33 @@ const modalBolsasFemCard3 = () => {
     })
 }
 
-modalBolsasFemCard1()
-modalBolsasFemCard2()
-modalBolsasFemCard3()
+const modalBolsasFemCard4 = () => {
+    const imgPeq = document.querySelectorAll(".js-imgPeq-card4-bolsa");
+    imgPeq.forEach((img) => {
+        img.addEventListener("click", () => {
+            const imgGra = document.querySelector(".js-imgGra-card4-bolsa");
+            imgGra.src = img.src;
+        });
+    });
+
+    const detalhesCard4Fem = document.querySelector(".js-card4-bolsaFem");
+    detalhesCard4Fem.addEventListener("click", () => {
+        const modalCard4Fem = document.querySelector(".js-modal-card4-bolsasFem");
+        modalCard4Fem.classList.add("open");
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "none"; 
+    });
+
+    const btnFecharModa41BlusaFem = document.querySelector(".js-btnFechar-card4-bolsasFem");
+    btnFecharModa41BlusaFem.addEventListener("click", () => {
+        const modalCard4Fem = document.querySelector(".js-modal-card4-bolsasFem");
+        modalCard4Fem.classList.remove("open");
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "block";
+    })
+}
+
+modalBolsasFemCard1();
+modalBolsasFemCard2();
+modalBolsasFemCard3();
+modalBolsasFemCard4();
