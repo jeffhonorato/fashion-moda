@@ -1,280 +1,111 @@
-const modalCard1PlusFem = () => {
-    const imgPequenas = document.querySelectorAll(".js-modal-imgP-plus-card1");
-    imgPequenas.forEach((img) => {
+const modalPlusFemCard1 = () => {
+    const imgPeq = document.querySelectorAll(".js-imgPeq-card1-plus");
+    imgPeq.forEach((img) => {
         img.addEventListener("click", () => {
-            const imgGrande = document.querySelector(".js-modal-imgG-plus-card1");
-            imgGrande.src = img.src;
+            const imgGra = document.querySelector(".js-imgGra-card1-plus");
+            imgGra.src = img.src;
         });
     });
 
-    const detalhesCard1 = document.querySelector(".js-btn1-detalhes-plus");
-    detalhesCard1.addEventListener("click", (e) => {
-        e.stopPropagation()
-        const modalBoxCard1 = document.querySelector(".js-modal__card1__plus");
-        modalBoxCard1.classList.add("show"); 
+    const detalhesCard1Fem = document.querySelector(".js-card1-plusFem");
+    detalhesCard1Fem.addEventListener("click", () => {
+        const modalCard1Fem = document.querySelector(".js-modal-card1-plusFem");
+        modalCard1Fem.classList.add("open");
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "none"; 
     });
 
-    const btnFechar = document.querySelector(".js-btn-fechar-card1-plus");
-    btnFechar.addEventListener("click", (e) => {
-        e.stopPropagation()
-        const modalBoxCard1 = document.querySelector(".js-modal__card1__plus");
-        modalBoxCard1.classList.remove("show");
-        
-    });
-   
-    
+    const btnFecharModal1BlusaFem = document.querySelector(".js-btnFechar-card1-plusFem");
+    btnFecharModal1BlusaFem.addEventListener("click", () => {
+        const modalCard1Fem = document.querySelector(".js-modal-card1-plusFem");
+        modalCard1Fem.classList.remove("open");
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "block";
+    })
 }
 
-const modalCard2PlusFem = () => {
-    const imgPequenas = document.querySelectorAll(".js-modal-imgP-plus-card2");
-    imgPequenas.forEach((img) => {
+const modalPlusFemCard2 = () => {
+    const imgPeq = document.querySelectorAll(".js-imgPeq-card2-plus");
+    imgPeq.forEach((img) => {
         img.addEventListener("click", () => {
-            const imgGrande = document.querySelector(".js-modal-imgG-plus-card2");
-            imgGrande.src = img.src;
+            const imgGra = document.querySelector(".js-imgGra-card2-plus");
+            imgGra.src = img.src;
         });
     });
 
-    const detalhesCard2 = document.querySelector(".js-btn2-detalhes-plus");
-    detalhesCard2.addEventListener("click", (e) => {
-        e.stopPropagation()
-        const modalBoxCard2 = document.querySelector(".js-modal__card2__plus");
-        modalBoxCard2.classList.add("show"); 
+    const detalhesCard2Fem = document.querySelector(".js-card2-plusFem");
+    detalhesCard2Fem.addEventListener("click", () => {
+        const modalCard2Fem = document.querySelector(".js-modal-card2-plusFem");
+        modalCard2Fem.classList.add("open");
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "none"; 
     });
 
-    const btnFechar = document.querySelector(".js-btn-fechar-card2-plus");
-    btnFechar.addEventListener("click", (e) => {
-        e.stopPropagation()
-        const modalBoxCard2 = document.querySelector(".js-modal__card2__plus");
-        modalBoxCard2.classList.remove("show");
-        
-    });
-   
-    
+    const btnFecharModal2BlusaFem = document.querySelector(".js-btnFechar-card2-plusFem");
+    btnFecharModal2BlusaFem.addEventListener("click", () => {
+        const modalCard2Fem = document.querySelector(".js-modal-card2-plusFem");
+        modalCard2Fem.classList.remove("open");
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "block";
+    })
 }
 
-const modalCard3PlusFem = () => {
-    const imgPequenas = document.querySelectorAll(".js-modal-imgP-plus-card3");
-    imgPequenas.forEach((img) => {
+const modalPlusFemCard3 = () => {
+    const imgPeq = document.querySelectorAll(".js-imgPeq-card3-plus");
+    imgPeq.forEach((img) => {
         img.addEventListener("click", () => {
-            const imgGrande = document.querySelector(".js-modal-imgG-plus-card3");
-            imgGrande.src = img.src;
+            const imgGra = document.querySelector(".js-imgGra-card3-plus");
+            imgGra.src = img.src;
         });
     });
 
-    const detalhesCard3 = document.querySelector(".js-btn3-detalhes-plus");
-    detalhesCard3.addEventListener("click", (e) => {
-        e.stopPropagation()
-        const modalBoxCard3 = document.querySelector(".js-modal__card3__plus");
-        modalBoxCard3.classList.add("show"); 
+    const detalhesCard3Fem = document.querySelector(".js-card3-plusFem");
+    detalhesCard3Fem.addEventListener("click", () => {
+        const modalCard3Fem = document.querySelector(".js-modal-card3-plusFem");
+        modalCard3Fem.classList.add("open");
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "none"; 
     });
 
-    const btnFechar = document.querySelector(".js-btn-fechar-card3-plus");
-    btnFechar.addEventListener("click", (e) => {
-        e.stopPropagation()
-        const modalBoxCard3 = document.querySelector(".js-modal__card3__plus");
-        modalBoxCard3.classList.remove("show");
-        
-    });
-   
-    
+    const btnFecharModal3BlusaFem = document.querySelector(".js-btnFechar-card3-plusFem");
+    btnFecharModal3BlusaFem.addEventListener("click", () => {
+        const modalCard3Fem = document.querySelector(".js-modal-card3-plusFem");
+        modalCard3Fem.classList.remove("open");
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "block";
+    })
 }
 
-const modalCard4PlusFem = () => {
-    const imgPequenas = document.querySelectorAll(".js-modal-imgP-plus-card4");
-    imgPequenas.forEach((img) => {
+const modalPlusFemCard4 = () => {
+    const imgPeq = document.querySelectorAll(".js-imgPeq-card4-plus");
+    imgPeq.forEach((img) => {
         img.addEventListener("click", () => {
-            const imgGrande = document.querySelector(".js-modal-imgG-plus-card4");
-            imgGrande.src = img.src;
+            const imgGra = document.querySelector(".js-imgGra-card4-plus");
+            imgGra.src = img.src;
         });
     });
 
-    const detalhesCard4 = document.querySelector(".js-btn4-detalhes-plus");
-    detalhesCard4.addEventListener("click", (e) => {
-        e.stopPropagation()
-        const modalBoxCard4 = document.querySelector(".js-modal__card4__plus");
-        modalBoxCard4.classList.add("show"); 
+    const detalhesCard4Fem = document.querySelector(".js-card4-plusFem");
+    detalhesCard4Fem.addEventListener("click", () => {
+        const modalCard4Fem = document.querySelector(".js-modal-card4-plusFem");
+        modalCard4Fem.classList.add("open");
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "none"; 
     });
 
-    const btnFechar = document.querySelector(".js-btn-fechar-card4-plus");
-    btnFechar.addEventListener("click", (e) => {
-        e.stopPropagation()
-        const modalBoxCard4 = document.querySelector(".js-modal__card4__plus");
-        modalBoxCard4.classList.remove("show");
-        
-    });
-   
-    
+    const btnFecharModal4BlusaFem = document.querySelector(".js-btnFechar-card4-plusFem");
+    btnFecharModal4BlusaFem.addEventListener("click", () => {
+        const modalCard4Fem = document.querySelector(".js-modal-card4-plusFem");
+        modalCard4Fem.classList.remove("open");
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "block";
+    })
 }
 
-const modalCard5PlusFem = () => {
-    const imgPequenas = document.querySelectorAll(".js-modal-imgP-plus-card5");
-    imgPequenas.forEach((img) => {
-        img.addEventListener("click", () => {
-            const imgGrande = document.querySelector(".js-modal-imgG-plus-card5");
-            imgGrande.src = img.src;
-        });
-    });
 
-    const detalhesCard5 = document.querySelector(".js-btn5-detalhes-plus");
-    detalhesCard5.addEventListener("click", (e) => {
-        e.stopPropagation()
-        const modalBoxCard5 = document.querySelector(".js-modal__card5__plus");
-        modalBoxCard5.classList.add("show"); 
-    });
 
-    const btnFechar = document.querySelector(".js-btn-fechar-card5-plus");
-    btnFechar.addEventListener("click", (e) => {
-        e.stopPropagation()
-        const modalBoxCard5 = document.querySelector(".js-modal__card5__plus");
-        modalBoxCard5.classList.remove("show");
-        
-    });
-   
-    
-}
 
-const modalCard6PlusFem = () => {
-    const imgPequenas = document.querySelectorAll(".js-modal-imgP-plus-card6");
-    imgPequenas.forEach((img) => {
-        img.addEventListener("click", () => {
-            const imgGrande = document.querySelector(".js-modal-imgG-plus-card6");
-            imgGrande.src = img.src;
-        });
-    });
-
-    const detalhesCard6 = document.querySelector(".js-btn6-detalhes-plus");
-    detalhesCard6.addEventListener("click", (e) => {
-        e.stopPropagation()
-        const modalBoxCard6 = document.querySelector(".js-modal__card6__plus");
-        modalBoxCard6.classList.add("show"); 
-    });
-
-    const btnFechar = document.querySelector(".js-btn-fechar-card6-plus");
-    btnFechar.addEventListener("click", (e) => {
-        e.stopPropagation()
-        const modalBoxCard6 = document.querySelector(".js-modal__card6__plus");
-        modalBoxCard6.classList.remove("show");
-        
-    });
-   
-    
-}
-
-const modalCard7PlusFem = () => {
-    const imgPequenas = document.querySelectorAll(".js-modal-imgP-plus-card7");
-    imgPequenas.forEach((img) => {
-        img.addEventListener("click", () => {
-            const imgGrande = document.querySelector(".js-modal-imgG-plus-card7");
-            imgGrande.src = img.src;
-        });
-    });
-
-    const detalhesCard7 = document.querySelector(".js-btn7-detalhes-plus");
-    detalhesCard7.addEventListener("click", (e) => {
-        e.stopPropagation()
-        const modalBoxCard7 = document.querySelector(".js-modal__card7__plus");
-        modalBoxCard7.classList.add("show"); 
-    });
-
-    const btnFechar = document.querySelector(".js-btn-fechar-card7-plus");
-    btnFechar.addEventListener("click", (e) => {
-        e.stopPropagation()
-        const modalBoxCard7 = document.querySelector(".js-modal__card7__plus");
-        modalBoxCard7.classList.remove("show");
-        
-    });
-   
-    
-}
-
-const modalCard8PlusFem = () => {
-    const imgPequenas = document.querySelectorAll(".js-modal-imgP-plus-card8");
-    imgPequenas.forEach((img) => {
-        img.addEventListener("click", () => {
-            const imgGrande = document.querySelector(".js-modal-imgG-plus-card8");
-            imgGrande.src = img.src;
-        });
-    });
-
-    const detalhesCard8 = document.querySelector(".js-btn8-detalhes-plus");
-    detalhesCard8.addEventListener("click", (e) => {
-        e.stopPropagation()
-        const modalBoxCard8 = document.querySelector(".js-modal__card8__plus");
-        modalBoxCard8.classList.add("show"); 
-    });
-
-    const btnFechar = document.querySelector(".js-btn-fechar-card8-plus");
-    btnFechar.addEventListener("click", (e) => {
-        e.stopPropagation()
-        const modalBoxCard8 = document.querySelector(".js-modal__card8__plus");
-        modalBoxCard8.classList.remove("show");
-        
-    });
-   
-    
-}
-
-const modalCard9PlusFem = () => {
-    const imgPequenas = document.querySelectorAll(".js-modal-imgP-plus-card9");
-    imgPequenas.forEach((img) => {
-        img.addEventListener("click", () => {
-            const imgGrande = document.querySelector(".js-modal-imgG-plus-card9");
-            imgGrande.src = img.src;
-        });
-    });
-
-    const detalhesCard9 = document.querySelector(".js-btn9-detalhes-plus");
-    detalhesCard9.addEventListener("click", (e) => {
-        e.stopPropagation()
-        const modalBoxCard9 = document.querySelector(".js-modal__card9__plus");
-        modalBoxCard9.classList.add("show"); 
-    });
-
-    const btnFechar = document.querySelector(".js-btn-fechar-card9-plus");
-    btnFechar.addEventListener("click", (e) => {
-        e.stopPropagation()
-        const modalBoxCard9 = document.querySelector(".js-modal__card9__plus");
-        modalBoxCard9.classList.remove("show");
-        
-    });
-   
-    
-}
-
-const modalCard10PlusFem = () => {
-    const imgPequenas = document.querySelectorAll(".js-modal-imgP-plus-card10");
-    imgPequenas.forEach((img) => {
-        img.addEventListener("click", () => {
-            const imgGrande = document.querySelector(".js-modal-imgG-plus-card10");
-            imgGrande.src = img.src;
-        });
-    });
-
-    const detalhesCard10 = document.querySelector(".js-btn10-detalhes-plus");
-    detalhesCard10.addEventListener("click", (e) => {
-        e.stopPropagation()
-        const modalBoxCard10 = document.querySelector(".js-modal__card10__plus");
-        modalBoxCard10.classList.add("show"); 
-    });
-
-    const btnFechar = document.querySelector(".js-btn-fechar-card10-plus");
-    btnFechar.addEventListener("click", (e) => {
-        e.stopPropagation()
-        const modalBoxCard10 = document.querySelector(".js-modal__card10__plus");
-        modalBoxCard10.classList.remove("show");
-        
-    });
-   
-    
-}
-
-modalCard1PlusFem();
-modalCard2PlusFem();
-modalCard3PlusFem();
-modalCard4PlusFem();
-modalCard5PlusFem();
-modalCard6PlusFem();
-modalCard7PlusFem();
-modalCard8PlusFem();
-modalCard9PlusFem();
-modalCard10PlusFem();
+modalPlusFemCard1();
+modalPlusFemCard2();
+modalPlusFemCard3();
+modalPlusFemCard4();
