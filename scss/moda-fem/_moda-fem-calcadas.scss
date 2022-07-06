@@ -1,27 +1,43 @@
 /******* CATALOGO CALÇADOS CARDS  *******/
-.card__fem__calcados {
+.catalogo__titulo--calcados {
+    background-color: $cor-sectionFem;
+    font-family: $fonte-titulo;
+    color: #fff;
+    font-size: 3.5rem;
+    border: 1px solid #fff;
+    width: 300px;
+    box-shadow: 4px 4px 10px 0 #fff; 
+    margin: 2rem auto;
+    text-align: center;
+    
+    
+        &:hover {
+            box-shadow: 4px 5px 5px 0 #000; 
+            transition: all .4s;
+        }
+
+        @include celular {
+            width: 70%;
+            margin: 2rem auto;
+            font-size: 2rem;
+            box-shadow: 4px 4px 10px 0 #fff; 
+            padding: .5rem;
+        }
+
+        @include tablet {
+            width: 400px;
+        }
+}
+
+.card__prod--calcados {
     display: flex;
     justify-content: center;
     align-items: center;
-    // gap: 1rem;
-    padding: 1rem;
-    height: 100vh;
-    margin-top: 1rem;
+    gap: 2rem;
 }
 
-.card__prod__calcados {
-    padding: .2rem;
-    border: 2px solid #000;
-    border-top-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-}
-
-.prod__img__calcados {
-    width: 300px;
-
-        @include celular {
-            width: 260px;
-        }
+.calcados-fem {
+    z-index: 0;
 }
 
 .prod__info__calcados {
