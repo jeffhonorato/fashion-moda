@@ -76,9 +76,36 @@ const modalCalcadosFemCard3 = () => {
     })
 }
 
+const modalCalcadosFemCard4 = () => {
+    const imgPeq = document.querySelectorAll(".js-imgPeq-card4-calcados");
+    imgPeq.forEach((img) => {
+        img.addEventListener("click", () => {
+            const imgGra = document.querySelector(".js-imgGra-card4-calcados");
+            imgGra.src = img.src;
+        });
+    });
+
+    const detalhesCard4Fem = document.querySelector(".js-card4-calcadoFem");
+    detalhesCard4Fem.addEventListener("click", () => {
+        const modalCard4Fem = document.querySelector(".js-modal-card4-calcadosFem");
+        modalCard4Fem.classList.add("open");
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "none"; 
+    });
+
+    const btnFecharModal4BlusaFem = document.querySelector(".js-btnFechar-card4-calcadosFem");
+    btnFecharModal4BlusaFem.addEventListener("click", () => {
+        const modalCard4Fem = document.querySelector(".js-modal-card4-calcadosFem");
+        modalCard4Fem.classList.remove("open");
+        const menuMobile = document.querySelector(".menu__mobile");
+        menuMobile.style.display = "block";
+    })
+}
+
 
 
 
 modalCalcadosFemCard1();
 modalCalcadosFemCard2();
 modalCalcadosFemCard3();
+modalCalcadosFemCard4();
