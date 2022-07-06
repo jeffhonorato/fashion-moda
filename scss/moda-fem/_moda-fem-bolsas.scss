@@ -132,7 +132,7 @@
 
 
 /******* MODAL CARDS BOLSAS FEM *******/
-.modal__box--saiasFem {
+.modal__box--bolsasFem {
     position: fixed;
     top: 0;
     left: 0;
@@ -144,11 +144,11 @@
     display: none;
 }
 
-.modal__box--saiasFem.open {
+.modal__box--bolsasFem.open {
     display: block;
 }
 
-.modal__saiasFem {
+.modal__bolsasFem {
     position: absolute;
     top: 50%;
     left: 50%;
