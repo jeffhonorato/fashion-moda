@@ -438,5 +438,24 @@
             @include celular {
                 font-size: 1.1rem;
             }
-    }    
+    }
+    
+    
+    
+
 }
+
+/******* SWWIPER SLIDER BLUSAS *******/
+.swiper {
+    width: 98vw;
+    height: 105vh;
+    padding: 30px 0;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 500px;
+}
+
