@@ -24,6 +24,9 @@ const navegacaoMenuCardsFem = () => {
 
 navegacaoMenuCardsFem();
 
+
+
+
 // MODAL BLUSAS FEM 
 const boxCard1blusasFem = () => {
     const imgPeq = document.querySelectorAll(".js-imgPeq-card1-blusa");
