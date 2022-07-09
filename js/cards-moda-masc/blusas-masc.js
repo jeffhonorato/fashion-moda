@@ -57,7 +57,7 @@ modalBlusasMascCard1 = () => {
     });
 } 
 
-modalBlusasMascCard1 = () => {
+modalBlusasMascCard2 = () => {
     const imgPequenas = document.querySelectorAll(".js-imgPeq-blusasMasc-card2");
     imgPequenas.forEach((img) => {
         img.addEventListener("click", () => {
@@ -113,6 +113,34 @@ modalBlusasMascCard3 = () => {
     });
 } 
 
+modalBlusasMascCard4 = () => {
+    const imgPequenas = document.querySelectorAll(".js-imgPeq-blusasMasc-card4");
+    imgPequenas.forEach((img) => {
+        img.addEventListener("click", () => {
+            const imgGrande = document.querySelector(".js-imgGra-blusasMasc-card4");
+            imgGrande.src = img.src;
+        });
+    });
+
+    const detalhesCard4 = document.querySelector(".js-blusasMasc-card4");
+    detalhesCard4.addEventListener("click", (e) => {
+        e.stopPropagation()
+        const modalBox4 = document.querySelector(".js-modal-blusasMasc-card4");
+        modalBox4.classList.add("open");
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "none";
+    });
+
+    const btnFechar = document.querySelector(".js-btnFechar--blusasMasc-card4");
+    btnFechar.addEventListener("click", (e) => {
+        e.stopPropagation()
+        const modalBox4 = document.querySelector(".js-modal-blusasMasc-card4");
+        modalBox4.classList.remove("open");
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "block";
+    });
+} 
+
 
  
 
@@ -121,3 +149,4 @@ modalBlusasMascCard3 = () => {
 modalBlusasMascCard1();
 modalBlusasMascCard2();
 modalBlusasMascCard3();
+modalBlusasMascCard4();
