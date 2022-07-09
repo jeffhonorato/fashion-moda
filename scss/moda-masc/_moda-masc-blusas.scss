@@ -220,6 +220,70 @@
         font-weight: 100;
     }
 
+    .card__blusasMasc--preco {
+        font-family: $fonte-corpo;
+        text-align: center;
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    .card__blusasMasc--parcelas {
+        font-family: $fonte-corpo;
+        display: block;
+        text-align: center;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+
+    .card__blusasMasc--btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: .7rem;
+    }
+
+    .card__blusasMasc--detalhes {
+        background-color: $cor-sectionMasc;
+        font-family: $fonte-corpo;
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: .4rem;
+        color: #fff;
+        border-top-left-radius: 30%;
+        box-shadow: 1px 1px 5px #fff;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 1px 1px 10px #fff;
+            background-color: #000;
+            transition: all .4s;
+        }
+    }
+
+    .card__blusasMasc--contato {
+        background-color: $cor-links;
+        font-family: $fonte-corpo;
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: .4rem;
+        color: #fff;
+        border-top-right-radius: 30%;
+        box-shadow: 1px 1px 5px #fff;
+        cursor: pointer;
+        user-select: none;
+
+        &:hover {
+            box-shadow: 1px 1px 10px #fff;
+            background-color: $cor-sectionMasc;
+            transition: all .4s;
+        }
+    }
+
+
+
+
+    
 
 
 
