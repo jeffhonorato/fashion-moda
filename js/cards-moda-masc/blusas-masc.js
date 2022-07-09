@@ -43,8 +43,8 @@ modalBlusasMascCard1 = () => {
         e.stopPropagation()
         const modalBox1 = document.querySelector(".js-modal-blusasMasc-card1");
         modalBox1.classList.add("open");
-        // const menuMobile = document.querySelector(".menu__mobile")
-        // menuMobile.style.display = "none";
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "none";
     });
 
     const btnFechar = document.querySelector(".js-btnFechar--blusasMasc-card1");
@@ -52,39 +52,39 @@ modalBlusasMascCard1 = () => {
         e.stopPropagation()
         const modalBox1 = document.querySelector(".js-modal-blusasMasc-card1");
         modalBox1.classList.remove("open");
-        // const menuMobile = document.querySelector(".menu__mobile")
-        // menuMobile.style.display = "block";
+        const menuMobile = document.querySelector(".menu__mobile")
+        menuMobile.style.display = "block";
     });
 } 
 
 
-modalBlusasMascCard2 = () => {
-    const imgPequenas = document.querySelectorAll(".js-imgPeq-blusasMasc-card2");
-    imgPequenas.forEach((img) => {
-        img.addEventListener("click", () => {
-            const imgGrande = document.querySelector(".js-imgGra-blusasMasc-card2");
-            imgGrande.src = img.src;
-        })2
-    });
+// modalBlusasMascCard2 = () => {
+//     const imgPequenas = document.querySelectorAll(".js-imgPeq-blusasMasc-card2");
+//     imgPequenas.forEach((img) => {
+//         img.addEventListener("click", () => {
+//             const imgGrande = document.querySelector(".js-imgGra-blusasMasc-card2");
+//             imgGrande.src = img.src;
+//         })2
+//     });
 
-    const detalhesCard2 = document.querySelector(".js-blusasMasc-card2");
-    detalhesCard2.addEventListener("click", (e) => {
-        e.stopPropagation()
-        const modalBox2 = document.querySelector(".js-modal-blusasMasc-card2");
-        modalBox2.classList.add("open");
-        // const menuMobile = document.querySelector(".menu__mobile")
-        // menuMobile.style.display = "none"; 
-    });
+//     const detalhesCard2 = document.querySelector(".js-blusasMasc-card2");
+//     detalhesCard2.addEventListener("click", (e) => {
+//         e.stopPropagation()
+//         const modalBox2 = document.querySelector(".js-modal-blusasMasc-card2");
+//         modalBox2.classList.add("open");
+//         // const menuMobile = document.querySelector(".menu__mobile")
+//         // menuMobile.style.display = "none"; 
+//     });
 
-    const btnFechar = document.querySelector(".js-btnFechar--blusasMasc-card2");
-    btnFechar.addEventListener("click", (e) => {
-        e.stopPropagation()
-        const modalBox2 = document.querySelector(".js-modal-blusasMasc-card2");
-        modalBox2.classList.remove("open");
-        // const menuMobile = document.querySelector(".menu__mobile")
-        // menuMobile.style.display = "block";
-    });
-}  
+//     const btnFechar = document.querySelector(".js-btnFechar--blusasMasc-card2");
+//     btnFechar.addEventListener("click", (e) => {
+//         e.stopPropagation()
+//         const modalBox2 = document.querySelector(".js-modal-blusasMasc-card2");
+//         modalBox2.classList.remove("open");
+//         // const menuMobile = document.querySelector(".menu__mobile")
+//         // menuMobile.style.display = "block";
+//     });
+// }  
 
 
 
