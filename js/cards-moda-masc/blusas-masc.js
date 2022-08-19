@@ -45,6 +45,7 @@ modalBlusasMascCard1 = () => {
         modalBox1.classList.add("open");
         const menuMobile = document.querySelector(".menu__mobile");
         menuMobile.style.display = "none";
+        console.log("clicou")
     });
 
     const btnFechar = document.querySelector(".js-btnFechar--blusasMasc-card1");
