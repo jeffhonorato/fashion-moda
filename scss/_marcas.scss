@@ -1,7 +1,6 @@
 .marcas {
-    position: relative;
     z-index: 0;
-    height: 20vh;
+    height: 100vh;
 
     
 
@@ -13,22 +12,42 @@
             height: 30vh;
         }
 
+    .marcas__box--conteudo {
+        display: flex;
+        // justify-content: center;
+        // align-items: center;
+        gap: 2rem;
+       
+    }   
 
-    .marca__box {
+    .marcas__box--info {
+        background-color: darkcyan;
+        width: 400px;
+    }
+    
+    .marcas__box {
+        background-color: coral;
+        position: relative;
+    }
+
+
+    .marca__box--slider {
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        width: 500px;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
         opacity: 0;
         transition: opacity 1s;
         padding: .2rem;
-        width: 100%;
-        height: 100%;
+        // width: 100%;
+        // height: 100%;
+        background-color: coral;
         
 
             @include celular {
@@ -64,7 +83,7 @@
         
     }
 
-    .marca__box.selected {
+    .marca__box--slider.selected {
         opacity: 1;
     }
 

@@ -1,6 +1,6 @@
 let tempoDeRotacao = 3000;
 let boxDeSlider = 0;
-let sliders = document.querySelectorAll(".marca__box");
+let sliders = document.querySelectorAll(".marca__box--slider");
 let maximoDeSlider = sliders.length;
 
 
