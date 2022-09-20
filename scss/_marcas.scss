@@ -26,8 +26,19 @@
     }   
 
     .marcas__box--info {
-        background-color: darkcyan;
-        width: 400px;
+        width: 600px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .marcas__box--titulo {
+        font-family: $fonte-subtitulo;
+        font-size: 6rem;
+        text-align: center;
+        transform: rotateZ(-25deg);
+        
     }
     
     .marcas__box {
@@ -43,7 +54,7 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        width: 900px;
+        width: 600px;
         height: 100vh;
         // top: 50%;
         // left: 50%;
@@ -68,8 +79,8 @@
     }
 
     .marca__img {
-        width: 12rem; /* 128px */
-        height: 12rem;
+        width: 7rem; /* 128px */
+        height: 7rem;
         border-radius: 20%;
         border: 1px solid #000;
         padding: .5rem;
