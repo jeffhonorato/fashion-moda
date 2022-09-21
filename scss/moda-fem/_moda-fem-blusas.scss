@@ -352,6 +352,7 @@
         transform: translate(-50%, -50%);
         width: 900px;
         height: 500px;
+        background: linear-gradient(to right, #da4453, #89216b);
         
         
 
@@ -364,7 +365,7 @@
         border-bottom-right-radius: 10%;
 
             @include celular {
-                background: linear-gradient(to right, #bc4e9c, #f80759);
+                background: linear-gradient(to right, #da4453, #89216b);
                 // background-image: url("../../images/moda-fem/background-section-modaFem2.jpg");
                 // background-position: center;
                 // background-repeat: no-repeat;
