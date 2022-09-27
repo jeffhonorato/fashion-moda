@@ -307,6 +307,23 @@ boxCard8blusasFem();
 boxCard9blusasFem();
 boxCard10blusasFem();
 
+// DESATIVANDO SCROLL 
+const desativandoScroll = () => {
+
+    const btnDetalhes = document.querySelector(".js-btn-scroll-disable");
+    const scrollBody = document.querySelector(".js-scroll"); 
+    const btnFechar = document.querySelector(".js-btn-fechar-scroll");
+    
+    btnDetalhes.addEventListener("click", () => {
+            scrollBody.classList.add("ativo");
+        });
+
+    btnFechar.addEventListener("click", () => {
+        scrollBody.classList.remove("ativo");
+    })
+}
+
+desativandoScroll();
 
 
 
