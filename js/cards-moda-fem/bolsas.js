@@ -13,6 +13,8 @@ const modalBolsasFemCard1 = () => {
         modalCard1Fem.classList.add("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "none"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFecharModal1BlusaFem = document.querySelector(".js-btnFechar-card1-bolsasFem");
@@ -21,6 +23,8 @@ const modalBolsasFemCard1 = () => {
         modalCard1Fem.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "block";
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
     })
 }
 
@@ -39,6 +43,8 @@ const modalBolsasFemCard2 = () => {
         modalCard2Fem.classList.add("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "none"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFecharModa21BlusaFem = document.querySelector(".js-btnFechar-card2-bolsasFem");
@@ -47,7 +53,9 @@ const modalBolsasFemCard2 = () => {
         modalCard2Fem.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "block";
-    })
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
+    });
 }
 
 const modalBolsasFemCard3 = () => {
@@ -65,6 +73,8 @@ const modalBolsasFemCard3 = () => {
         modalCard3Fem.classList.add("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "none"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFecharModa31BlusaFem = document.querySelector(".js-btnFechar-card3-bolsasFem");
@@ -73,6 +83,8 @@ const modalBolsasFemCard3 = () => {
         modalCard3Fem.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "block";
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
     })
 }
 
@@ -91,6 +103,8 @@ const modalBolsasFemCard4 = () => {
         modalCard4Fem.classList.add("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "none"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFecharModa41BlusaFem = document.querySelector(".js-btnFechar-card4-bolsasFem");
@@ -99,6 +113,8 @@ const modalBolsasFemCard4 = () => {
         modalCard4Fem.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "block";
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
     })
 }
 
