@@ -142,6 +142,8 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.605);
     display: none;
+    animation: slidein forwards;
+    animation-duration: 1s;
 }
 
 .modal__box--bolsasFem.open {
@@ -356,6 +358,18 @@
     color: #fff;
         
 }
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 
 
 

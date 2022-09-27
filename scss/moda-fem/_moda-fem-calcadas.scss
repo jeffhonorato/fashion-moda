@@ -142,6 +142,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.605);
     display: none;
+    animation: slidein 1s forwards;
 }
 
 .modal__box--calcadosFem.open {
@@ -157,10 +158,6 @@
     height: 500px;
     background: linear-gradient(to right, #da4453, #89216b);
 
-    // background-image: url("../../images/moda-fem/background-section-modaFem2.jpg");
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
     box-shadow: 0 0 20px #fff;
     border-top-right-radius: 5%;
     border-bottom-right-radius: 10%;
@@ -174,11 +171,6 @@
             background: linear-gradient(to right, #da4453, #89216b);
             border-top-right-radius: 0%;
             border-bottom-right-radius: 0%;
-
-            // background-image: url("../../images/moda-fem/background-section-modaFem2.jpg");
-            // background-position: center;
-            // background-repeat: no-repeat;
-            // background-size: cover;
         }
 }
 
@@ -354,4 +346,16 @@
     color: #fff;
         
 }
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 
