@@ -15,6 +15,8 @@ const modalCard1CalcasFem = () => {
         modalBoxCard1.classList.add("open"); 
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "none"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFechar = document.querySelector(".js-btnFechar-card1-calcasFem");
@@ -24,6 +26,8 @@ const modalCard1CalcasFem = () => {
         modalBoxCard1.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "block"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
         
     });
    
@@ -46,6 +50,8 @@ const modalCard2CalcasFem = () => {
         modalBoxCard2.classList.add("open"); 
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "none"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFechar = document.querySelector(".js-btnFechar-card2-calcasFem");
@@ -55,6 +61,8 @@ const modalCard2CalcasFem = () => {
         modalBoxCard2.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "block"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
         
     });
    
@@ -77,6 +85,8 @@ const modalCard3CalcasFem = () => {
         modalBoxCard3.classList.add("open"); 
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "none"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFechar = document.querySelector(".js-btnFechar-card3-calcasFem");
@@ -86,6 +96,8 @@ const modalCard3CalcasFem = () => {
         modalBoxCard3.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "block"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
         
     });
    
@@ -108,6 +120,8 @@ const modalCard4CalcasFem = () => {
         modalBoxCard4.classList.add("open"); 
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "none"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFechar = document.querySelector(".js-btnFechar-card4-calcasFem");
@@ -117,6 +131,8 @@ const modalCard4CalcasFem = () => {
         modalBoxCard4.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "block"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
         
     });
    
@@ -139,6 +155,8 @@ const modalCard5CalcasFem = () => {
         modalBoxCard5.classList.add("open"); 
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "none"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFechar = document.querySelector(".js-btnFechar-card5-calcasFem");
@@ -148,6 +166,8 @@ const modalCard5CalcasFem = () => {
         modalBoxCard5.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "block"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
         
     });
    
@@ -170,6 +190,8 @@ const modalCard6CalcasFem = () => {
         modalBoxCard6.classList.add("open"); 
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "none"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFechar = document.querySelector(".js-btnFechar-card6-calcasFem");
@@ -179,7 +201,8 @@ const modalCard6CalcasFem = () => {
         modalBoxCard6.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "block"; 
-        
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
     });
    
     
@@ -201,6 +224,8 @@ const modalCard7CalcasFem = () => {
         modalBoxCard7.classList.add("open"); 
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "none"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFechar = document.querySelector(".js-btnFechar-card7-calcasFem");
@@ -210,7 +235,8 @@ const modalCard7CalcasFem = () => {
         modalBoxCard7.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "block"; 
-        
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
     });
    
     
@@ -232,6 +258,8 @@ const modalCard8CalcasFem = () => {
         modalBoxCard8.classList.add("open"); 
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "none"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFechar = document.querySelector(".js-btnFechar-card8-calcasFem");
@@ -241,6 +269,8 @@ const modalCard8CalcasFem = () => {
         modalBoxCard8.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "block"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
         
     });
    
@@ -263,6 +293,8 @@ const modalCard9CalcasFem = () => {
         modalBoxCard9.classList.add("open"); 
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "none"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFechar = document.querySelector(".js-btnFechar-card9-calcasFem");
@@ -272,7 +304,8 @@ const modalCard9CalcasFem = () => {
         modalBoxCard9.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "block"; 
-        
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
     });
    
     
@@ -294,6 +327,8 @@ const modalCard10CalcasFem = () => {
         modalBoxCard10.classList.add("open"); 
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "none"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFechar = document.querySelector(".js-btnFechar-card10-calcasFem");
@@ -303,16 +338,13 @@ const modalCard10CalcasFem = () => {
         modalBoxCard10.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "block"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
         
     });
    
     
 }
-
-
-
-
-
 
 modalCard1CalcasFem();
 modalCard2CalcasFem();

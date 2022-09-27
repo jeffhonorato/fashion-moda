@@ -118,9 +118,6 @@ const modalPlusFemCard4 = () => {
     })
 }
 
-
-
-
 modalPlusFemCard1();
 modalPlusFemCard2();
 modalPlusFemCard3();
