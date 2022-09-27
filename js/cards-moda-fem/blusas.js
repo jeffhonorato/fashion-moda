@@ -43,15 +43,21 @@ const boxCard1blusasFem = () => {
         modalCard1Fem.classList.add("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "none"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFecharModal1BlusaFem = document.querySelector(".js-btnFechar-card1-blusasFem");
     btnFecharModal1BlusaFem.addEventListener("click", () => {
         const modalCard1Fem = document.querySelector(".js-modal-card1-blusasFem");
         modalCard1Fem.classList.remove("open");
-        const menuMobile = document.querySelector(".menu__mobile")
+        const menuMobile = document.querySelector(".menu__mobile");
         menuMobile.style.display = "block";
-    })
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
+    });
+
+    
 }
 
 const boxCard2blusasFem = () => {
@@ -308,22 +314,22 @@ boxCard9blusasFem();
 boxCard10blusasFem();
 
 // DESATIVANDO SCROLL 
-const desativandoScroll = () => {
+// const desativandoScroll = () => {
 
-    const btnDetalhes = document.querySelector(".js-btn-scroll-disable");
-    const scrollBody = document.querySelector(".js-scroll"); 
-    const btnFechar = document.querySelector(".js-btn-fechar-scroll");
+//     const btnDetalhes = document.querySelector(".js-btn-scroll-disable");
+//     const scrollBody = document.querySelector(".js-scroll"); 
+//     const btnFechar = document.querySelector(".js-btn-fechar-scroll");
     
-    btnDetalhes.addEventListener("click", () => {
-            scrollBody.classList.add("ativo");
-        });
+//     btnDetalhes.addEventListener("click", () => {
+//             scrollBody.classList.add("ativo");
+//         });
 
-    btnFechar.addEventListener("click", () => {
-        scrollBody.classList.remove("ativo");
-    })
-}
+//     btnFechar.addEventListener("click", () => {
+//         scrollBody.classList.remove("ativo");
+//     })
+// }
 
-desativandoScroll();
+// desativandoScroll();
 
 
 
