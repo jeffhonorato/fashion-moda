@@ -76,6 +76,8 @@ const boxCard2blusasFem = () => {
         modalCard2Fem.classList.add("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "none"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFecharModal2BlusaFem = document.querySelector(".js-btnFechar-card2-blusasFem");
@@ -84,6 +86,8 @@ const boxCard2blusasFem = () => {
         modalCard2Fem.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "block";
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
     })
 }
 
@@ -103,6 +107,8 @@ const boxCard3blusasFem = () => {
         modalCard3Fem.classList.add("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "none"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFecharModal3BlusaFem = document.querySelector(".js-btnFechar-card3-blusasFem");
@@ -111,6 +117,8 @@ const boxCard3blusasFem = () => {
         modalCard3Fem.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "block";
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
     })
 }
 
