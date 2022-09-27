@@ -138,6 +138,8 @@ const boxCard4blusasFem = () => {
         modalCard4Fem.classList.add("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "none"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFecharModal4BlusaFem = document.querySelector(".js-btnFechar-card4-blusasFem");
@@ -146,6 +148,8 @@ const boxCard4blusasFem = () => {
         modalCard4Fem.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "block";
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
     })
 }
 
@@ -165,6 +169,8 @@ const boxCard5blusasFem = () => {
         modalCard5Fem.classList.add("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "none"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFecharModal5BlusaFem = document.querySelector(".js-btnFechar-card5-blusasFem");
@@ -173,6 +179,8 @@ const boxCard5blusasFem = () => {
         modalCard5Fem.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "block";
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
     })
 }
 
@@ -192,6 +200,8 @@ const boxCard6blusasFem = () => {
         modalCard6Fem.classList.add("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "none"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFecharModal6BlusaFem = document.querySelector(".js-btnFechar-card6-blusasFem");
@@ -200,7 +210,9 @@ const boxCard6blusasFem = () => {
         modalCard6Fem.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "block";
-    })
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
+    });
 }
 
 const boxCard7blusasFem = () => {
@@ -219,6 +231,8 @@ const boxCard7blusasFem = () => {
         modalCard7Fem.classList.add("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "none"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFecharModal7BlusaFem = document.querySelector(".js-btnFechar-card7-blusasFem");
@@ -227,7 +241,9 @@ const boxCard7blusasFem = () => {
         modalCard7Fem.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "block";
-    })
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
+    });
 }
 
 const boxCard8blusasFem = () => {
@@ -246,6 +262,8 @@ const boxCard8blusasFem = () => {
         modalCard8Fem.classList.add("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "none"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFecharModal8BlusaFem = document.querySelector(".js-btnFechar-card8-blusasFem");
@@ -254,7 +272,9 @@ const boxCard8blusasFem = () => {
         modalCard8Fem.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "block";
-    })
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
+    });
 }
 
 const boxCard9blusasFem = () => {
@@ -272,6 +292,8 @@ const boxCard9blusasFem = () => {
         modalCard9Fem.classList.add("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "none"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFecharModal9BlusaFem = document.querySelector(".js-btnFechar-card9-blusasFem");
@@ -280,7 +302,9 @@ const boxCard9blusasFem = () => {
         modalCard9Fem.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "block";
-    })
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
+    });
 }
 
 const boxCard10blusasFem = () => {
@@ -298,6 +322,8 @@ const boxCard10blusasFem = () => {
         modalCard10Fem.classList.add("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "none"; 
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFecharModal10BlusaFem = document.querySelector(".js-btnFechar-card10-blusasFem");
@@ -306,7 +332,9 @@ const boxCard10blusasFem = () => {
         modalCard10Fem.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile")
         menuMobile.style.display = "block";
-    })
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
+    });
 }
 
 
@@ -321,23 +349,6 @@ boxCard8blusasFem();
 boxCard9blusasFem();
 boxCard10blusasFem();
 
-// DESATIVANDO SCROLL 
-// const desativandoScroll = () => {
-
-//     const btnDetalhes = document.querySelector(".js-btn-scroll-disable");
-//     const scrollBody = document.querySelector(".js-scroll"); 
-//     const btnFechar = document.querySelector(".js-btn-fechar-scroll");
-    
-//     btnDetalhes.addEventListener("click", () => {
-//             scrollBody.classList.add("ativo");
-//         });
-
-//     btnFechar.addEventListener("click", () => {
-//         scrollBody.classList.remove("ativo");
-//     })
-// }
-
-// desativandoScroll();
 
 
 
