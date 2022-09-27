@@ -5,10 +5,10 @@ var swiper = new Swiper(".blusas-masc", {
     slidesPerView: "auto",
     loop: true,
     coverflowEffect: {
-      rotate: 10,
+      rotate: 5,
       stretch: 0,
       depth: 100,
-      modifier: 8,
+      modifier: 9,
       slideShadows: false,
     },
     // pagination: {
@@ -27,10 +27,10 @@ var swiper = new Swiper(".blusas-masc", {
     slidesPerView: "auto",
     loop: true,
     coverflowEffect: {
-      rotate: 10,
+      rotate: 5,
       stretch: 0,
       depth: 100,
-      modifier: 8,
+      modifier: 9,
       slideShadows: false,
     },
     // pagination: {
@@ -49,10 +49,10 @@ var swiper = new Swiper(".blusas-masc", {
     slidesPerView: "auto",
     loop: true,
     coverflowEffect: {
-      rotate: 10,
+      rotate: 5,
       stretch: 0,
       depth: 100,
-      modifier: 8,
+      modifier: 9,
       slideShadows: false,
     },
     // pagination: {
@@ -71,10 +71,10 @@ var swiper = new Swiper(".blusas-masc", {
     slidesPerView: "auto",
     loop: true,
     coverflowEffect: {
-      rotate: 10,
+      rotate: 5,
       stretch: 0,
       depth: 100,
-      modifier: 8,
+      modifier: 9,
       slideShadows: false,
     },
     // pagination: {

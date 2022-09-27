@@ -113,10 +113,6 @@ modalShortMascCard4 = () => {
 }
 
 
-
-
-
-
 modalShortMascCard1();
 modalShortMascCard2();
 modalShortMascCard3();

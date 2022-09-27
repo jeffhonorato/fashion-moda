@@ -45,6 +45,8 @@ modalBlusasMascCard1 = () => {
         modalBox1.classList.add("open");
         const menuMobile = document.querySelector(".menu__mobile");
         menuMobile.style.display = "none";
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFechar = document.querySelector(".js-btnFechar--blusasMasc-card1");
@@ -54,6 +56,8 @@ modalBlusasMascCard1 = () => {
         modalBox1.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile");
         menuMobile.style.display = "block";
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
     });
 } 
 
@@ -73,6 +77,8 @@ modalBlusasMascCard2 = () => {
         modalBox2.classList.add("open");
         const menuMobile = document.querySelector(".menu__mobile");
         menuMobile.style.display = "none";
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFechar = document.querySelector(".js-btnFechar--blusasMasc-card2");
@@ -82,6 +88,9 @@ modalBlusasMascCard2 = () => {
         modalBox2.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile");
         menuMobile.style.display = "block";
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
+
     });
 } 
 
@@ -101,6 +110,8 @@ modalBlusasMascCard3 = () => {
         modalBox3.classList.add("open");
         const menuMobile = document.querySelector(".menu__mobile");
         menuMobile.style.display = "none";
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFechar = document.querySelector(".js-btnFechar--blusasMasc-card3");
@@ -110,6 +121,8 @@ modalBlusasMascCard3 = () => {
         modalBox3.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile");
         menuMobile.style.display = "block";
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
     });
 } 
 
@@ -129,6 +142,8 @@ modalBlusasMascCard4 = () => {
         modalBox4.classList.add("open");
         const menuMobile = document.querySelector(".menu__mobile");
         menuMobile.style.display = "none";
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFechar = document.querySelector(".js-btnFechar--blusasMasc-card4");
@@ -138,13 +153,10 @@ modalBlusasMascCard4 = () => {
         modalBox4.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile");
         menuMobile.style.display = "block";
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
     });
 } 
-
-
- 
-
-
 
 modalBlusasMascCard1();
 modalBlusasMascCard2();

@@ -16,6 +16,8 @@ modalCalcaMascCard1 = () => {
         modalBox1.classList.add("open");
         const menuMobile = document.querySelector(".menu__mobile");
         menuMobile.style.display = "none";
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFechar = document.querySelector(".js-btnFechar--calcaMasc-card1");
@@ -25,6 +27,8 @@ modalCalcaMascCard1 = () => {
         modalBox1.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile");
         menuMobile.style.display = "block";
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
     });
 }
 
@@ -44,6 +48,8 @@ modalCalcaMascCard2 = () => {
         modalBox2.classList.add("open");
         const menuMobile = document.querySelector(".menu__mobile");
         menuMobile.style.display = "none";
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFechar = document.querySelector(".js-btnFechar--calcaMasc-card2");
@@ -53,6 +59,8 @@ modalCalcaMascCard2 = () => {
         modalBox2.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile");
         menuMobile.style.display = "block";
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
     });
 }
 
@@ -72,6 +80,8 @@ modalCalcaMascCard3 = () => {
         modalBox3.classList.add("open");
         const menuMobile = document.querySelector(".menu__mobile");
         menuMobile.style.display = "none";
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFechar = document.querySelector(".js-btnFechar--calcaMasc-card3");
@@ -81,6 +91,8 @@ modalCalcaMascCard3 = () => {
         modalBox3.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile");
         menuMobile.style.display = "block";
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
     });
 }
 
@@ -100,6 +112,8 @@ modalCalcaMascCard4 = () => {
         modalBox4.classList.add("open");
         const menuMobile = document.querySelector(".menu__mobile");
         menuMobile.style.display = "none";
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.add("ativo");
     });
 
     const btnFechar = document.querySelector(".js-btnFechar--calcaMasc-card4");
@@ -109,12 +123,10 @@ modalCalcaMascCard4 = () => {
         modalBox4.classList.remove("open");
         const menuMobile = document.querySelector(".menu__mobile");
         menuMobile.style.display = "block";
+        const scrollBody = document.querySelector(".js-scroll");
+        scrollBody.classList.remove("ativo");
     });
 }
-
-
-
-
 
 modalCalcaMascCard1();
 modalCalcaMascCard2();
