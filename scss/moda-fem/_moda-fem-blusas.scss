@@ -119,7 +119,7 @@
                 padding: 1rem;
                 background-color: $cor-sectionFem;
                 box-shadow: 4px 10px 10px 0 $cor-header;    
-                color: #fff;  
+                color: #000;  
                 font-family: $fonte-titulo;
                 font-size: 1.5rem;
                 cursor: pointer;
@@ -132,7 +132,7 @@
                         box-shadow: 4px 10px 10px 0 #000; 
                         // border-top-left-radius: 30%;
                         transition: all .4s;
-                        color: #858585;
+                        color: #fff;
                     }
 
                     @include celular {
