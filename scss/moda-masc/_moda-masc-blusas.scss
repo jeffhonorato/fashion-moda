@@ -4,7 +4,7 @@
         height: 85vh;
         padding: .5rem;
         position: relative;
-        background: linear-gradient(to right, #74ebd5, #acb6e5);
+        background: linear-gradient(to right, #523e27, #FFEBD3);
     
         // background-image: url("/images/moda-masc/background-sectionMasc.jpg");
         // background-position: center;
@@ -32,46 +32,46 @@
         }
     }
 
-    .img__detalhe1__header__masc {
-        position: absolute;
-        bottom: -140px;
-        left: 100px;
-        width: 200px;
-        padding: .5rem;
+    // .img__detalhe1__header__masc {
+    //     position: absolute;
+    //     bottom: -140px;
+    //     left: 100px;
+    //     width: 200px;
+    //     padding: .5rem;
 
-            @include celular {
-                width: 100px;
-                bottom: -35px;
-                left: 4px;
-            }
+    //         @include celular {
+    //             width: 100px;
+    //             bottom: -35px;
+    //             left: 4px;
+    //         }
 
-            @include tablet {
-                width: 100px;
-                top: 20px;
-                left: 10px;
-            }
-    } 
+    //         @include tablet {
+    //             width: 100px;
+    //             top: 20px;
+    //             left: 10px;
+    //         }
+    // } 
 
-    .img__detalhe2__header__masc {
-        position: absolute;
-        width: 200px;
-        top: 240px;
-        right: 150px;
+    // .img__detalhe2__header__masc {
+    //     position: absolute;
+    //     width: 200px;
+    //     top: 240px;
+    //     right: 150px;
 
-            @include celular {
-                width: 120px;
-                top: 150px;
-                right: 20px;
-                width: 80px;
-            }
+    //         @include celular {
+    //             width: 120px;
+    //             top: 150px;
+    //             right: 20px;
+    //             width: 80px;
+    //         }
 
-            @include tablet {
-                width: 200px;
-                top: 100px;
-                right: 0px;
-                width: 110px;
-            }
-    } 
+    //         @include tablet {
+    //             width: 200px;
+    //             top: 100px;
+    //             right: 0px;
+    //             width: 110px;
+    //         }
+    // } 
 
     .adesivo__titulo {
         font-size: 3.5rem;
@@ -80,7 +80,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 85vh;
+        height: 65vh;
         @include titulo;
 
             @include celular {
