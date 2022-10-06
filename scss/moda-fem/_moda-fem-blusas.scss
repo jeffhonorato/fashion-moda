@@ -83,15 +83,14 @@
                     @include titulo;
                     
                         @include celular {
-                            font-size: 3.5rem;
+                            font-size: 3.2rem;
                             margin-left: 2.5rem;
                             padding-left: 1rem;
                             height: 40vh;
                         }
 
                         @include tablet {
-                            font-size: 2rem;
-                            font-size: 4.2rem;
+                            font-size: 3.3rem;
                             margin-left: 2rem;
                         }
                     
