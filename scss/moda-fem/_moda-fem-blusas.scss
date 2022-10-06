@@ -4,7 +4,7 @@
             height: 85vh;
             padding: .5rem;
             position: relative;
-            background: linear-gradient(to right, #bc4e9c, #f80759);
+            background: linear-gradient(to right, #ce6857, #FFEBD3);
 
             // background-image: url("../images/moda-fem/background-section-modaFem2.jpg");
             // background-position: center;
@@ -31,67 +31,61 @@
                     padding: .5rem;
                 }
 
-                .img__detalhe__header__fem {
-                    position: absolute;
-                    bottom: -140px;
-                    left: 0px;
-                    width: 400px;
-                    padding: .5rem;
+                // .img__detalhe__header__fem {
+                //     position: absolute;
+                //     bottom: -140px;
+                //     left: 0px;
+                //     width: 400px;
+                //     padding: .5rem;
 
-                        @include celular {
-                            width: 210px;
-                            top: 20px;
-                            left: -74px;
-                        }
+                //         @include celular {
+                //             width: 210px;
+                //             top: 20px;
+                //             left: -74px;
+                //         }
 
-                        @include tablet {
-                            width: 250px;
-                            top: 20px;
-                            left: -50px;
-                        }
+                //         @include tablet {
+                //             width: 250px;
+                //             top: 20px;
+                //             left: -50px;
+                //         }
 
-                        // @include desktop{
-                        //     width: 350px;
-                        //     left: -47px;
-                        // }
-                }
-
-                // .img__detalhe__header {
-                //     position: relative;
                 // }
 
-                .img__detalhe2__header__fem {
-                    position: absolute;
-                    top: 140px;
-                    right: 150px;
+               
+
+                // .img__detalhe2__header__fem {
+                //     position: absolute;
+                //     top: 140px;
+                //     right: 150px;
                     
-                    width: 200px;
-                    padding: .5rem;
+                //     width: 200px;
+                //     padding: .5rem;
 
-                        @include celular {
-                            width: 210px;
-                            top: 130px;
-                            right: 0px;
-                            width: 80px;
-                        }
+                //         @include celular {
+                //             width: 210px;
+                //             top: 130px;
+                //             right: 0px;
+                //             width: 80px;
+                //         }
 
-                        @include tablet {
-                            width: 250px;
-                            top: 130px;
-                            right: 0px;
-                            width: 110px;
-                        }
-                }
+                //         @include tablet {
+                //             width: 250px;
+                //             top: 130px;
+                //             right: 0px;
+                //             width: 110px;
+                //         }
+                // }
 
                
                 .adesivo__titulo__h1 {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    height: 50vh;
-                    color: #fff;        
+                    height: 65vh;
+                    color: #000;        
                     @include titulo;
-
+                    
                         @include celular {
                             font-size: 1.8rem;
                             font-size: 3rem;
