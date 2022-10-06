@@ -164,11 +164,7 @@
 
     /******* CATALOGO BLUSAS CARDS  *******/
     .catalogo__moda__fem {
-        background-image: url("../images/moda-fem/background-section-modaFem2.jpg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        background: linear-gradient(to right, #FFEBD3,#ce6857);
         padding: 2rem 0;
 
             @include celular {
@@ -187,7 +183,7 @@
     .catalogo__titulo--blusas {
         background-color: $cor-sectionFem;
         font-family: $fonte-titulo;
-        color: #fff;
+        color: #000;
         font-size: 3.5rem;
         border: 1px solid #fff;
         width: 300px;
