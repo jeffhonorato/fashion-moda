@@ -7,9 +7,8 @@
             background: linear-gradient(40deg, #D530F7, #FFEBD3);
             border-bottom-left-radius: 40%;
             border-top-right-radius: 20%;
-            margin: .5rem;
             box-shadow: 4px 10px 10px 0 $cor-header;
-            border: 1px solid #000;
+            box-shadow: 1px 1px 20px $cor-sectionFem;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -36,7 +35,7 @@
 
                 .adesivo__titulo__h1 {
                     
-                    color: #000;        
+                    color: #fff;        
                     @include titulo;
                     
                         @include celular {
@@ -80,18 +79,18 @@
                 padding: 1rem;
                 background-color: $cor-sectionFem;
                 box-shadow: 4px 10px 10px 0 $cor-header;    
-                color: #000;  
+                color: #fff;  
                 font-family: $fonte-titulo;
                 font-size: 1.5rem;
                 cursor: pointer;
-                border-top-right-radius: 30%;
+                border-top-left-radius: 20%;
+                border-bottom-right-radius: 20%;
                 transform: skewY(-10deg);
 
                 
                     &:hover {
                         background-color: #000;
-                        box-shadow: 4px 10px 10px 0 #000; 
-                        // border-top-left-radius: 30%;
+                        box-shadow: 4px 10px 10px 0 $cor-sectionFem; 
                         transition: all .4s;
                         color: #fff;
                     }
