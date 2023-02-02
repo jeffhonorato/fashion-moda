@@ -205,13 +205,53 @@
         &:hover {
             transition: all .5s;
             box-shadow: 2px 2px 20px #fff;
+            background-color: #fff;
+        }
+
+        &:hover .acordion__titulo {
+            color: $cor-sectionFem;
+            transition: all .5s;
+        }
+
+        &:hover .acordion__desc {
+            color: #000;
+            transition: all .5s;
+        }
+
+        &:hover .acordion__tam {
+            color: $cor-sectionFem;
+            transition: all .5s;
+        }
+
+        &:hover .acordion__comp--titulo {
+            color: $cor-sectionFem;
+            transition: all .5s;
+        }
+
+        &:hover .acordion__comp--p {
+            color: #000;
+            transition: all .5s;
+        }
+
+        &:hover .acordion__tam--ico {
+            background-color: $cor-sectionFem;
+            transition: all .5s;
+        }
+
+        &:hover .acordion__cod {
+            color: #000;
+            transition: all .5s;
+        }
+
+        &:hover .acordion__preco {
+            background: $cor-sectionFem;
         }
   
 
             .acordion__titulo {
                 text-align: center;
                 color: #fff;
-                font-family: $fonte-corpo;
+                font-family: $fonte-titulo;
                 font-size: 1.5rem;
                 margin-bottom: 1rem;
                 
@@ -227,7 +267,7 @@
 
             .acordion__preco {
                 color: #000;
-                font-family: $fonte-corpo;
+                font-family: $fonte-titulo;
                 font-size: 1.2rem;
                 font-weight: bold;
                 text-align: center;
@@ -261,7 +301,7 @@
             }
 
             .acordion__tam--ico {
-                background-color: #000;
+                background-color: #fff;
                 border-radius: 50%;
                 padding: .4rem;
             }
@@ -271,6 +311,7 @@
                 color: $cor-fonte-texto;
                 font-family: $fonte-corpo;
                 font-size: 1.3rem;
+                font-weight: bold;
             }
 
             .acordion__tamanhos--pmg {
@@ -281,9 +322,11 @@
             }
 
             .acordion__tam--ref {
-                color: #fff;
-                font-family: $fonte-corpo;
-                font-size: 1.3rem;
+                color: #000;
+                font-family: $fonte-titulo;
+                font-size: 1.4rem;
+
+               
             }
 
             .acordion__comp {
@@ -332,17 +375,17 @@
                 margin: 0 auto;
 
                 &:hover {
-                    background-color: $cor-header;
+                    background-color: $cor-sectionFem;
                     box-shadow: 0 4px 2px 0 #000;
                     transition: all .6s;
                 }
 
                 &:hover .acordion__icone {
-                    color: #000;
+                    color: #fff;
                 }
 
                 &:hover .acordion__a {
-                    color: #000;
+                    color: #fff;
                 }
                 
             }
