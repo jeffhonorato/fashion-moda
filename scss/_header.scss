@@ -1,10 +1,12 @@
 #header {
-    background-color: #FFEBD3;
+    background: linear-gradient(40deg, #c1b8ae, #DF007A) ;
 
     padding: 1rem;
     position: relative;
     height: 80vh;
     z-index: 2;
+    display: grid;
+    place-content: center;
 
         @include celular {
             height: 50vh;
@@ -16,7 +18,7 @@
 
         .logo {
             display: flex;
-            justify-content: center;
+            place-content: center;
             width: 100%;
         }
 
