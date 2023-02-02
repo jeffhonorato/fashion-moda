@@ -31,6 +31,15 @@
                     padding: .5rem;
                 }
 
+                .adesivo__titulo {
+                    @include celular {
+                        height: 40vh;
+                        display: grid;
+                        place-content: center;
+                    }
+                  
+                }
+
                 .adesivo__titulo__h1 {
                     
                     color: #fff;        
@@ -38,10 +47,12 @@
                     
                         @include celular {
                             position: absolute;
-                            top: 40px;
-                            right: 30px;
-                            font-size: 3.2rem;
-                          
+                            top: 15%;
+                            right: 0px;
+                            left: 0;
+                            bottom: 0;
+                            font-size: 4rem;
+                            height: 40vh;
                         }
 
                         @include tablet {
