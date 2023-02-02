@@ -58,6 +58,10 @@
 
         .btn__promo__masc {
             background-color: $cor-sectionMasc;
+
+            &:hover {
+                box-shadow: 4px 10px 10px $cor-sectionMasc;
+            }
         }
 
         .btn__promo {
@@ -65,26 +69,23 @@
             justify-content: center;
             align-items: center;
             padding: .8rem;
-            border-top-right-radius: 30%;
-            border: 2px solid #fff;
+            border-top-left-radius: 20%;
+            border-bottom-right-radius: 20%;
             cursor: pointer;
             transform: skewY(-5deg);
             box-shadow: 4px 10px 10px 0 $cor-header;
 
                 @include celular {
-                    border: 1px solid #fff;
                     box-shadow: 4px 10px 10px 0 $cor-header;
                     padding: .4rem;
                 }
 
-
                 &:hover {
                     background-color: #fff;
-                    box-shadow: 0 4px 2px 0 $cor-header;
+                    box-shadow: 4px 10px 10px $cor-sectionFem;
                     transition: all .6s;
-                    border-top-left-radius: 30%;
-                    border: 2px solid $cor-header;
-                    
+                    border-top-left-radius: 20%;
+                    border-bottom-right-radius: 20%;
                 }
 
                 &:hover .btn__titulo {
@@ -99,15 +100,12 @@
         }
 
         .nav__ico {
-            // display: flex;
-            // justify-content: center;
             font-size: 1.5rem;
             color: #fff;
-            // margin: 0 auto;
-
-                @include celular {
-                    font-size: 1.2rem;  
-                }
+            
+            @include celular {
+                font-size: 1.2rem;  
+            }
         }
 
         .btn__titulo { 
@@ -137,7 +135,6 @@
 /******** TENDENCIA FEMININA ********/
 .tendencia__fem {
     margin-top: 5rem;
-
 
     .container__cards__fem {
         display: flex;
@@ -187,7 +184,6 @@
     .imagem__grande {
         width: 260px;
         border-radius: 5px;
-        // border: 2px solid #000;
     }
 
     .acordion {
@@ -248,7 +244,6 @@
             background: $cor-sectionFem;
         }
   
-
             .acordion__titulo {
                 text-align: center;
                 color: #fff;
@@ -289,12 +284,6 @@
                 }
             }
 
-            // .acordion__marca {
-            //     color: #fff;
-            //     font-family: $fonte-corpo;
-            //     font-size: 1.2rem;
-            // }
-
             .acordion__tam--box {
                 display: flex;
                 flex-direction: column;
@@ -327,8 +316,6 @@
                 color: #000;
                 font-family: $fonte-titulo;
                 font-size: 1.4rem;
-
-               
             }
 
             .acordion__comp {
@@ -344,7 +331,6 @@
                 color: $cor-fonte-texto;
                 text-align: center;
                 font-size: 1.3rem;
-
             }
 
             .acordion__comp--p {
@@ -459,7 +445,6 @@
     .imagem__grande {
         width: 260px;
         border-radius: 5px;
-        // border: 2px solid #000;
     }
 
     .acordion {
@@ -471,14 +456,12 @@
         cursor: pointer;
         width: 260px;
   
-
             .acordion__titulo {
                 text-align: center;
                 color: #fff;
                 font-family: $fonte-corpo;
                 font-size: 1.5rem;
                 margin-bottom: 1rem;
-                
             }
 
             .acordion__desc {
@@ -520,8 +503,7 @@
             .acordion__tam {
                 color: #fff;
                 font-family: $fonte-corpo;
-                font-size: 1.3rem;
-                
+                font-size: 1.3rem;                
             }
 
             .acordion__tam--ico {
@@ -603,7 +585,6 @@
                 padding: .4rem;
             }
     }
-
         
         .cards__fem {
             display: flex;
@@ -665,7 +646,6 @@
     .imagem__grande {
         width: 260px;
         border-radius: 5px;
-        // border: 2px solid #000;
     }
 
     .acordion {
@@ -677,7 +657,6 @@
         cursor: pointer;
         width: 260px;
   
-
             .acordion__titulo {
                 text-align: center;
                 color: #fff;
@@ -1012,16 +991,3 @@
         transform: translate3d(0,0,0)
     }
 }
-
-// @keyframes acordion-show {
-//     from {
-//         opacity: 0;
-//         margin-top: -10px;
-//     }
-
-//     to {
-//         opacity: 0;
-//         margin-top: 0px;
-//     }
-// }
-
