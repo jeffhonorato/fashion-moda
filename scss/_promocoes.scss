@@ -236,6 +236,7 @@
         &:hover .acordion__tam--ico {
             background-color: $cor-sectionFem;
             transition: all .5s;
+            color: #fff;
         }
 
         &:hover .acordion__cod {
@@ -277,6 +278,7 @@
                 padding: .8rem;
                 border: 2px solid #000;
                 border-top-left-radius: 20%;
+                border-bottom-right-radius: 20%;
 
                 span {
                     text-decoration: line-through;
