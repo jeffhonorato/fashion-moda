@@ -17,10 +17,8 @@
                 @include celular {
                     height: 40vh;
                     padding: .5rem;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin: 0rem;
+                    display: grid;
+                    place-content: center;
                 }
 
                 @include tablet {
@@ -40,8 +38,8 @@
                     
                         @include celular {
                             position: absolute;
-                            top: 80px;
-                            left: 5px;
+                            top: 40px;
+                            right: 30px;
                             font-size: 3.2rem;
                           
                         }
@@ -57,7 +55,8 @@
 
                     @include celular {
                         position: relative;
-                        max-width: 100px;
+                        left: 0;
+                        top: 0;
                     }
                    
                 }
