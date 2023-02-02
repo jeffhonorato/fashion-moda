@@ -457,15 +457,6 @@
         width: 260px;
         box-shadow: 1px 1px 10px #fff;
 
-  
-            .acordion__titulo {
-                text-align: center;
-                color: #fff;
-                font-family: $fonte-titulo;
-                font-size: 1.5rem;
-                margin-bottom: 1rem;
-            }
-
             &:hover {
                 transition: all .5s;
                 box-shadow: 4px 4px 30px $cor-sectionFem;
@@ -476,6 +467,12 @@
                 color: $cor-sectionMasc;
                 transition: all .5s;
             }
+
+            &:hover .acordion__preco {
+                color: #fff;
+                transition: all .5s;
+                
+            }
     
             &:hover .acordion__desc {
                 color: #000;
@@ -483,12 +480,12 @@
             }
     
             &:hover .acordion__tam {
-                color: $cor-sectionFem;
+                color: $cor-sectionMasc;
                 transition: all .5s;
             }
     
             &:hover .acordion__comp--titulo {
-                color: $cor-sectionFem;
+                color: $cor-sectionMasc;
                 transition: all .5s;
             }
     
@@ -498,7 +495,7 @@
             }
     
             &:hover .acordion__tam--ico {
-                background-color: $cor-sectionFem;
+                background-color: $cor-sectionMasc;
                 transition: all .5s;
                 color: #fff;
             }
@@ -509,7 +506,15 @@
             }
     
             &:hover .acordion__preco {
-                background: $cor-sectionFem;
+                background: $cor-sectionMasc;
+            }
+
+            .acordion__titulo {
+                text-align: center;
+                color: #fff;
+                font-family: $fonte-titulo;
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
             }
 
             .acordion__desc {
@@ -532,6 +537,7 @@
                 padding: .8rem;
                 border: 2px solid #000;
                 border-top-left-radius: 20%;
+                border-bottom-right-radius: 20%;
 
                 span {
                     text-decoration: line-through;
@@ -549,10 +555,19 @@
                 margin-bottom: .8rem;
             }
 
+            .acordion__tam--ico {
+                background-color: #fff;
+                border-radius: 50%;
+                padding: .4rem;
+            }
+
             .acordion__tam {
-                color: #fff;
+                text-align: center;
+                color: $cor-fonte-texto;
                 font-family: $fonte-corpo;
-                font-size: 1.3rem;                
+                font-size: 1.3rem;
+                font-weight: bold;   
+                color:#b5b5b5;         
             }
 
             .acordion__tamanhos--pmg {
@@ -562,11 +577,17 @@
                 gap: .5rem;
             }
 
-            .acordion__tam--ico {
-                background-color: #000;
-                border-radius: 50%;
-                padding: .2rem;
+            .acordion__tam--ref {
+                color: #000;
+                font-family: $fonte-titulo;
+                font-size: 1.4rem;
             }
+
+            // .acordion__tam--ico {
+            //     background-color: #000;
+            //     border-radius: 50%;
+            //     padding: .2rem;
+            // }
 
             .acordion__comp {
                 display: flex;
@@ -581,6 +602,7 @@
                 color: $cor-fonte-texto;
                 text-align: center;
                 font-size: 1.3rem;
+                color:#b5b5b5;
             }
 
             .acordion__comp--p {
@@ -596,6 +618,7 @@
                 margin-bottom: 1rem;
                 font-weight: bold;
                 color: #fff;
+                text-align: center;
 
             }
 
@@ -604,16 +627,16 @@
                 gap: .2rem;
                 padding: .3rem;
                 align-items: center;
-                background-color: $cor-header;
+                background-color: #000;
                 border-radius: 10px;
                 padding: .8rem 1rem;
-                box-shadow: 4px 0 2px 0 #000;
+                box-shadow: 4px 0 2px 0 #fff;
                 width: 120px;
                 margin: 0 auto;
 
                 &:hover {
-                    background-color: #000;
-                    box-shadow: 0 4px 2px 0 $cor-header;
+                    background-color: $cor-sectionMasc;
+                    box-shadow: 0 4px 2px 0 #000;
                     transition: all .6s;
                 }
 
@@ -628,12 +651,12 @@
             }
 
             .acordion__icone {
-                color: #000;
+                color: #fff;
                 font-size: 20px;
             }
 
             .acordion__a {
-                color: #000;
+                color: #fff;
                 font-size: 1rem;
                 font-family: $fonte-titulo;
             }
