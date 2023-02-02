@@ -450,18 +450,66 @@
     .acordion {
         background-color: $cor-sectionMasc;
         padding: 1rem;
-        border: 2px solid #fff;
-        border-radius: 5px;
+        border-top-left-radius: 20%;
+        border-bottom-right-radius: 20%;
         margin-top: .2rem;
         cursor: pointer;
         width: 260px;
+        box-shadow: 1px 1px 10px #fff;
+
   
             .acordion__titulo {
                 text-align: center;
                 color: #fff;
-                font-family: $fonte-corpo;
+                font-family: $fonte-titulo;
                 font-size: 1.5rem;
                 margin-bottom: 1rem;
+            }
+
+            &:hover {
+                transition: all .5s;
+                box-shadow: 4px 4px 30px $cor-sectionFem;
+                background-color: #fff;
+            }
+    
+            &:hover .acordion__titulo {
+                color: $cor-sectionMasc;
+                transition: all .5s;
+            }
+    
+            &:hover .acordion__desc {
+                color: #000;
+                transition: all .5s;
+            }
+    
+            &:hover .acordion__tam {
+                color: $cor-sectionFem;
+                transition: all .5s;
+            }
+    
+            &:hover .acordion__comp--titulo {
+                color: $cor-sectionFem;
+                transition: all .5s;
+            }
+    
+            &:hover .acordion__comp--p {
+                color: #000;
+                transition: all .5s;
+            }
+    
+            &:hover .acordion__tam--ico {
+                background-color: $cor-sectionFem;
+                transition: all .5s;
+                color: #fff;
+            }
+    
+            &:hover .acordion__cod {
+                color: #000;
+                transition: all .5s;
+            }
+    
+            &:hover .acordion__preco {
+                background: $cor-sectionFem;
             }
 
             .acordion__desc {
@@ -496,14 +544,22 @@
 
             .acordion__tam--box {
                 display: flex;
+                flex-direction: column;
                 gap: .5rem;
-                margin-bottom: .3rem;
+                margin-bottom: .8rem;
             }
 
             .acordion__tam {
                 color: #fff;
                 font-family: $fonte-corpo;
                 font-size: 1.3rem;                
+            }
+
+            .acordion__tamanhos--pmg {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: .5rem;
             }
 
             .acordion__tam--ico {
@@ -513,10 +569,26 @@
             }
 
             .acordion__comp {
-                color: #fff;
-                font-family: $fonte-corpo;
-                font-size: 1.2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                 margin-bottom: .8rem;
+            }
+
+            .acordion__comp--titulo {
+                font-family: $fonte-corpo;
+                font-weight: bold;
+                color: $cor-fonte-texto;
+                text-align: center;
+                font-size: 1.3rem;
+            }
+
+            .acordion__comp--p {
+                font-family: $fonte-corpo;
+                font-weight: bold;
+                color: #fff;
+                text-align: center;
+                font-size: 1.3rem;
             }
 
             .acordion__cod {
