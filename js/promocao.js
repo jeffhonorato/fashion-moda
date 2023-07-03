@@ -47,8 +47,7 @@ const boxFemCard03 = () => {
             const imgGrande = document.querySelector(".img__gra__card3");
             imgGrande.src = img.src;
         });
-    });
-    
+    }); 
 }
 
 const boxFemCard04 = () => {
@@ -69,7 +68,6 @@ const boxFemCard05 = () => {
             imgGrande.src = img.src;
         });
     })
-    
 }
 
 const boxFemCard06 = () => {
@@ -80,7 +78,6 @@ const boxFemCard06 = () => {
             imgGrande.src = img.src;
         });
     });
-    
 }
 
 const boxFemCard07 = () => {
